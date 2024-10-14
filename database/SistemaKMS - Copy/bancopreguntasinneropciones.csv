@@ -1,0 +1,634 @@
+id	pregunta	tipo	id_tema	created_at	updated_at	id_imagen	id	opcion	id_pregunta	esrespuesta	created_at	updated_at
+121820	D003\nRepresenta la diferencia de dos o más elementos. \nNota: se espera solo una palabra.	1	26	NULL	NULL	NULL	219678	resta	121820	1	NULL	NULL
+121821	D001.\nEsta es la jerarquía correcta de operaciones:\n1. Paréntesis\n2. Exponentes \n3. Multiplicación y División\n4. Suma y Resta\n	3	36	NULL	NULL	NULL	219679	verdadero	121821	1	NULL	NULL
+121822	D003\nRepresenta el producto de dos o más elementos. \nNota: se espera solo una palabra.	1	26	NULL	NULL	NULL	219680	multiplicacion	121822	1	NULL	NULL
+121823	D001.\nResuelve:\n	2	36	NULL	NULL	NULL	219681	14	121823	1	NULL	NULL
+121824	D003.\nPropiedades de la suma: conmutativa, uniformidad, asociativa, disociativa.	3	26	NULL	NULL	NULL	219682	verdadero	121824	1	NULL	NULL
+121825	D003.\nLa operación inversa de la multiplicación es la raiz.	3	26	NULL	NULL	NULL	219683	falso	121825	1	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL	219764	32	121827	0	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL	219765	73/3	121827	0	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL	219766	12	121827	0	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL	219767	9	121827	0	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL	219768	9	121827	0	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL	219769	32	121827	0	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL	219770	17	121827	1	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL	219771	73/3	121827	0	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL	219772	9	121827	0	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL	219773	32	121827	0	NULL	NULL
+121828	D003.\nLa operación inversa de la suma es:	4	26	NULL	NULL	NULL	219954	resta	121828	1	NULL	NULL
+121828	D003.\nLa operación inversa de la suma es:	4	26	NULL	NULL	NULL	219955	división	121828	0	NULL	NULL
+121828	D003.\nLa operación inversa de la suma es:	4	26	NULL	NULL	NULL	219956	raiz	121828	0	NULL	NULL
+121828	D003.\nLa operación inversa de la suma es:	4	26	NULL	NULL	NULL	219957	logarítmo	121828	0	NULL	NULL
+121828	D003.\nLa operación inversa de la suma es:	4	26	NULL	NULL	NULL	219958	multiplicación	121828	0	NULL	NULL
+121829	D002.\nDos variables con números diferentes pero mismo signo se ______ y se mantiene la variable. 	1	86	NULL	NULL	NULL	219696	suman	121829	1	NULL	NULL
+121830	D002.\nSe pueden sumar o restar las potencias en una suma o resta algebraica. 	3	86	NULL	NULL	NULL	219707	falso	121830	1	NULL	NULL
+121831	D003.\nLa operación inversa de la multiplicación es:	4	26	NULL	NULL	NULL	219959	resta	121831	0	NULL	NULL
+121831	D003.\nLa operación inversa de la multiplicación es:	4	26	NULL	NULL	NULL	219960	división	121831	1	NULL	NULL
+121831	D003.\nLa operación inversa de la multiplicación es:	4	26	NULL	NULL	NULL	219961	raiz	121831	0	NULL	NULL
+121831	D003.\nLa operación inversa de la multiplicación es:	4	26	NULL	NULL	NULL	219962	logarítmo	121831	0	NULL	NULL
+121831	D003.\nLa operación inversa de la multiplicación es:	4	26	NULL	NULL	NULL	219963	multiplicación	121831	0	NULL	NULL
+121832	D003.\nLa operación inversa de la potenciación es:	4	26	NULL	NULL	NULL	219964	resta	121832	0	NULL	NULL
+121832	D003.\nLa operación inversa de la potenciación es:	4	26	NULL	NULL	NULL	219965	división	121832	0	NULL	NULL
+121832	D003.\nLa operación inversa de la potenciación es:	4	26	NULL	NULL	NULL	219966	raíz	121832	1	NULL	NULL
+121832	D003.\nLa operación inversa de la potenciación es:	4	26	NULL	NULL	NULL	219967	logarítmo	121832	0	NULL	NULL
+121832	D003.\nLa operación inversa de la potenciación es:	4	26	NULL	NULL	NULL	219968	multiplicación	121832	0	NULL	NULL
+121833	D003.\nAl ir a la universidad durante la semana pasada, en transporte y almuerzo: el Lunes gaste ${a}, el Martes ${b}, Miércoles ${c}, Jueves $ {d} y el Viernes ${e}. ¿El gasto de la semana fue?	5	26	NULL	NULL	NULL	219718	{a} + {b} + {c} + {d} + {e}	121833	1	NULL	NULL
+121834	D001.\nResuelve: \n{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c}	5	36	NULL	NULL	NULL	219719	{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c}	121834	1	NULL	NULL
+121835	D003\n¿Cuál es el resultado de la siguiente expresión?\n528+312+51	2	26	NULL	NULL	NULL	219720	891	121835	1	NULL	NULL
+121836	D003\n¿Cuál es el resultado de la siguiente expresión?\n28*12	2	26	NULL	NULL	NULL	219721	336	121836	1	NULL	NULL
+121837	D003\n¿Cuál  es el resultado de la siguiente expresión?\n1327-718\n	2	26	NULL	NULL	NULL	219722	609	121837	1	NULL	NULL
+121838	D003\n¿Cuál es el resultado de la siguiente expresión?\n1024/32	2	26	NULL	NULL	NULL	219723	32	121838	1	NULL	NULL
+121840	D004\nEs una razón de proporcionalidad que representa una cantidad compara con 100.\nNota: Se espera una sola palabra.	1	98	NULL	NULL	NULL	219728	porcentaje	121840	1	NULL	NULL
+121841	D004\nEl 25% de 1200	2	98	NULL	NULL	NULL	219729	300	121841	1	NULL	NULL
+121842	D004\nUna pantalla tiene un descuento de 10% si su valor es de $12,000 ¿De cuánto es el descuento?	2	98	NULL	NULL	NULL	219730	1200	121842	1	NULL	NULL
+121843	D004.\nPara denotar porcentaje usamos el  símbolo de ÷	3	98	NULL	NULL	NULL	219731	verdadero	121843	1	NULL	NULL
+121844	D004.\nUn celular nuevo tiene el precio de $18000. Tiene un 15% de descuento. Si lo compro, ¿Cuánto me costará?	4	98	NULL	NULL	NULL	219969	2700	121844	0	NULL	NULL
+121844	D004.\nUn celular nuevo tiene el precio de $18000. Tiene un 15% de descuento. Si lo compro, ¿Cuánto me costará?	4	98	NULL	NULL	NULL	219970	15300	121844	1	NULL	NULL
+121844	D004.\nUn celular nuevo tiene el precio de $18000. Tiene un 15% de descuento. Si lo compro, ¿Cuánto me costará?	4	98	NULL	NULL	NULL	219971	20700	121844	0	NULL	NULL
+121844	D004.\nUn celular nuevo tiene el precio de $18000. Tiene un 15% de descuento. Si lo compro, ¿Cuánto me costará?	4	98	NULL	NULL	NULL	219972	14400	121844	0	NULL	NULL
+121844	D004.\nUn celular nuevo tiene el precio de $18000. Tiene un 15% de descuento. Si lo compro, ¿Cuánto me costará?	4	98	NULL	NULL	NULL	219973	16200	121844	0	NULL	NULL
+121844	D004.\nUn celular nuevo tiene el precio de $18000. Tiene un 15% de descuento. Si lo compro, ¿Cuánto me costará?	4	98	NULL	NULL	NULL	219974	13500	121844	0	NULL	NULL
+121845	D005.\nResuelve:	2	96	NULL	NULL	NULL	219795	5	121845	1	NULL	NULL
+121846	D005. \nResuelve:	2	96	NULL	NULL	NULL	219796	2	121846	1	NULL	NULL
+121847	D005.\nLa raíz cuadrada de un número consiste en encontrar un número que multiplicado por si mismo nos de el valor que tenemos	3	96	NULL	NULL	NULL	219797	verdadero	121847	1	NULL	NULL
+121850	D005. \nOperación inversa a la potencia 	1	96	NULL	NULL	NULL	219804	raiz	121850	1	NULL	NULL
+121851	D006\nEvalúa la ecuación cuadrática\n	2	94	NULL	NULL	NULL	219805	12	121851	1	NULL	NULL
+121852	D006.\nLa fórmula general para resolver ecuaciones cuadráticas es:	3	94	NULL	NULL	NULL	219806	falso	121852	1	NULL	NULL
+121853	D006.\nAl resolver:	4	94	NULL	NULL	NULL	219975	x=1,x=2	121853	0	NULL	NULL
+121853	D006.\nAl resolver:	4	94	NULL	NULL	NULL	219976	x=-2,x=1	121853	0	NULL	NULL
+121853	D006.\nAl resolver:	4	94	NULL	NULL	NULL	219977	x=-1,x=-2	121853	1	NULL	NULL
+121853	D006.\nAl resolver:	4	94	NULL	NULL	NULL	219978	x=2,x=-1	121853	0	NULL	NULL
+121855	D007.\nIndica con una palabra el grado de la siguiente ecuación algebraica 	1	78	NULL	NULL	NULL	219812	cinco	121855	1	NULL	NULL
+121856	D007.\nResuelve:	2	78	NULL	NULL	NULL	219813	8	121856	1	NULL	NULL
+121857	D007.\nLa suma de tres números consecutivos da 21. ¿Cuáles son esos números? 	4	78	NULL	NULL	NULL	219814	5	121857	0	NULL	NULL
+121857	D007.\nLa suma de tres números consecutivos da 21. ¿Cuáles son esos números? 	4	78	NULL	NULL	NULL	219815	6	121857	1	NULL	NULL
+121857	D007.\nLa suma de tres números consecutivos da 21. ¿Cuáles son esos números? 	4	78	NULL	NULL	NULL	219816	7	121857	1	NULL	NULL
+121857	D007.\nLa suma de tres números consecutivos da 21. ¿Cuáles son esos números? 	4	78	NULL	NULL	NULL	219817	8	121857	1	NULL	NULL
+121857	D007.\nLa suma de tres números consecutivos da 21. ¿Cuáles son esos números? 	4	78	NULL	NULL	NULL	219818	4	121857	0	NULL	NULL
+121857	D007.\nLa suma de tres números consecutivos da 21. ¿Cuáles son esos números? 	4	78	NULL	NULL	NULL	219819	9	121857	0	NULL	NULL
+121858	D007.\nAl resolver una ecuación algebraica de segundo grado, siempre se obtienen dos raíces. 	3	78	NULL	NULL	NULL	219820	falso	121858	1	NULL	NULL
+121859	D007.\n¿Cuál es el valor de x que satisface la igualdad?	4	78	NULL	NULL	NULL	219821	8	121859	0	NULL	NULL
+121859	D007.\n¿Cuál es el valor de x que satisface la igualdad?	4	78	NULL	NULL	NULL	219822	-4	121859	0	NULL	NULL
+121859	D007.\n¿Cuál es el valor de x que satisface la igualdad?	4	78	NULL	NULL	NULL	219823	4	121859	1	NULL	NULL
+121859	D007.\n¿Cuál es el valor de x que satisface la igualdad?	4	78	NULL	NULL	NULL	219824	2	121859	0	NULL	NULL
+121859	D007.\n¿Cuál es el valor de x que satisface la igualdad?	4	78	NULL	NULL	NULL	219825	-2	121859	0	NULL	NULL
+121859	D007.\n¿Cuál es el valor de x que satisface la igualdad?	4	78	NULL	NULL	NULL	219826	-8	121859	0	NULL	NULL
+121860	D009.\nEn una división de polinomio entre monomio, el residuo es siempre cero. 	3	164	NULL	NULL	NULL	219827	verdadero	121860	1	NULL	NULL
+121861	D009.\nDetermine el grado del cociente de: 	4	164	NULL	NULL	NULL	219828	2	121861	0	NULL	NULL
+121861	D009.\nDetermine el grado del cociente de: 	4	164	NULL	NULL	NULL	219829	3	121861	1	NULL	NULL
+121861	D009.\nDetermine el grado del cociente de: 	4	164	NULL	NULL	NULL	219830	1	121861	0	NULL	NULL
+121861	D009.\nDetermine el grado del cociente de: 	4	164	NULL	NULL	NULL	219831	0	121861	0	NULL	NULL
+121861	D009.\nDetermine el grado del cociente de: 	4	164	NULL	NULL	NULL	219832	-3	121861	0	NULL	NULL
+121861	D009.\nDetermine el grado del cociente de: 	4	164	NULL	NULL	NULL	219833	-1	121861	0	NULL	NULL
+121862	D011. \nCuando escribimos Gf= {(x,y) | x ϵ Df } hacemos referencia a la representación _______ de una función.	1	193	NULL	NULL	NULL	219834	grafica	121862	1	NULL	NULL
+121863	D011.\nLa forma verbal de una función corresponde a un enunciado que involucra datos, incógnitas y relaciones verbales entre ellos 	3	193	NULL	NULL	NULL	219835	verdadero	121863	1	NULL	NULL
+121864	D011.\nLos datos en la siguiente tabla corresponden a una relación ______. 	1	193	NULL	NULL	NULL	219836	directa	121864	1	NULL	NULL
+121865	D011.\nLos datos en la siguiente tabla corresponden a una relación ______. 	1	193	NULL	NULL	NULL	219837	inversa	121865	1	NULL	NULL
+121866	D011.\nLa siguiente expresión es una función en forma algebraica. 	3	193	NULL	NULL	NULL	219838	verdadero	121866	1	NULL	NULL
+121867	D011.\nLa forma verbal de una función es la forma más sencilla de representar una función	3	193	NULL	NULL	NULL	219839	falso	121867	1	NULL	NULL
+121868	D011.\nEl perímetro de un triangulo equilátero que es 3L. La funcion del área de dicho triangulo se expresa de la siguiente manera: 	3	193	NULL	NULL	NULL	219840	verdadero	121868	1	NULL	NULL
+121869	D011.\nSeleccione la fórmula que corresponda para obtener el área sombreada de la siguiente figura. 	4	193	NULL	NULL	NULL	219993	4*4(π)cm²	121869	0	NULL	NULL
+121869	D011.\nSeleccione la fórmula que corresponda para obtener el área sombreada de la siguiente figura. 	4	193	NULL	NULL	NULL	219994	(4-π)cm²	121869	0	NULL	NULL
+121869	D011.\nSeleccione la fórmula que corresponda para obtener el área sombreada de la siguiente figura. 	4	193	NULL	NULL	NULL	219995	4(4-π)cm²	121869	1	NULL	NULL
+121870	D013.\nLa representación geométrica de f(x) = ax + b corresponde a una ____.	1	44	NULL	NULL	NULL	219844	recta	121870	1	NULL	NULL
+121871	D013.\n¿Qué condición debe cumplir la función f(x} = ax+ b, para afirmar que representa una recta inclinada a la izquierda? 	4	44	NULL	NULL	NULL	219845	a>0	121871	0	NULL	NULL
+121871	D013.\n¿Qué condición debe cumplir la función f(x} = ax+ b, para afirmar que representa una recta inclinada a la izquierda? 	4	44	NULL	NULL	NULL	219846	a<0	121871	1	NULL	NULL
+121871	D013.\n¿Qué condición debe cumplir la función f(x} = ax+ b, para afirmar que representa una recta inclinada a la izquierda? 	4	44	NULL	NULL	NULL	219847	a=0	121871	0	NULL	NULL
+121871	D013.\n¿Qué condición debe cumplir la función f(x} = ax+ b, para afirmar que representa una recta inclinada a la izquierda? 	4	44	NULL	NULL	NULL	219848	a≥0	121871	0	NULL	NULL
+121871	D013.\n¿Qué condición debe cumplir la función f(x} = ax+ b, para afirmar que representa una recta inclinada a la izquierda? 	4	44	NULL	NULL	NULL	219849	a≤0	121871	0	NULL	NULL
+121872	D013.\nConsidere f(x)= ½ x + 1. ¿Cuál es el valor de la ordenada de A(½, f(x)? \nExpresa tu respuesta en fracción.	2	44	NULL	NULL	NULL	219850	5/4	121872	1	NULL	NULL
+121873	D013.\nConsidere f(x)=x. ¿Cuál es su ángulo de inclinación? 	2	44	NULL	NULL	NULL	219851	45	121873	1	NULL	NULL
+121874	D011.\nUna recta con pendiente positiva representa a una función decreciente.	3	44	NULL	NULL	NULL	219852	falso	121874	1	NULL	NULL
+121875	D013. \nDetermina la ecuación que corresponde a una recta paralela a f(x)=⅔x+1	4	44	NULL	NULL	NULL	219853	y=2x+1	121875	0	NULL	NULL
+121875	D013. \nDetermina la ecuación que corresponde a una recta paralela a f(x)=⅔x+1	4	44	NULL	NULL	NULL	219854	y=⅓x+2	121875	0	NULL	NULL
+121875	D013. \nDetermina la ecuación que corresponde a una recta paralela a f(x)=⅔x+1	4	44	NULL	NULL	NULL	219855	y=-⅔x + ⅔	121875	0	NULL	NULL
+121875	D013. \nDetermina la ecuación que corresponde a una recta paralela a f(x)=⅔x+1	4	44	NULL	NULL	NULL	219856	y=⅔x - ⅓	121875	1	NULL	NULL
+121876	D013.\nUna recta pasa por los puntos A(3,4) y B(-1,5).\nObtener su ordenada al origen.\nExpresa tu respuesta en fracción. 	2	44	NULL	NULL	NULL	219857	19/4	121876	1	NULL	NULL
+121877	D015. \nEs el conjunto de parejas ordenadas, tales que dos parejas distintas no pueden tener el mismo primer elemento.	1	41	NULL	NULL	NULL	219858	funcion	121877	1	NULL	NULL
+121878	D015. \nSi f(x)= x² + 2x + 5 entonces f(-1) es igual a: 	2	41	NULL	NULL	NULL	219859	4	121878	1	NULL	NULL
+121879	D015.\nObtén f(½) para la siguiente función:	2	41	NULL	NULL	NULL	219860	-3	121879	1	NULL	NULL
+121880	D015.\nLa siguiente imagen representa una función:	3	41	NULL	NULL	NULL	219861	falso	121880	1	NULL	NULL
+121881	D015.\nCuando una recta paralela al eje de las ordenadas corta a una gráfica en dos o más puntos, decimos que la gráfica corresponde a una función	3	41	NULL	NULL	NULL	219862	falso	121881	1	NULL	NULL
+121882	D015.\nEl volumen de una caja sin tapa de lado x es 	4	41	NULL	NULL	NULL	219863	v(x)= x³	121882	1	NULL	NULL
+121882	D015.\nEl volumen de una caja sin tapa de lado x es 	4	41	NULL	NULL	NULL	219864	v(x)= 3x + c	121882	0	NULL	NULL
+121882	D015.\nEl volumen de una caja sin tapa de lado x es 	4	41	NULL	NULL	NULL	219865	v(x)= -x³+1	121882	0	NULL	NULL
+121882	D015.\nEl volumen de una caja sin tapa de lado x es 	4	41	NULL	NULL	NULL	219866	v(x)= 5x³	121882	0	NULL	NULL
+121883	D015.\nEl área de un triangulo equilátero de lado  l corresponde a: 	4	41	NULL	NULL	NULL	219867	A(l)= 4l²	121883	0	NULL	NULL
+121883	D015.\nEl área de un triangulo equilátero de lado  l corresponde a: 	4	41	NULL	NULL	NULL	219868	A(l)= b*h / 2	121883	0	NULL	NULL
+121883	D015.\nEl área de un triangulo equilátero de lado  l corresponde a: 	4	41	NULL	NULL	NULL	219869	A(l)= √3 l² / 4	121883	1	NULL	NULL
+121883	D015.\nEl área de un triangulo equilátero de lado  l corresponde a: 	4	41	NULL	NULL	NULL	219870	A(l)= l * l² / 2	121883	0	NULL	NULL
+121884	D015.\nEl intervalo (0,∞) corresponde al dominio de f(x)=x²	3	41	NULL	NULL	NULL	219871	falso	121884	1	NULL	NULL
+121885	D017.\nSelecciona los cuatro grandes grupos en los cuales se clasifican los números reales. 	4	9	NULL	NULL	NULL	219872	Números Naturales	121885	1	NULL	NULL
+121885	D017.\nSelecciona los cuatro grandes grupos en los cuales se clasifican los números reales. 	4	9	NULL	NULL	NULL	219873	Números Enteros	121885	1	NULL	NULL
+121885	D017.\nSelecciona los cuatro grandes grupos en los cuales se clasifican los números reales. 	4	9	NULL	NULL	NULL	219874	Números Racionales	121885	1	NULL	NULL
+121885	D017.\nSelecciona los cuatro grandes grupos en los cuales se clasifican los números reales. 	4	9	NULL	NULL	NULL	219875	Números Irracionales	121885	1	NULL	NULL
+121885	D017.\nSelecciona los cuatro grandes grupos en los cuales se clasifican los números reales. 	4	9	NULL	NULL	NULL	219876	Números Imaginarios	121885	0	NULL	NULL
+121885	D017.\nSelecciona los cuatro grandes grupos en los cuales se clasifican los números reales. 	4	9	NULL	NULL	NULL	219877	Números Fraccionarios	121885	0	NULL	NULL
+121886	D017.\n¿Cuál es el número real que arroja como resultado en la siguiente expresión? 	2	9	NULL	NULL	NULL	219878	5	121886	1	NULL	NULL
+121887	D017.\nEl número ¾ es un ejemplo de un número entero 	3	9	NULL	NULL	NULL	219879	falso	121887	1	NULL	NULL
+121888	D017.\nEl valor de π (3.1415...) es un ejemplo de un número...	4	9	NULL	NULL	NULL	219880	natural	121888	0	NULL	NULL
+121888	D017.\nEl valor de π (3.1415...) es un ejemplo de un número...	4	9	NULL	NULL	NULL	219881	entero	121888	0	NULL	NULL
+121888	D017.\nEl valor de π (3.1415...) es un ejemplo de un número...	4	9	NULL	NULL	NULL	219882	racional	121888	0	NULL	NULL
+121888	D017.\nEl valor de π (3.1415...) es un ejemplo de un número...	4	9	NULL	NULL	NULL	219883	irracional	121888	1	NULL	NULL
+121889	D017.\nPara armar un rompecabezas se necesitan {t} piezas.\n¿Cuántas piezas se necesitan para armar {m} rompecabezas? 	5	9	NULL	NULL	NULL	219884	{t} * {m}	121889	1	NULL	NULL
+121890	D017.\nPara armar un corredor, un carpintero necesita {h} horas.\n¿Cuántas horas se necesitan para armar {m} corredores? 	6	9	NULL	NULL	NULL	219885	{h} / {m}	121890	0	NULL	NULL
+121890	D017.\nPara armar un corredor, un carpintero necesita {h} horas.\n¿Cuántas horas se necesitan para armar {m} corredores? 	6	9	NULL	NULL	NULL	219886	{m} / {h}	121890	0	NULL	NULL
+121890	D017.\nPara armar un corredor, un carpintero necesita {h} horas.\n¿Cuántas horas se necesitan para armar {m} corredores? 	6	9	NULL	NULL	NULL	219887	{h} * {m}	121890	1	NULL	NULL
+121890	D017.\nPara armar un corredor, un carpintero necesita {h} horas.\n¿Cuántas horas se necesitan para armar {m} corredores? 	6	9	NULL	NULL	NULL	219888	{h} + {m}	121890	0	NULL	NULL
+121891	D019. \nEs una colección de elementos considerados en si mismo como un objeto	1	12	NULL	NULL	NULL	219889	conjunto	121891	1	NULL	NULL
+121892	D019.\nSean los conjuntos A={8,4,3,5,9,1) y B={2,10,7,6}. ¿Cuál es el resultado de la operación A∩B?	2	12	NULL	NULL	NULL	219890	0	121892	1	NULL	NULL
+121893	D019.\nSean los conjuntos A={1,3}, B={2,9}, C={1,2,3,9} y D={1,2,3,9}. El resultado de la operación de A∪B  es igual a D	3	12	NULL	NULL	NULL	219891	verdadero	121893	1	NULL	NULL
+121894	D019.\nSean los conjuntos A={3,4,7,6}, B={1,3,4,9}, C={2,6,3,8} y D={9,7,6,1}. Completa lo siguiente 6 ∉ ... 	4	12	NULL	NULL	NULL	219892	C	121894	0	NULL	NULL
+121894	D019.\nSean los conjuntos A={3,4,7,6}, B={1,3,4,9}, C={2,6,3,8} y D={9,7,6,1}. Completa lo siguiente 6 ∉ ... 	4	12	NULL	NULL	NULL	219893	A	121894	0	NULL	NULL
+121894	D019.\nSean los conjuntos A={3,4,7,6}, B={1,3,4,9}, C={2,6,3,8} y D={9,7,6,1}. Completa lo siguiente 6 ∉ ... 	4	12	NULL	NULL	NULL	219894	B	121894	1	NULL	NULL
+121894	D019.\nSean los conjuntos A={3,4,7,6}, B={1,3,4,9}, C={2,6,3,8} y D={9,7,6,1}. Completa lo siguiente 6 ∉ ... 	4	12	NULL	NULL	NULL	219895	D	121894	0	NULL	NULL
+121895	D021.\nOperación básica de las matemáticas que permite distribuir un todo en partes iguales.\n	1	39	NULL	NULL	NULL	219896	division	121895	1	NULL	NULL
+121896	D021.\nAl realizar la división 5325/3. ¿Cuál es el resultado?	2	39	NULL	NULL	NULL	219897	1775	121896	1	NULL	NULL
+121897	D021.\nCuando se realiza una división de números enteros la cantidad resultante siempre es mayor que la cantidad  que se dividió	3	39	NULL	NULL	NULL	219898	falso	121897	1	NULL	NULL
+121898	D021.\n¿Cuál es el resultado de realizar la división 10428/3?	4	39	NULL	NULL	NULL	219899	7643	121898	0	NULL	NULL
+121898	D021.\n¿Cuál es el resultado de realizar la división 10428/3?	4	39	NULL	NULL	NULL	219900	4376	121898	0	NULL	NULL
+121898	D021.\n¿Cuál es el resultado de realizar la división 10428/3?	4	39	NULL	NULL	NULL	219901	3476	121898	1	NULL	NULL
+121898	D021.\n¿Cuál es el resultado de realizar la división 10428/3?	4	39	NULL	NULL	NULL	219902	6734	121898	0	NULL	NULL
+121899	D023.\nNombre que recibe la operación de multiplicar por si mismo un numero dos o más veces. 	1	34	NULL	NULL	NULL	219903	potencia	121899	1	NULL	NULL
+121900	D023.\nResuelve lo siguiente: (-6)³	2	34	NULL	NULL	NULL	219904	-216	121900	1	NULL	NULL
+121901	D023.\nLa siguiente operación es correcta: (-3)²=-9	3	34	NULL	NULL	NULL	219905	falso	121901	1	NULL	NULL
+121902	D023.\nEl resultado de la siguiente operación (-4)³ es igual a 	4	34	NULL	NULL	NULL	219906	-12	121902	0	NULL	NULL
+121902	D023.\nEl resultado de la siguiente operación (-4)³ es igual a 	4	34	NULL	NULL	NULL	219907	-64	121902	1	NULL	NULL
+121902	D023.\nEl resultado de la siguiente operación (-4)³ es igual a 	4	34	NULL	NULL	NULL	219908	12	121902	0	NULL	NULL
+121902	D023.\nEl resultado de la siguiente operación (-4)³ es igual a 	4	34	NULL	NULL	NULL	219909	64	121902	0	NULL	NULL
+121903	\nD021.\nEn un videojuego el número de pruebas que hay que superar en cada nivel es el doble de las del nivel anterior. Si en el nivel 1 hay dos pruebas cuantas habrá en el nivel {n} ?	6	34	NULL	NULL	NULL	219910	pow ( {n} , 2 )	121903	0	NULL	NULL
+121903	\nD021.\nEn un videojuego el número de pruebas que hay que superar en cada nivel es el doble de las del nivel anterior. Si en el nivel 1 hay dos pruebas cuantas habrá en el nivel {n} ?	6	34	NULL	NULL	NULL	219911	pow ( 2 , {n} )	121903	1	NULL	NULL
+121903	\nD021.\nEn un videojuego el número de pruebas que hay que superar en cada nivel es el doble de las del nivel anterior. Si en el nivel 1 hay dos pruebas cuantas habrá en el nivel {n} ?	6	34	NULL	NULL	NULL	219912	2 * {n}	121903	0	NULL	NULL
+121903	\nD021.\nEn un videojuego el número de pruebas que hay que superar en cada nivel es el doble de las del nivel anterior. Si en el nivel 1 hay dos pruebas cuantas habrá en el nivel {n} ?	6	34	NULL	NULL	NULL	219913	18 * {n}	121903	0	NULL	NULL
+121904	\nD025.\nLa jerarquía de operaciones es una convención matemática que establece el orden en que deben realizarse operaciones de cálculo combinados en un mismo enumerado matemático.\n	3	35	NULL	NULL	NULL	219914	verdadero	121904	1	NULL	NULL
+121905	D025.\nResuelve:	2	35	NULL	NULL	NULL	219915	-17	121905	1	NULL	NULL
+121906	D025.\nEl resultado de la operación presentada en la imagen es -8	3	35	NULL	NULL	NULL	219916	falso	121906	1	NULL	NULL
+121907	D027.\n¿Cuál es el resultado de realizar la siguiente operación?\n	2	33	NULL	NULL	NULL	219917	-10	121907	1	NULL	NULL
+121908	D027.\nEl resultado de la operación mostrada en la imagen es -6?	3	33	NULL	NULL	NULL	219918	falso	121908	1	NULL	NULL
+121909	D027.\n¿Cuál es el resultado de 5(-1)+8(-3)+20 ?	4	33	NULL	NULL	NULL	219919	9	121909	0	NULL	NULL
+121909	D027.\n¿Cuál es el resultado de 5(-1)+8(-3)+20 ?	4	33	NULL	NULL	NULL	219920	49	121909	0	NULL	NULL
+121909	D027.\n¿Cuál es el resultado de 5(-1)+8(-3)+20 ?	4	33	NULL	NULL	NULL	219921	-9	121909	1	NULL	NULL
+121909	D027.\n¿Cuál es el resultado de 5(-1)+8(-3)+20 ?	4	33	NULL	NULL	NULL	219922	39	121909	0	NULL	NULL
+121910	D029.\nLuis y Pablo comen en la misma taquería, pero Luis asiste cada 20 días y Pablo cada 38. ¿Dentro de cuantos días volverán a encontrarse? \n	2	28	NULL	NULL	NULL	219923	380	121910	1	NULL	NULL
+121911	D029.\n¿Cuál es el mínimo común múltiplo de 12,18 y 42?	4	28	NULL	NULL	NULL	219924	252	121911	1	NULL	NULL
+121911	D029.\n¿Cuál es el mínimo común múltiplo de 12,18 y 42?	4	28	NULL	NULL	NULL	219925	325	121911	0	NULL	NULL
+121911	D029.\n¿Cuál es el mínimo común múltiplo de 12,18 y 42?	4	28	NULL	NULL	NULL	219926	225	121911	0	NULL	NULL
+121911	D029.\n¿Cuál es el mínimo común múltiplo de 12,18 y 42?	4	28	NULL	NULL	NULL	219927	255	121911	0	NULL	NULL
+121912	D031.\nDetermina el resultado de la operación presentada en la imagen. 	2	99	NULL	NULL	NULL	219928	-21/16	121912	1	NULL	NULL
+121913	D031.\n¿Cuál es el resultado de la operación presentada en la imagen?	4	99	NULL	NULL	NULL	219929	-7/23	121913	0	NULL	NULL
+121913	D031.\n¿Cuál es el resultado de la operación presentada en la imagen?	4	99	NULL	NULL	NULL	219930	12/60	121913	0	NULL	NULL
+121913	D031.\n¿Cuál es el resultado de la operación presentada en la imagen?	4	99	NULL	NULL	NULL	219931	-1/5	121913	1	NULL	NULL
+121913	D031.\n¿Cuál es el resultado de la operación presentada en la imagen?	4	99	NULL	NULL	NULL	219932	-60/12	121913	0	NULL	NULL
+121914	D033.\nDetermina el resultado de la operación presentada en la imagen. 	2	25	NULL	NULL	NULL	219933	-17/28	121914	1	NULL	NULL
+121915	D033.\nLuis fue al mandado y compró lo siguiente: 3/4 kg de zanahoria, 1/2 kg de manzana, 1/4 kg de uvas y 1/5 kg de chile.\n¿Cuántos kg de verdura y frutas compró en total?	4	25	NULL	NULL	NULL	219938	10/17	121915	0	NULL	NULL
+121915	D033.\nLuis fue al mandado y compró lo siguiente: 3/4 kg de zanahoria, 1/2 kg de manzana, 1/4 kg de uvas y 1/5 kg de chile.\n¿Cuántos kg de verdura y frutas compró en total?	4	25	NULL	NULL	NULL	219939	34/10	121915	0	NULL	NULL
+121915	D033.\nLuis fue al mandado y compró lo siguiente: 3/4 kg de zanahoria, 1/2 kg de manzana, 1/4 kg de uvas y 1/5 kg de chile.\n¿Cuántos kg de verdura y frutas compró en total?	4	25	NULL	NULL	NULL	219940	17/10	121915	1	NULL	NULL
+121915	D033.\nLuis fue al mandado y compró lo siguiente: 3/4 kg de zanahoria, 1/2 kg de manzana, 1/4 kg de uvas y 1/5 kg de chile.\n¿Cuántos kg de verdura y frutas compró en total?	4	25	NULL	NULL	NULL	219941	10/34	121915	0	NULL	NULL
+121916	D008\nUna división algebraica se compone por el dividendo y divisor.\n¿Qué nombre recibe el resultado de efectuar esa división?	1	91	NULL	NULL	NULL	219942	cociente	121916	1	NULL	NULL
+121917	D008.\nPara poder realizar una división algebraica se debe tener:\nmayor o igual grado en el dividendo que en el divisor.	3	91	NULL	NULL	NULL	219943	verdadero	121917	1	NULL	NULL
+121918	D008.\nEn	4	91	NULL	NULL	NULL	219949	-2	121918	0	NULL	NULL
+121918	D008.\nEn	4	91	NULL	NULL	NULL	219950	-1	121918	1	NULL	NULL
+121918	D008.\nEn	4	91	NULL	NULL	NULL	219951	0	121918	0	NULL	NULL
+121918	D008.\nEn	4	91	NULL	NULL	NULL	219952	1	121918	0	NULL	NULL
+121918	D008.\nEn	4	91	NULL	NULL	NULL	219953	2	121918	0	NULL	NULL
+121919	D010.\nEs el conjunto de valores que toma la variable independiente.	1	42	NULL	NULL	NULL	219979	dominio	121919	1	NULL	NULL
+121920	D010.\nEs el conjunto de todos los valores de una pareja ordenada correspondiente a una función.	1	42	NULL	NULL	NULL	219980	rango	121920	1	NULL	NULL
+121922	D010.\nResuelve	3	42	NULL	NULL	NULL	219982	verdadero	121922	1	NULL	NULL
+121923	D010.\nResuelve	3	42	NULL	NULL	NULL	219983	verdadero	121923	1	NULL	NULL
+121924	D005.\nLa respuesta a la operación √32 es 4√2	3	96	NULL	NULL	NULL	219996	verdadero	121924	1	NULL	NULL
+121927	D005.\nResuelve:	3	96	NULL	NULL	NULL	219999	verdadero	121927	1	NULL	NULL
+121929	D010.\nResuelve	3	42	NULL	NULL	NULL	220001	falso	121929	1	NULL	NULL
+121930	D010.\nResuelve.	4	42	NULL	NULL	NULL	220002	[1,∞)	121930	1	NULL	NULL
+121930	D010.\nResuelve.	4	42	NULL	NULL	NULL	220003	[1,∞]	121930	0	NULL	NULL
+121930	D010.\nResuelve.	4	42	NULL	NULL	NULL	220004	{1,∞}	121930	0	NULL	NULL
+121930	D010.\nResuelve.	4	42	NULL	NULL	NULL	220005	[1,-∞)	121930	0	NULL	NULL
+121931	D010.\nPara el dominio de f(x)=1/x+7 la solución es R-{7} ó (-∞,-7)∪(-7,∞)	3	42	NULL	NULL	NULL	220006	verdadero	121931	1	NULL	NULL
+121932	D014.\nLos elementos que componen una división son dividendo, divisor, _______ y residuo	1	91	NULL	NULL	NULL	220007	cociente	121932	1	NULL	NULL
+121933	D014. \nAl dividir el término 3ab⁴ entre -2ab, el grado de la literal en b en el resultado es:	2	91	NULL	NULL	NULL	220008	3	121933	1	NULL	NULL
+121934	D014.\nEl resultado de la operación presentada en la imagen es correcto. 	3	91	NULL	NULL	NULL	220009	falso	121934	1	NULL	NULL
+121935	D010.\nPara el dominio de la función que se muestra en la imagen es:	4	42	NULL	NULL	NULL	220010	[1,∞)∪(-∞,-3]	121935	0	NULL	NULL
+121935	D010.\nPara el dominio de la función que se muestra en la imagen es:	4	42	NULL	NULL	NULL	220011	[-∞,-3]∩[1,∞)	121935	0	NULL	NULL
+121935	D010.\nPara el dominio de la función que se muestra en la imagen es:	4	42	NULL	NULL	NULL	220012	(∞,-3]∪[1,-∞)	121935	0	NULL	NULL
+121935	D010.\nPara el dominio de la función que se muestra en la imagen es:	4	42	NULL	NULL	NULL	220013	(-∞,-3]∪[1,∞)	121935	1	NULL	NULL
+121936	D010.\nPara el dominio de la función de f(x)=1/x²+2x-3 la solución es   IR-{-3,1}	3	42	NULL	NULL	NULL	220014	verdadero	121936	1	NULL	NULL
+121937	D014.\nEl resultado de la operación mostrada en la imagen es:	4	91	NULL	NULL	NULL	220015	5  a³b²c⁵	121937	1	NULL	NULL
+121937	D014.\nEl resultado de la operación mostrada en la imagen es:	4	91	NULL	NULL	NULL	220016	4/5 a³b²c⁵\t	121937	0	NULL	NULL
+121937	D014.\nEl resultado de la operación mostrada en la imagen es:	4	91	NULL	NULL	NULL	220017	5/4 a¹¹b⁶c⁷\t	121937	0	NULL	NULL
+121937	D014.\nEl resultado de la operación mostrada en la imagen es:	4	91	NULL	NULL	NULL	220018	5/4 a³b²c⁵	121937	0	NULL	NULL
+121938	D012.\nEs el dominio de la función exponencial.\nNota: Introducir la respuesta en minúscula.	1	48	NULL	NULL	NULL	220019	r	121938	1	NULL	NULL
+121939	D012.\nEl valor de la función exponencial es:\nNota: Introducir la respuesta con letras y en minúscula.	1	48	NULL	NULL	NULL	220020	uno	121939	1	NULL	NULL
+121940	D012.\nCorresponde al valor de la función exponencial evaluada en 1.\nNota: Introducir la respuesta con cuatro decimales después del punto.	2	48	NULL	NULL	NULL	220021	2.7182	121940	1	NULL	NULL
+121941	D012.\nResuelve.\nNota: Introducir la respuesta con número.	2	48	NULL	NULL	NULL	220022	1	121941	1	NULL	NULL
+121942	D012.\nLa función exponencial es decreciente.	3	48	NULL	NULL	NULL	220023	falso	121942	1	NULL	NULL
+121943	D012.\nPara la función exponencial el rango es (0,∞)	3	48	NULL	NULL	NULL	220024	verdadero	121943	1	NULL	NULL
+121944	D012.\nResuelve.\n	4	48	NULL	NULL	NULL	220372	x=0	121944	1	NULL	NULL
+121944	D012.\nResuelve.\n	4	48	NULL	NULL	NULL	220373	x=1	121944	0	NULL	NULL
+121944	D012.\nResuelve.\n	4	48	NULL	NULL	NULL	220374	x=-1	121944	0	NULL	NULL
+121944	D012.\nResuelve.\n	4	48	NULL	NULL	NULL	220375	x=-1/2	121944	0	NULL	NULL
+121945	D012.\nResuelve	4	48	NULL	NULL	NULL	220376	x=3	121945	0	NULL	NULL
+121945	D012.\nResuelve	4	48	NULL	NULL	NULL	220377	x=4	121945	1	NULL	NULL
+121945	D012.\nResuelve	4	48	NULL	NULL	NULL	220378	x=3 & x=-4	121945	0	NULL	NULL
+121945	D012.\nResuelve	4	48	NULL	NULL	NULL	220379	x=-3 & x= 4	121945	0	NULL	NULL
+121946	D014.\nLa regla para dividir un polinomio de un monomio consiste en dividir cada término del polinomio entre monomio. 	3	164	NULL	NULL	NULL	220037	verdadero	121946	1	NULL	NULL
+121947	D014.\n¿Cuál es el resultado de la operación presentada en la imagen?\nIndica el exponente de menor grado en la literal b del resultado. 	2	164	NULL	NULL	NULL	220038	-3	121947	1	NULL	NULL
+121948	D014.\nEl resultado de la operación presentada en la imagen es correcto. 	3	164	NULL	NULL	NULL	220039	falso	121948	1	NULL	NULL
+121949	D014.\nLa operación presentada en la imagen siguiente es correcta.	3	164	NULL	NULL	NULL	220040	falso	121949	1	NULL	NULL
+121950	D014. \nPara poder realizar una división de un polinomio entre otro polinomio, se debe ordenar el dividendo y el divisor con relación a la misma\nvariable	3	165	NULL	NULL	NULL	220041	verdadero	121950	1	NULL	NULL
+121951	D014.\nEl resultado de la operación presentada en la imagen. el coeficiente del primer cociente es..	2	165	NULL	NULL	NULL	220042	1	121951	1	NULL	NULL
+121952	D014.\nLa operación presentada en la siguiente imagen es correcta. 	3	165	NULL	NULL	NULL	220043	verdadero	121952	1	NULL	NULL
+121953	D014.\nEl resultado de dividir 11a³-3a⁵-46a²+32 entre 8-3a²-6a es	4	165	NULL	NULL	NULL	220044	11/8 a³- 2a² + 3a + 4	121953	0	NULL	NULL
+121953	D014.\nEl resultado de dividir 11a³-3a⁵-46a²+32 entre 8-3a²-6a es	4	165	NULL	NULL	NULL	220045	3/8 a³-2a² + 3a + 4	121953	0	NULL	NULL
+121953	D014.\nEl resultado de dividir 11a³-3a⁵-46a²+32 entre 8-3a²-6a es	4	165	NULL	NULL	NULL	220046	a³ - 2a² + 3a + 4	121953	1	NULL	NULL
+121954	D014.\nLa expresión (a + b)² se desarrolla como el cuadrado a mas el ______ de a por b mas el cuadrado de b	1	167	NULL	NULL	NULL	220047	doble	121954	1	NULL	NULL
+121955	D014.\nEn la expresión (3x + 5/2 y)² , el coeficiente del término xy es	2	167	NULL	NULL	NULL	220048	15	121955	1	NULL	NULL
+121956	D014.\nEn la expresión (2a - 3b)³, el desarrollo del binomio al cubo es (8a³ - 6a²b + 6ab² - 27b³)	3	167	NULL	NULL	NULL	220049	falso	121956	1	NULL	NULL
+121957	D014.\nEl producto notable (2x² − 3b²)\nSe puede expresar como :	4	167	NULL	NULL	NULL	220050	(√2 x + √3 b) (√2x - √3 b)	121957	1	NULL	NULL
+121957	D014.\nEl producto notable (2x² − 3b²)\nSe puede expresar como :	4	167	NULL	NULL	NULL	220051	(2 x + 3 b)(2 x - 3 b)	121957	0	NULL	NULL
+121957	D014.\nEl producto notable (2x² − 3b²)\nSe puede expresar como :	4	167	NULL	NULL	NULL	220052	(2 x - 3 b)(2 x - 3 b)	121957	0	NULL	NULL
+121958	D016.\nEs una relación de orden entre dos expresiones algebraicas.\nNota: se espera solo una palabra.	1	192	NULL	NULL	NULL	220053	desigualdades	121958	1	NULL	NULL
+121960	D016.\nEs la solución de 2x+1>0	2	192	NULL	NULL	NULL	220055	x>-1/2	121960	1	NULL	NULL
+121962	D016.\nLa solución de 2x+1≥0  es x=1/2	3	192	NULL	NULL	NULL	220057	falso	121962	1	NULL	NULL
+121963	D016. La solución de 5x-1≤0  es  (-∞, 1/5]	3	192	NULL	NULL	NULL	220058	verdadero	121963	1	NULL	NULL
+121965	D018.\nDetermina el resultado de la siguiente operación 2/3+3/4-1/2	2	27	NULL	NULL	NULL	220060	11/12	121965	1	NULL	NULL
+121966	D018.\nEl mínimo común denominador de las fracciones  1/3,  1/5, 1/6 es el número 30?	3	27	NULL	NULL	NULL	220061	verdadero	121966	1	NULL	NULL
+121967	D018. \nEl mínimo común denominador de los denominadores  6, 9 y 15 es	4	27	NULL	NULL	NULL	220368	45	121967	0	NULL	NULL
+121967	D018. \nEl mínimo común denominador de los denominadores  6, 9 y 15 es	4	27	NULL	NULL	NULL	220369	30	121967	0	NULL	NULL
+121967	D018. \nEl mínimo común denominador de los denominadores  6, 9 y 15 es	4	27	NULL	NULL	NULL	220370	90	121967	1	NULL	NULL
+121967	D018. \nEl mínimo común denominador de los denominadores  6, 9 y 15 es	4	27	NULL	NULL	NULL	220371	100	121967	0	NULL	NULL
+121969	D020.\nLa fracción irreductible equivalente a 735/1050 es:	2	7	NULL	NULL	NULL	220067	7/10	121969	1	NULL	NULL
+121970	D020.\n¿Cuándo se reparte un pastel entre los invitados  de una fiesta, la cantidad de pastel que le toca a cada uno de los invitados es un número entero?	3	7	NULL	NULL	NULL	220068	falso	121970	1	NULL	NULL
+121971	D022.\nNombre que recibe el resultado de una división.\nNota: responda con una sola palabra.	1	95	NULL	NULL	NULL	220069	cociente	121971	1	NULL	NULL
+121972	D022.\nResuelve la siguiente operación: 3/4 ÷ 3/2	4	95	NULL	NULL	NULL	220070	6/12	121972	1	NULL	NULL
+121972	D022.\nResuelve la siguiente operación: 3/4 ÷ 3/2	4	95	NULL	NULL	NULL	220071	3/6	121972	1	NULL	NULL
+121972	D022.\nResuelve la siguiente operación: 3/4 ÷ 3/2	4	95	NULL	NULL	NULL	220072	1/2	121972	1	NULL	NULL
+121972	D022.\nResuelve la siguiente operación: 3/4 ÷ 3/2	4	95	NULL	NULL	NULL	220073	2/5	121972	0	NULL	NULL
+121972	D022.\nResuelve la siguiente operación: 3/4 ÷ 3/2	4	95	NULL	NULL	NULL	220074	3/2	121972	0	NULL	NULL
+121972	D022.\nResuelve la siguiente operación: 3/4 ÷ 3/2	4	95	NULL	NULL	NULL	220075	6/3	121972	0	NULL	NULL
+121973	D022.\n¿El resultado de la división 5/2 ÷ 3/4 es 15/8?	3	95	NULL	NULL	NULL	220076	falso	121973	1	NULL	NULL
+121974	D022.\nEl resultado de dividir 8/7 ÷  7/2 es: 	4	95	NULL	NULL	NULL	220077	56/14	121974	0	NULL	NULL
+121974	D022.\nEl resultado de dividir 8/7 ÷  7/2 es: 	4	95	NULL	NULL	NULL	220078	49/16	121974	0	NULL	NULL
+121974	D022.\nEl resultado de dividir 8/7 ÷  7/2 es: 	4	95	NULL	NULL	NULL	220079	16/49	121974	1	NULL	NULL
+121974	D022.\nEl resultado de dividir 8/7 ÷  7/2 es: 	4	95	NULL	NULL	NULL	220080	14/56	121974	0	NULL	NULL
+121975	D024.\nTodo valor dentro de una raíz se puede expresar como un valor elevado a una potencia. Dicha potencia es una 	1	161	NULL	NULL	NULL	220081	fraccion	121975	1	NULL	NULL
+121976	D024.\nDeterminar el valor de la siguiente operación que se muestra en la imagen y representa la respuesta en fracción.	2	161	NULL	NULL	NULL	220082	625/81	121976	1	NULL	NULL
+121977	D024.\n¿El resultado de la operación que se muestra en la imagen es 2/4?	3	161	NULL	NULL	NULL	220083	falso	121977	1	NULL	NULL
+121978	D024.\n¿Cuál es el resultado de realizar la siguiente operación que se muestra en la imagen?	4	161	NULL	NULL	NULL	220084	27/64	121978	1	NULL	NULL
+121978	D024.\n¿Cuál es el resultado de realizar la siguiente operación que se muestra en la imagen?	4	161	NULL	NULL	NULL	220085	9/12	121978	0	NULL	NULL
+121978	D024.\n¿Cuál es el resultado de realizar la siguiente operación que se muestra en la imagen?	4	161	NULL	NULL	NULL	220086	64/27	121978	0	NULL	NULL
+121978	D024.\n¿Cuál es el resultado de realizar la siguiente operación que se muestra en la imagen?	4	161	NULL	NULL	NULL	220087	12/9	121978	0	NULL	NULL
+122145	D026.\nDada la siguiente operación que se presenta en la imagen,  expresa el resultado en fracción.\n	2	31	NULL	NULL	NULL	220254	1/64	122145	1	NULL	NULL
+122146	D026.\nResuelve.	3	31	NULL	NULL	NULL	220255	falso	122146	1	NULL	NULL
+122147	D028.\nCalcular el M.C.D.  de 20,48 y 72	2	29	NULL	NULL	NULL	220256	4	122147	1	NULL	NULL
+122148	D028.\nLuis quiere enlosar un piso de 360 cm con baldosas cuadradas lo mas grande posibles ¿Cuánto debe medir el lado de las baldosas?	4	29	NULL	NULL	NULL	220257	15 cm	122148	0	NULL	NULL
+122148	D028.\nLuis quiere enlosar un piso de 360 cm con baldosas cuadradas lo mas grande posibles ¿Cuánto debe medir el lado de las baldosas?	4	29	NULL	NULL	NULL	220258	10 cm	122148	0	NULL	NULL
+122148	D028.\nLuis quiere enlosar un piso de 360 cm con baldosas cuadradas lo mas grande posibles ¿Cuánto debe medir el lado de las baldosas?	4	29	NULL	NULL	NULL	220259	20 cm	122148	0	NULL	NULL
+122148	D028.\nLuis quiere enlosar un piso de 360 cm con baldosas cuadradas lo mas grande posibles ¿Cuánto debe medir el lado de las baldosas?	4	29	NULL	NULL	NULL	220260	40 cm	122148	1	NULL	NULL
+122149	D030.\nResuelve la siguiente operación\n(-3)(-4)(-6)(-10)(-1)	2	11	NULL	NULL	NULL	220261	-720	122149	1	NULL	NULL
+122150	D030.\nEl resultado de la operación (-2)(3)(+8)(-5) ¿es igual a 240?	3	11	NULL	NULL	NULL	220262	verdadero	122150	1	NULL	NULL
+122151	D030.\nEl resultado de realizar la siguiente operación es: \n(2)(-3)(-1)(4)	4	11	NULL	NULL	NULL	220263	-24	122151	0	NULL	NULL
+122151	D030.\nEl resultado de realizar la siguiente operación es: \n(2)(-3)(-1)(4)	4	11	NULL	NULL	NULL	220264	25	122151	0	NULL	NULL
+122151	D030.\nEl resultado de realizar la siguiente operación es: \n(2)(-3)(-1)(4)	4	11	NULL	NULL	NULL	220265	-25	122151	0	NULL	NULL
+122151	D030.\nEl resultado de realizar la siguiente operación es: \n(2)(-3)(-1)(4)	4	11	NULL	NULL	NULL	220266	24	122151	1	NULL	NULL
+122153	D014.\nEs una igualdad en la que hay una o varias cantidades desconocidas llamadas incógnitas	1	78	NULL	NULL	NULL	220268	ecuacion	122153	1	NULL	NULL
+122154	D014.\nEs el mayor exponente que tiene la incógnita en la ecuación	1	78	NULL	NULL	NULL	220269	grado	122154	1	NULL	NULL
+122155	D014.\nResuelva la siguiente ecuación\n3x+3=10	2	78	NULL	NULL	NULL	220270	7/3	122155	1	NULL	NULL
+122156	D014.\nResuelva la siguiente ecuación\n3x-5=2x-2	2	78	NULL	NULL	NULL	220271	3	122156	1	NULL	NULL
+122157	D014.\nLas raíces o soluciones de una ecuación son los valores de las incógnitas  que satisfacen la ecuación. 	3	78	NULL	NULL	NULL	220272	verdadero	122157	1	NULL	NULL
+122158	D014.\nPara la ecuación 4x-5=-x+5, con x= 1 se satisface la ecuación	3	78	NULL	NULL	NULL	220273	falso	122158	1	NULL	NULL
+122159	D014.\nResolver la ecuación:\n5x=8x-15\nEl valor de x que la satisface es:	4	78	NULL	NULL	NULL	220274	5	122159	1	NULL	NULL
+122159	D014.\nResolver la ecuación:\n5x=8x-15\nEl valor de x que la satisface es:	4	78	NULL	NULL	NULL	220275	3	122159	0	NULL	NULL
+122159	D014.\nResolver la ecuación:\n5x=8x-15\nEl valor de x que la satisface es:	4	78	NULL	NULL	NULL	220276	15/13	122159	0	NULL	NULL
+122159	D014.\nResolver la ecuación:\n5x=8x-15\nEl valor de x que la satisface es:	4	78	NULL	NULL	NULL	220277	-15/13	122159	0	NULL	NULL
+122160	D014.\nResolver la ecuación:\n8x-4+3x=7x+x+14\nEl valor de x que la satisface es:	4	78	NULL	NULL	NULL	220278	18/3	122160	1	NULL	NULL
+122160	D014.\nResolver la ecuación:\n8x-4+3x=7x+x+14\nEl valor de x que la satisface es:	4	78	NULL	NULL	NULL	220279	1	122160	0	NULL	NULL
+122160	D014.\nResolver la ecuación:\n8x-4+3x=7x+x+14\nEl valor de x que la satisface es:	4	78	NULL	NULL	NULL	220280	10/18	122160	0	NULL	NULL
+122160	D014.\nResolver la ecuación:\n8x-4+3x=7x+x+14\nEl valor de x que la satisface es:	4	78	NULL	NULL	NULL	220281	10/3	122160	0	NULL	NULL
+122162	D014.\nComo se le llama a la expresión algebraica que consta de un solo termino como la que se muestra en la imagen	1	86	NULL	NULL	NULL	220283	monomio	122162	1	NULL	NULL
+122163	D014.\nComo se le llama a la expresión algebraica que\nconsta de más de un solo término\ncomo:\nA+c-y,  x³+2x²-x+3	1	86	NULL	NULL	NULL	220284	polinomio	122163	1	NULL	NULL
+122164	D014.\nEs un polinomio que consta de dos\ntérminos como se muestra en la imagen\n	1	86	NULL	NULL	NULL	220285	binomio	122164	1	NULL	NULL
+122165	D014.\nIndicar el grado del polinomio de la\nsiguiente expresión algebraica que se muestra en la imagen	2	86	NULL	NULL	NULL	220286	4	122165	1	NULL	NULL
+122166	D014.\nIndicar el grado absoluto del polinomio\nde la siguiente expresión algebraica que se muestra en la imagen	2	86	NULL	NULL	NULL	220287	7	122166	1	NULL	NULL
+122167	D014.\nPara sumar o restar dos términos algebraicos, es necesario que dichos términos tengan las mimas variables, elevados al mismo exponente, con el mismo signo	3	86	NULL	NULL	NULL	220288	falso	122167	1	NULL	NULL
+122168	D014.\nLa suma de los términos:\n-3x²y-5xy+4yx²-xy = x²y-6yx	3	86	NULL	NULL	NULL	220289	verdadero	122168	1	NULL	NULL
+122169	D014.\nSimplificar las siguientes expresiones\nalgebraicas:\n3a²b – 8 a²b – 7a²b + 3a²b²	4	86	NULL	NULL	NULL	220290	– 12a²b+ 3a²b²	122169	1	NULL	NULL
+122169	D014.\nSimplificar las siguientes expresiones\nalgebraicas:\n3a²b – 8 a²b – 7a²b + 3a²b²	4	86	NULL	NULL	NULL	220291	– 7a²b + 3a²b²	122169	0	NULL	NULL
+122169	D014.\nSimplificar las siguientes expresiones\nalgebraicas:\n3a²b – 8 a²b – 7a²b + 3a²b²	4	86	NULL	NULL	NULL	220292	8a²b²	122169	0	NULL	NULL
+122170	D014.\nSimplificar las siguientes expresiones\nalgebraicas:\n5x³y-6yx+7xy-yx³-4x²y-xy+4yx³+2xy	4	86	NULL	NULL	NULL	220293	8x³y+2xy-4x²y	122170	1	NULL	NULL
+122170	D014.\nSimplificar las siguientes expresiones\nalgebraicas:\n5x³y-6yx+7xy-yx³-4x²y-xy+4yx³+2xy	4	86	NULL	NULL	NULL	220294	9x³y-yx³+2xy-4x²y	122170	0	NULL	NULL
+122170	D014.\nSimplificar las siguientes expresiones\nalgebraicas:\n5x³y-6yx+7xy-yx³-4x²y-xy+4yx³+2xy	4	86	NULL	NULL	NULL	220295	9x³y-yx³-6yx+8xy	122170	0	NULL	NULL
+122171	D014.\nSimplificar las siguientes expresiones algebraicas:\n3ab-2ab²-4ab-a²b+3ab-5b²a+8a	4	86	NULL	NULL	NULL	220296	2ab-7ab²-a²b+8a	122171	1	NULL	NULL
+122171	D014.\nSimplificar las siguientes expresiones algebraicas:\n3ab-2ab²-4ab-a²b+3ab-5b²a+8a	4	86	NULL	NULL	NULL	220297	6ab-2ab²-4ba-a²b-5b²a+8a	122171	0	NULL	NULL
+122171	D014.\nSimplificar las siguientes expresiones algebraicas:\n3ab-2ab²-4ab-a²b+3ab-5b²a+8a	4	86	NULL	NULL	NULL	220298	6ab-3ab²-4ba-a²b-5b²a	122171	0	NULL	NULL
+122172	D014.\nPara multiplicar un término algebraico por otro término algebraico, el procedimiento consiste en multiplicar\nlos coeficientes y para la parte literal aplicar la ley de los ________. El signo del producto estará dado por la ley de\nlos signos	1	88	NULL	NULL	NULL	220299	exponentes	122172	1	NULL	NULL
+122173	D014.\nMultiplicación de potencias de la misma base: Es igual a la base\nelevada al exponente que resulta de _______ los exponentes de los factores	1	88	NULL	NULL	NULL	220300	sumar	122173	1	NULL	NULL
+122174	D014.\nResuelva lo de la siguiente imagen.\n	2	88	NULL	NULL	NULL	220301	8	122174	1	NULL	NULL
+122175	D014.\nResuelva lo de la siguiente imagen.	2	88	NULL	NULL	NULL	220302	-14	122175	1	NULL	NULL
+122176	D014.\nResuelva la siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220307	45/16  x⁹	122176	1	NULL	NULL
+122176	D014.\nResuelva la siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220308	14/16  x¹⁸	122176	0	NULL	NULL
+122176	D014.\nResuelva la siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220309	45/4  x¹⁸	122176	0	NULL	NULL
+122176	D014.\nResuelva la siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220310	45/16  x¹⁸	122176	0	NULL	NULL
+122177	D014.\nResuelva las siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220315	-14y⁸	122177	1	NULL	NULL
+122177	D014.\nResuelva las siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220316	14y¹⁵	122177	0	NULL	NULL
+122177	D014.\nResuelva las siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220317	-9y⁸	122177	0	NULL	NULL
+122177	D014.\nResuelva las siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220318	9y⁸	122177	0	NULL	NULL
+122178	D014.\nResuelva las siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220319	-504w⁷  x⁷	122178	0	NULL	NULL
+122178	D014.\nResuelva las siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220320	-504w⁸  x⁷	122178	0	NULL	NULL
+122178	D014.\nResuelva las siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220321	-504w⁷ x⁸	122178	1	NULL	NULL
+122178	D014.\nResuelva las siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL	220322	504w⁸  x⁷	122178	0	NULL	NULL
+122179	D014.\nResuelva lo siguiente.	4	94	NULL	NULL	NULL	220329	cuadratica	122179	1	NULL	NULL
+122179	D014.\nResuelva lo siguiente.	4	94	NULL	NULL	NULL	220330	segundo grado	122179	1	NULL	NULL
+122179	D014.\nResuelva lo siguiente.	4	94	NULL	NULL	NULL	220331	tercer grado	122179	0	NULL	NULL
+122180	D014.\nEn la expresión x²-2x-15=0 encontrar los valores de x, que satisfacen la ecuación	4	94	NULL	NULL	NULL	220336	x1=-3	122180	1	NULL	NULL
+122180	D014.\nEn la expresión x²-2x-15=0 encontrar los valores de x, que satisfacen la ecuación	4	94	NULL	NULL	NULL	220337	x2=5	122180	1	NULL	NULL
+122180	D014.\nEn la expresión x²-2x-15=0 encontrar los valores de x, que satisfacen la ecuación	4	94	NULL	NULL	NULL	220338	x1=5	122180	0	NULL	NULL
+122180	D014.\nEn la expresión x²-2x-15=0 encontrar los valores de x, que satisfacen la ecuación	4	94	NULL	NULL	NULL	220339	x2=-3	122180	0	NULL	NULL
+122181	D014.\nLa fórmula cuadrática puede usarse\npara resolver cualquier ecuación de la\nforma ax² + bx + c = 0.	3	94	NULL	NULL	NULL	220340	verdadero	122181	1	NULL	NULL
+122182	D014.\nPara la expresión 5x²+5x-30=0\nLos valores de x que la satisfacen son:	4	94	NULL	NULL	NULL	220341	x1=-3	122182	1	NULL	NULL
+122182	D014.\nPara la expresión 5x²+5x-30=0\nLos valores de x que la satisfacen son:	4	94	NULL	NULL	NULL	220342	x2=2	122182	1	NULL	NULL
+122182	D014.\nPara la expresión 5x²+5x-30=0\nLos valores de x que la satisfacen son:	4	94	NULL	NULL	NULL	220343	x1=3	122182	0	NULL	NULL
+122182	D014.\nPara la expresión 5x²+5x-30=0\nLos valores de x que la satisfacen son:	4	94	NULL	NULL	NULL	220344	x2=2	122182	0	NULL	NULL
+122182	D014.\nPara la expresión 5x²+5x-30=0\nLos valores de x que la satisfacen son:	4	94	NULL	NULL	NULL	220345	x1=-3	122182	0	NULL	NULL
+122182	D014.\nPara la expresión 5x²+5x-30=0\nLos valores de x que la satisfacen son:	4	94	NULL	NULL	NULL	220346	x2=-2	122182	0	NULL	NULL
+122182	D014.\nPara la expresión 5x²+5x-30=0\nLos valores de x que la satisfacen son:	4	94	NULL	NULL	NULL	220347	x1=-2	122182	0	NULL	NULL
+122182	D014.\nPara la expresión 5x²+5x-30=0\nLos valores de x que la satisfacen son:	4	94	NULL	NULL	NULL	220348	x2=3	122182	0	NULL	NULL
+122183	D014.\nEncontrar la solución de la expresión 2x²-7x+3=0	4	94	NULL	NULL	NULL	220349	x1=3	122183	1	NULL	NULL
+122183	D014.\nEncontrar la solución de la expresión 2x²-7x+3=0	4	94	NULL	NULL	NULL	220350	x2=1/2	122183	1	NULL	NULL
+122183	D014.\nEncontrar la solución de la expresión 2x²-7x+3=0	4	94	NULL	NULL	NULL	220351	x1=-3	122183	0	NULL	NULL
+122183	D014.\nEncontrar la solución de la expresión 2x²-7x+3=0	4	94	NULL	NULL	NULL	220352	x2=-1/2	122183	0	NULL	NULL
+122183	D014.\nEncontrar la solución de la expresión 2x²-7x+3=0	4	94	NULL	NULL	NULL	220353	x1=-3	122183	0	NULL	NULL
+122183	D014.\nEncontrar la solución de la expresión 2x²-7x+3=0	4	94	NULL	NULL	NULL	220354	x2=1/2	122183	0	NULL	NULL
+122183	D014.\nEncontrar la solución de la expresión 2x²-7x+3=0	4	94	NULL	NULL	NULL	220355	x1=-3	122183	0	NULL	NULL
+122183	D014.\nEncontrar la solución de la expresión 2x²-7x+3=0	4	94	NULL	NULL	NULL	220356	x2=-1/2	122183	0	NULL	NULL
+122184	D016.\nLa solución de 2x+1>0    es x>-1/2	3	192	NULL	NULL	NULL	220357	verdadero	122184	1	NULL	NULL
+122185	D016.\nLa solución de 5x+2≤x+3   es   x∈(-∞,1/4]	3	192	NULL	NULL	NULL	220358	verdadero	122185	1	NULL	NULL
+122186	D016.\nEl dibujo que se muestra en la imagen, ¿es la representación de la expresión y>x en el plano cartesiano?	3	192	NULL	NULL	NULL	220359	verdadero	122186	1	NULL	NULL
+122187	D032.\nRealiza la suma de las siguientes cantidades en notación científica:\n4.53x10⁻⁴+6.38x10⁻³=	4	32	NULL	NULL	NULL	220360	6.833x10⁻³	122187	1	NULL	NULL
+122187	D032.\nRealiza la suma de las siguientes cantidades en notación científica:\n4.53x10⁻⁴+6.38x10⁻³=	4	32	NULL	NULL	NULL	220361	68.33x10⁻⁴	122187	1	NULL	NULL
+122187	D032.\nRealiza la suma de las siguientes cantidades en notación científica:\n4.53x10⁻⁴+6.38x10⁻³=	4	32	NULL	NULL	NULL	220362	6.833x10³	122187	0	NULL	NULL
+122187	D032.\nRealiza la suma de las siguientes cantidades en notación científica:\n4.53x10⁻⁴+6.38x10⁻³=	4	32	NULL	NULL	NULL	220363	68.33x10⁴	122187	0	NULL	NULL
+122188	D032.\nEl peso aproximado de la Tierra es de 5,975,000,000,000,000,000,000,000 kg. Su representación en notación científica equivale a: 	4	32	NULL	NULL	NULL	220364	5.975x10²⁴	122188	1	NULL	NULL
+122188	D032.\nEl peso aproximado de la Tierra es de 5,975,000,000,000,000,000,000,000 kg. Su representación en notación científica equivale a: 	4	32	NULL	NULL	NULL	220365	5.975x10²¹	122188	0	NULL	NULL
+122188	D032.\nEl peso aproximado de la Tierra es de 5,975,000,000,000,000,000,000,000 kg. Su representación en notación científica equivale a: 	4	32	NULL	NULL	NULL	220366	59.75x10²⁴	122188	0	NULL	NULL
+122188	D032.\nEl peso aproximado de la Tierra es de 5,975,000,000,000,000,000,000,000 kg. Su representación en notación científica equivale a: 	4	32	NULL	NULL	NULL	220367	59.75x10²¹	122188	0	NULL	NULL
+122189	D016.\nDado dos números a y b, se cumple una de las soluciones a>b, a<b, a=b. A esto se le llama ley de la tricotomía.	3	192	NULL	NULL	NULL	220380	verdadero	122189	1	NULL	NULL
+122190	D020.\n¿Las categorías en las que se clasifican los numero en función de sus diferentes características son los conjuntos numéricos?	3	7	NULL	NULL	NULL	220381	verdadero	122190	1	NULL	NULL
+122191	D018.\n¿El número que resulta de calcular el mínimo común múltiplo de los denominadores  de dos o mas fracciones es el mínimo común denominador?	3	27	NULL	NULL	NULL	220382	verdadero	122191	1	NULL	NULL
+122192	D001.\nLa aritmética se basa en expresiones numéricas en las que pueden aparecer varias operaciones. 	3	36	NULL	NULL	NULL	220383	verdadero	122192	1	NULL	NULL
+122193	D001.\nLas operaciones aritméticas compuestas son expresiones numéricas  en las que solo aparecen sumas y restas	3	36	NULL	NULL	NULL	220384	falso	122193	1	NULL	NULL
+122194	D005.\nResuelve la siguiente operación.\n	1	96	NULL	NULL	NULL	220385	a	122194	1	NULL	NULL
+122195	D005.\nUna manera de expresar el resultado de la operación presentada en la imagen. 	4	96	NULL	NULL	NULL	220386	a	122195	1	NULL	NULL
+122195	D005.\nUna manera de expresar el resultado de la operación presentada en la imagen. 	4	96	NULL	NULL	NULL	220387	2a/10	122195	0	NULL	NULL
+122195	D005.\nUna manera de expresar el resultado de la operación presentada en la imagen. 	4	96	NULL	NULL	NULL	220388	a+1	122195	0	NULL	NULL
+122195	D005.\nUna manera de expresar el resultado de la operación presentada en la imagen. 	4	96	NULL	NULL	NULL	220389	a/100	122195	0	NULL	NULL
+122196	D007.\nLa base de un rectángulo mide tres veces lo que su ancho. Si su perímetro es de 8 * {a} . ¿Cuánto mide la base?\n	5	78	NULL	NULL	NULL	220390	3 * {a} 	122196	1	NULL	NULL
+122197	D011.\nIdentifica cuál de las opciones no corresponde a la representación de una función	4	193	NULL	NULL	NULL	220391	Forma verbal	122197	1	NULL	NULL
+122197	D011.\nIdentifica cuál de las opciones no corresponde a la representación de una función	4	193	NULL	NULL	NULL	220392	Forma gráfica 	122197	0	NULL	NULL
+122197	D011.\nIdentifica cuál de las opciones no corresponde a la representación de una función	4	193	NULL	NULL	NULL	220393	Forma subjetiva	122197	0	NULL	NULL
+122197	D011.\nIdentifica cuál de las opciones no corresponde a la representación de una función	4	193	NULL	NULL	NULL	220394	Forma algebraica 	122197	0	NULL	NULL
+122198	D011. \nFunción que corresponde a una parábola vertical con vértice en el origen  que abre hacia abajo, desplazada 3 unidades hacia arriba sobre el eje de las ordenadas. 	4	193	NULL	NULL	NULL	220395	f(x)=x²+3	122198	0	NULL	NULL
+122198	D011. \nFunción que corresponde a una parábola vertical con vértice en el origen  que abre hacia abajo, desplazada 3 unidades hacia arriba sobre el eje de las ordenadas. 	4	193	NULL	NULL	NULL	220396	h(x)=-x²+3	122198	1	NULL	NULL
+122198	D011. \nFunción que corresponde a una parábola vertical con vértice en el origen  que abre hacia abajo, desplazada 3 unidades hacia arriba sobre el eje de las ordenadas. 	4	193	NULL	NULL	NULL	220397	g(x)=-3x²+1	122198	0	NULL	NULL
+122198	D011. \nFunción que corresponde a una parábola vertical con vértice en el origen  que abre hacia abajo, desplazada 3 unidades hacia arriba sobre el eje de las ordenadas. 	4	193	NULL	NULL	NULL	220398	f(x)-x²-3	122198	0	NULL	NULL
+122199	D013. \nLa función f(x) = -2x+2 corresponde a una recta inclinada a la izquierda que corta al eje de las ordenadas en y = 2	3	44	NULL	NULL	NULL	220399	verdadero	122199	1	NULL	NULL
+122200	D013.\nDetermina la ecuación que representa una recta con pendiente de -2 y ordenada al origen 5	4	44	NULL	NULL	NULL	220400	2x+y-5=0	122200	1	NULL	NULL
+122200	D013.\nDetermina la ecuación que representa una recta con pendiente de -2 y ordenada al origen 5	4	44	NULL	NULL	NULL	220401	2x+5y-1=0	122200	0	NULL	NULL
+122200	D013.\nDetermina la ecuación que representa una recta con pendiente de -2 y ordenada al origen 5	4	44	NULL	NULL	NULL	220402	2x+5y+1=0\t	122200	0	NULL	NULL
+122200	D013.\nDetermina la ecuación que representa una recta con pendiente de -2 y ordenada al origen 5	4	44	NULL	NULL	NULL	220403	x+2y+5=0	122200	0	NULL	NULL
+122201	D015. \nPara f(x)= log x. Obtener f(½)	4	41	NULL	NULL	NULL	220404	f(½)=-log 2	122201	1	NULL	NULL
+122201	D015. \nPara f(x)= log x. Obtener f(½)	4	41	NULL	NULL	NULL	220405	f(½)=log 2	122201	0	NULL	NULL
+122201	D015. \nPara f(x)= log x. Obtener f(½)	4	41	NULL	NULL	NULL	220406	f(½)= 2 log 2	122201	0	NULL	NULL
+122202	D015.\nPara f(x) = x². Obtener f(x-n)-f(x)	4	41	NULL	NULL	NULL	220407	n(2x+n)	122202	1	NULL	NULL
+122202	D015.\nPara f(x) = x². Obtener f(x-n)-f(x)	4	41	NULL	NULL	NULL	220408	2x+n²	122202	0	NULL	NULL
+122202	D015.\nPara f(x) = x². Obtener f(x-n)-f(x)	4	41	NULL	NULL	NULL	220409	nx(x+n)	122202	0	NULL	NULL
+122203	D023. \nEn una ciudad hay {m} barrios. Cada barrio tiene {m} rascacielos. En cada rascacielos hay {m} plantas. En cada planta hay {m} viviendas. ¿Cuántas viviendas hay en total? 	5	34	NULL	NULL	NULL	220410	pow ( {m} , 4 )	122203	1	NULL	NULL
+122204	D025.\nDeterminar el valor de la siguiente operación \n7(3-1)-3[1-(2)(2)]-2(4+1)(2+1)\n	4	35	NULL	NULL	NULL	220411	7	122204	0	NULL	NULL
+122204	D025.\nDeterminar el valor de la siguiente operación \n7(3-1)-3[1-(2)(2)]-2(4+1)(2+1)\n	4	35	NULL	NULL	NULL	220412	53	122204	0	NULL	NULL
+122204	D025.\nDeterminar el valor de la siguiente operación \n7(3-1)-3[1-(2)(2)]-2(4+1)(2+1)\n	4	35	NULL	NULL	NULL	220413	-7	122204	1	NULL	NULL
+122204	D025.\nDeterminar el valor de la siguiente operación \n7(3-1)-3[1-(2)(2)]-2(4+1)(2+1)\n	4	35	NULL	NULL	NULL	220414	-25	122204	0	NULL	NULL
+122205	D025.\n¿Cuál es el resultado de la siguiente operación?\n{a} ² + ( {b} + {c} ) - 2 * {a} - 3 * ( {a} - {c} )	5	35	NULL	NULL	NULL	220415	pow ( {a} , 2 ) + ( {b} + {c} ) - 2 * {a} - 3 * ( {a} - {c} )	122205	1	NULL	NULL
+122206	D035.\nLa suma de tres números diferentes 	4	83	NULL	NULL	NULL	220416	x + y + z	122206	1	NULL	NULL
+122206	D035.\nLa suma de tres números diferentes 	4	83	NULL	NULL	NULL	220417	x + 2x + 3x	122206	0	NULL	NULL
+122206	D035.\nLa suma de tres números diferentes 	4	83	NULL	NULL	NULL	220418	3(x + y + z)	122206	0	NULL	NULL
+122206	D035.\nLa suma de tres números diferentes 	4	83	NULL	NULL	NULL	220419	x + x² + x³	122206	0	NULL	NULL
+122207	D035.\nEl doble de un número disminuido en tres unidades	4	83	NULL	NULL	NULL	220420	2(x-3)	122207	0	NULL	NULL
+122207	D035.\nEl doble de un número disminuido en tres unidades	4	83	NULL	NULL	NULL	220421	2x-3	122207	1	NULL	NULL
+122207	D035.\nEl doble de un número disminuido en tres unidades	4	83	NULL	NULL	NULL	220422	x²-3	122207	0	NULL	NULL
+122207	D035.\nEl doble de un número disminuido en tres unidades	4	83	NULL	NULL	NULL	220423	2x-6	122207	0	NULL	NULL
+122208	D035.\nx²+4x es	4	83	NULL	NULL	NULL	220424	La suma de un número al cuadrado aumentado cuatro veces el mismo número y disminuido tres.	122208	0	NULL	NULL
+122208	D035.\nx²+4x es	4	83	NULL	NULL	NULL	220425	La suma del cuadrado de un número y cuatro veces otro diferente	122208	0	NULL	NULL
+122208	D035.\nx²+4x es	4	83	NULL	NULL	NULL	220426	Un numero al cuadrado más cuatro	122208	0	NULL	NULL
+122208	D035.\nx²+4x es	4	83	NULL	NULL	NULL	220427	 La suma del cuadrado de un número y cuatro veces el mismo número.	122208	1	NULL	NULL
+122209	D035\nx²-y² es 	4	83	NULL	NULL	NULL	220428	La diferencia de dos números al cuadrado	122209	0	NULL	NULL
+122209	D035\nx²-y² es 	4	83	NULL	NULL	NULL	220429	La diferencia de los cuadrados de dos números diferentes	122209	1	NULL	NULL
+122209	D035\nx²-y² es 	4	83	NULL	NULL	NULL	220430	El cuadrado de la diferencia de dos números diferentes	122209	0	NULL	NULL
+122209	D035\nx²-y² es 	4	83	NULL	NULL	NULL	220431	 La diferencia de dos números al cuadrado	122209	0	NULL	NULL
+122210	D035.\nEl cuadrado de la diferencia de dos números diferentes	4	83	NULL	NULL	NULL	220432	2(x-y)	122210	0	NULL	NULL
+122210	D035.\nEl cuadrado de la diferencia de dos números diferentes	4	83	NULL	NULL	NULL	220433	2x-2y	122210	0	NULL	NULL
+122210	D035.\nEl cuadrado de la diferencia de dos números diferentes	4	83	NULL	NULL	NULL	220434	(x-y)²	122210	1	NULL	NULL
+122210	D035.\nEl cuadrado de la diferencia de dos números diferentes	4	83	NULL	NULL	NULL	220435	x²-y²	122210	0	NULL	NULL
+122211	D035.\nCinco veces la diferencia de dos números al cuadrado se expresa como 5(x-y)²	3	83	NULL	NULL	NULL	220436	falso	122211	1	NULL	NULL
+122212	D035.\nEl cubo de la diferencia del doble de un número y otro diferente se expresa como (2x-y)³	3	83	NULL	NULL	NULL	220437	verdadero	122212	1	NULL	NULL
+122213	D035.\nEl doble de la diferencia de dos números diferentes se expresa como	4	83	NULL	NULL	NULL	220438	x²-y²	122213	0	NULL	NULL
+122213	D035.\nEl doble de la diferencia de dos números diferentes se expresa como	4	83	NULL	NULL	NULL	220439	2(x-y)	122213	1	NULL	NULL
+122213	D035.\nEl doble de la diferencia de dos números diferentes se expresa como	4	83	NULL	NULL	NULL	220440	(x-y)²	122213	0	NULL	NULL
+122213	D035.\nEl doble de la diferencia de dos números diferentes se expresa como	4	83	NULL	NULL	NULL	220441	2x-2y	122213	0	NULL	NULL
+122214	D035.\nEl triple del cuadrado de la suma de dos números se expresa como 	4	83	NULL	NULL	NULL	220442	3x²+3y²	122214	0	NULL	NULL
+122214	D035.\nEl triple del cuadrado de la suma de dos números se expresa como 	4	83	NULL	NULL	NULL	220443	3(x+y)²	122214	1	NULL	NULL
+122214	D035.\nEl triple del cuadrado de la suma de dos números se expresa como 	4	83	NULL	NULL	NULL	220444	3+(x+y)²	122214	0	NULL	NULL
+122214	D035.\nEl triple del cuadrado de la suma de dos números se expresa como 	4	83	NULL	NULL	NULL	220445	3(x²+y²)	122214	0	NULL	NULL
+122215	D035.\nLa operación representada en la imagen se puede expresar como 	4	83	NULL	NULL	NULL	220446	La raíz cúbica de un número aumentado en dos	122215	0	NULL	NULL
+122215	D035.\nLa operación representada en la imagen se puede expresar como 	4	83	NULL	NULL	NULL	220447	 La raíz cúbica del doble de un número	122215	1	NULL	NULL
+122215	D035.\nLa operación representada en la imagen se puede expresar como 	4	83	NULL	NULL	NULL	220448	La raíz del doble de un número	122215	0	NULL	NULL
+122215	D035.\nLa operación representada en la imagen se puede expresar como 	4	83	NULL	NULL	NULL	220449	La raíz de dos equis	122215	0	NULL	NULL
+122221	D037.\nElige el cociente  y el residuo.\n	4	164	NULL	NULL	NULL	220480	x²-10x-16	122221	0	NULL	NULL
+122221	D037.\nElige el cociente  y el residuo.\n	4	164	NULL	NULL	NULL	220481	x²+6x-16	122221	1	NULL	NULL
+122221	D037.\nElige el cociente  y el residuo.\n	4	164	NULL	NULL	NULL	220482	x²-4	122221	0	NULL	NULL
+122221	D037.\nElige el cociente  y el residuo.\n	4	164	NULL	NULL	NULL	220483	R: -4	122221	0	NULL	NULL
+122221	D037.\nElige el cociente  y el residuo.\n	4	164	NULL	NULL	NULL	220484	R: -10	122221	0	NULL	NULL
+122221	D037.\nElige el cociente  y el residuo.\n	4	164	NULL	NULL	NULL	220485	x²+10x+16	122221	0	NULL	NULL
+122221	D037.\nElige el cociente  y el residuo.\n	4	164	NULL	NULL	NULL	220486	R: -9	122221	1	NULL	NULL
+122222	D039.\nLa fórmula para resolver una ecuación de segundo grado es la presentada en la imagen 	3	94	NULL	NULL	NULL	220487	falso	122222	1	NULL	NULL
+122223	D039.\nLas soluciones para la ecuación 6x²-7x-3 son:	4	94	NULL	NULL	NULL	220488	x₁=⅓ , x₂=-³⁄₂\t	122223	0	NULL	NULL
+122223	D039.\nLas soluciones para la ecuación 6x²-7x-3 son:	4	94	NULL	NULL	NULL	220489	x₁=-⅓ , x₂=-³⁄₂\t	122223	0	NULL	NULL
+122223	D039.\nLas soluciones para la ecuación 6x²-7x-3 son:	4	94	NULL	NULL	NULL	220490	x₁=-⅓ , x₂= ³⁄₂\t 	122223	1	NULL	NULL
+122223	D039.\nLas soluciones para la ecuación 6x²-7x-3 son:	4	94	NULL	NULL	NULL	220491	x₁=⅓ , x₂=³⁄₂\t	122223	0	NULL	NULL
+129118	D041.\nResuelve la siguiente multiplicación	4	88	NULL	NULL	NULL	227724	35x⁴y⁵+42xy⁷\t	129118	0	NULL	NULL
+129118	D041.\nResuelve la siguiente multiplicación	4	88	NULL	NULL	NULL	227725	35x⁵y⁵+42xy⁷\t	129118	1	NULL	NULL
+129118	D041.\nResuelve la siguiente multiplicación	4	88	NULL	NULL	NULL	227726	12x⁵y⁵+13xy⁷	129118	0	NULL	NULL
+129118	D041.\nResuelve la siguiente multiplicación	4	88	NULL	NULL	NULL	227727	12x⁴y⁵+13xy⁷\t	129118	0	NULL	NULL
+129118	D041.\nResuelve la siguiente multiplicación	4	88	NULL	NULL	NULL	227728	35x⁵y⁶+42xy⁷\t	129118	0	NULL	NULL
+129118	D041.\nResuelve la siguiente multiplicación	4	88	NULL	NULL	NULL	227729	12x⁵y⁶+13xy⁷\t	129118	0	NULL	NULL
+129119	D041.\nResuelve la siguiente operación 	4	88	NULL	NULL	NULL	227730	x⁸+7x⁵+3x³+21x	129119	0	NULL	NULL
+129119	D041.\nResuelve la siguiente operación 	4	88	NULL	NULL	NULL	227731	x¹⁵+7x⁵+3x³+21x	129119	0	NULL	NULL
+129119	D041.\nResuelve la siguiente operación 	4	88	NULL	NULL	NULL	227732	x⁸+7x⁶+3x³+21x	129119	1	NULL	NULL
+129119	D041.\nResuelve la siguiente operación 	4	88	NULL	NULL	NULL	227733	x¹⁵+7x⁶+3x³+21x	129119	0	NULL	NULL
+129120	D041. Resuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227734	27x ¹⁰+48x⁹+21x⁸-18x⁷+18x⁵+36x⁴	129120	0	NULL	NULL
+129120	D041. Resuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227735	27x ¹⁰-60x⁹-21x⁸+18x⁷+18x⁵+36x⁴	129120	0	NULL	NULL
+129120	D041. Resuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227736	27x ¹⁰-60x⁹-21x⁸-18x⁷+18x⁵+36x⁴\t	129120	0	NULL	NULL
+129120	D041. Resuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227737	27x ¹⁰-60x⁹+21x⁸-18x⁷+18x⁵+36x⁴\t	129120	0	NULL	NULL
+129120	D041. Resuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227738	27x ¹⁰+48x⁹-21x⁸-18x⁷+18x⁵+36x⁴\t	129120	1	NULL	NULL
+129120	D041. Resuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227739	27x ¹⁰+48x⁹-21x⁸+18x⁷+18x⁵+36x⁴\t	129120	0	NULL	NULL
+129121	D041.\nResuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227740	18x ¹⁰+30x⁹-22x⁸+20x⁷+10x⁵+20x⁴	129121	0	NULL	NULL
+129121	D041.\nResuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227741	18x ¹⁰+30x⁹-22x⁸-20x⁷+10x⁵+20x⁴	129121	1	NULL	NULL
+129121	D041.\nResuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227742	18x ¹⁰-42x⁹+22x⁸-20x⁷+10x⁵+20x⁴\t	129121	0	NULL	NULL
+129121	D041.\nResuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227743	18x ¹⁰-42x⁹-22x⁸+20x⁷+10x⁵+20x⁴\t	129121	0	NULL	NULL
+129121	D041.\nResuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227744	18x ¹⁰+30x⁹+22x⁸-20x⁷+10x⁵+20x⁴\t	129121	0	NULL	NULL
+129121	D041.\nResuelve la siguiente operación.\n	4	163	NULL	NULL	NULL	227745	18x ¹⁰-42x⁹-22x⁸-20x⁷+10x⁵+20x⁴\t	129121	0	NULL	NULL
+129122	D041.\nRealiza la siguiente operación.\nDe 11x + 11y + 11z sumar 11x + 6xy + 12y	4	82	NULL	NULL	NULL	227752	20x + 9xy + 17y	129122	0	NULL	NULL
+129122	D041.\nRealiza la siguiente operación.\nDe 11x + 11y + 11z sumar 11x + 6xy + 12y	4	82	NULL	NULL	NULL	227753	19x + 17xy + 11y	129122	0	NULL	NULL
+129122	D041.\nRealiza la siguiente operación.\nDe 11x + 11y + 11z sumar 11x + 6xy + 12y	4	82	NULL	NULL	NULL	227754	22x + 6xy + 23y + 11z	129122	1	NULL	NULL
+129122	D041.\nRealiza la siguiente operación.\nDe 11x + 11y + 11z sumar 11x + 6xy + 12y	4	82	NULL	NULL	NULL	227755	19x + 16xy + 11y	129122	0	NULL	NULL
+129122	D041.\nRealiza la siguiente operación.\nDe 11x + 11y + 11z sumar 11x + 6xy + 12y	4	82	NULL	NULL	NULL	227756	20x + 15xy + 11y	129122	0	NULL	NULL
+129122	D041.\nRealiza la siguiente operación.\nDe 11x + 11y + 11z sumar 11x + 6xy + 12y	4	82	NULL	NULL	NULL	227757	22x + 6xy + 24y + 11z	129122	0	NULL	NULL
+129123	D041.\nRealiza la siguiente operación.\nDe 7x + 9xy + 5y sumar 10x + 6y	4	82	NULL	NULL	NULL	227758	17x + 9xy + 11y	129123	1	NULL	NULL
+129123	D041.\nRealiza la siguiente operación.\nDe 7x + 9xy + 5y sumar 10x + 6y	4	82	NULL	NULL	NULL	227759	16x + 17xy + 5y	129123	0	NULL	NULL
+129123	D041.\nRealiza la siguiente operación.\nDe 7x + 9xy + 5y sumar 10x + 6y	4	82	NULL	NULL	NULL	227760	19x + 6xy + 17y + 5z	129123	0	NULL	NULL
+129123	D041.\nRealiza la siguiente operación.\nDe 7x + 9xy + 5y sumar 10x + 6y	4	82	NULL	NULL	NULL	227761	16x + 16xy +5y	129123	0	NULL	NULL
+129123	D041.\nRealiza la siguiente operación.\nDe 7x + 9xy + 5y sumar 10x + 6y	4	82	NULL	NULL	NULL	227762	17x + 15xy + 5y	129123	0	NULL	NULL
+129123	D041.\nRealiza la siguiente operación.\nDe 7x + 9xy + 5y sumar 10x + 6y	4	82	NULL	NULL	NULL	227763	19x + 6xy + 18y + 5z	129123	0	NULL	NULL
+129124	D041.\nRealiza la siguiente operación.\nDe 36x + 24xy + 36y restar 25x - 6xy 	4	82	NULL	NULL	NULL	227764	13x + 30xy + 36y	129124	0	NULL	NULL
+129124	D041.\nRealiza la siguiente operación.\nDe 36x + 24xy + 36y restar 25x - 6xy 	4	82	NULL	NULL	NULL	227765	11x + 30xy + 36y 	129124	1	NULL	NULL
+129124	D041.\nRealiza la siguiente operación.\nDe 36x + 24xy + 36y restar 25x - 6xy 	4	82	NULL	NULL	NULL	227766	11x + 18xy + 36y	129124	0	NULL	NULL
+129124	D041.\nRealiza la siguiente operación.\nDe 36x + 24xy + 36y restar 25x - 6xy 	4	82	NULL	NULL	NULL	227767	13x + 18xy +36y	129124	0	NULL	NULL
+129124	D041.\nRealiza la siguiente operación.\nDe 36x + 24xy + 36y restar 25x - 6xy 	4	82	NULL	NULL	NULL	227768	25x + 19xy + 36y	129124	0	NULL	NULL
+129124	D041.\nRealiza la siguiente operación.\nDe 36x + 24xy + 36y restar 25x - 6xy 	4	82	NULL	NULL	NULL	227769	11x + 19xy + 36y	129124	0	NULL	NULL
+129125	D041. \nRealiza la siguiente operación e indica el número que corresponde a la respuesta.\nRestar 5x - 26yz + 6z de 47x + 49yz - 3z	4	82	NULL	NULL	NULL	227770	42x + 57yz - 9z	129125	0	NULL	NULL
+129125	D041. \nRealiza la siguiente operación e indica el número que corresponde a la respuesta.\nRestar 5x - 26yz + 6z de 47x + 49yz - 3z	4	82	NULL	NULL	NULL	227771	34x + 75yz - 9z	129125	0	NULL	NULL
+129125	D041. \nRealiza la siguiente operación e indica el número que corresponde a la respuesta.\nRestar 5x - 26yz + 6z de 47x + 49yz - 3z	4	82	NULL	NULL	NULL	227772	42z + 75yz + 9z	129125	0	NULL	NULL
+129125	D041. \nRealiza la siguiente operación e indica el número que corresponde a la respuesta.\nRestar 5x - 26yz + 6z de 47x + 49yz - 3z	4	82	NULL	NULL	NULL	227773	34x + 57yz - 9z	129125	0	NULL	NULL
+129125	D041. \nRealiza la siguiente operación e indica el número que corresponde a la respuesta.\nRestar 5x - 26yz + 6z de 47x + 49yz - 3z	4	82	NULL	NULL	NULL	227774	42z + 75yz - 9z	129125	1	NULL	NULL
+129125	D041. \nRealiza la siguiente operación e indica el número que corresponde a la respuesta.\nRestar 5x - 26yz + 6z de 47x + 49yz - 3z	4	82	NULL	NULL	NULL	227775	34x + 75yz + 9z	129125	0	NULL	NULL
+129126	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227776	44x³y⁴+19x²+45y⁶	129126	0	NULL	NULL
+129126	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227777	29x³y⁴+34x²+45y⁵	129126	0	NULL	NULL
+129126	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227778	44x³y⁴+19x²+45y⁵	129126	1	NULL	NULL
+129126	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227779	29x³y⁴+34x³+45y⁵	129126	0	NULL	NULL
+129126	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227780	29x³y⁴+34x²+45y⁶	129126	0	NULL	NULL
+129126	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227781	44x³y⁴+19x³+45y⁵	129126	0	NULL	NULL
+129127	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227782	10x⁴+4x³y⁴+42x²y⁵+35y⁶	129127	0	NULL	NULL
+129127	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227783	10x⁴+4x³y⁴+42x²y⁵-35y⁶\t	129127	0	NULL	NULL
+129127	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227784	10x⁴+4x³y⁴+10x²y⁵+23y⁶\t	129127	0	NULL	NULL
+129127	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227785	10x⁴+4x³y⁴+42x²y⁵+23y⁶\t	129127	1	NULL	NULL
+129127	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227786	10x⁴+4x³y⁴+10x²y⁵-23y⁶\t	129127	0	NULL	NULL
+129127	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL	227787	10x⁴+4x³y⁴+42x²y⁵-23y⁶\t	129127	0	NULL	NULL
+129128	D041.\nRealiza la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL	227788	11x⁷y³+41x⁵y⁴+6x³+21y⁶	129128	0	NULL	NULL
+129128	D041.\nRealiza la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL	227789	11x⁷y³+7x⁵y⁴+6x³+21y⁶	129128	1	NULL	NULL
+129128	D041.\nRealiza la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL	227790	11x⁷y³+7x⁵y⁴+6x³-21y⁶\t	129128	0	NULL	NULL
+129128	D041.\nRealiza la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL	227791	11x⁷y³+7x⁵y⁴+6x³-15y⁶\t	129128	0	NULL	NULL
+129128	D041.\nRealiza la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL	227792	11x⁷y³+41x⁵y⁴+6x³+21y⁶\t	129128	0	NULL	NULL
+129129	D041.\nRealiza la siguiente operación e indica la respuesta correcta. \n	4	82	NULL	NULL	NULL	227793	-14x¹³+18x¹¹+27x⁹y³+10y⁴-60y¹¹	129129	0	NULL	NULL
+129129	D041.\nRealiza la siguiente operación e indica la respuesta correcta. \n	4	82	NULL	NULL	NULL	227794	-14x¹³+18x¹¹+27x⁹y³+10y⁴+60y¹¹\t	129129	0	NULL	NULL
+129129	D041.\nRealiza la siguiente operación e indica la respuesta correcta. \n	4	82	NULL	NULL	NULL	227795	-14x¹³y+18x¹¹+27x⁹y³+10y⁴+60y¹¹\t	129129	1	NULL	NULL
+129129	D041.\nRealiza la siguiente operación e indica la respuesta correcta. \n	4	82	NULL	NULL	NULL	227796	-14x¹³y+18x¹¹-27x⁹y³+10y⁴+60y¹¹\t	129129	0	NULL	NULL
+129129	D041.\nRealiza la siguiente operación e indica la respuesta correcta. \n	4	82	NULL	NULL	NULL	227797	-14x¹³+18x¹¹+27x⁹y³+10y⁴+60y¹¹\t	129129	0	NULL	NULL
+129130	D041.\nResuelve la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL	227798	 ⁷⁄₃ x⁵y⁴ + ³⁄₄ x⁴y⁵ +  ⁵⁄₅y⁶ + ⁵⁄₄x³	129130	0	NULL	NULL
+129130	D041.\nResuelve la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL	227799	 ⁷⁄₃ x⁵y⁴ + ³⁄₅ x⁴y⁵ +  ⁵⁄₅y⁶ + ⁵⁄₄x³	129130	1	NULL	NULL
+129130	D041.\nResuelve la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL	227800	⁷⁄₃ x⁵y⁴ - ³⁄₅ x⁴y⁵ + ⁵⁄₅y⁶ + ⁵⁄₄x³ 	129130	0	NULL	NULL
+129130	D041.\nResuelve la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL	227801	⁷⁄₃ x⁵y⁴ - ⁷⁄₅ x⁴y⁵ + ⁵⁄₅y⁶ + ⁵⁄₄x³\t	129130	0	NULL	NULL
+129131	D041.\nResuelve la siguiente multiplicación.\n	4	82	NULL	NULL	NULL	227802	x⁸ + 8x⁵ + 7x³ + 56x	129131	0	NULL	NULL
+129131	D041.\nResuelve la siguiente multiplicación.\n	4	82	NULL	NULL	NULL	227803	x¹⁵ + 8x⁵ + 7x³ + 56x	129131	0	NULL	NULL
+129131	D041.\nResuelve la siguiente multiplicación.\n	4	82	NULL	NULL	NULL	227804	x⁸ + 8x⁶ + 7x³ + 56x\t	129131	1	NULL	NULL
+129131	D041.\nResuelve la siguiente multiplicación.\n	4	82	NULL	NULL	NULL	227805	x¹⁵ + 8x⁶ + 7x³ + 56x\t	129131	0	NULL	NULL
+129132	D041.\nResuelve la siguiente operación	4	82	NULL	NULL	NULL	227806	25x¹⁵ + 20x³ - 40x⁴y⁶ - 32y⁶	129132	0	NULL	NULL
+129132	D041.\nResuelve la siguiente operación	4	82	NULL	NULL	NULL	227807	25x⁴ + 20x³ - 40x⁴y⁶ - 32y⁶\t	129132	0	NULL	NULL
+129132	D041.\nResuelve la siguiente operación	4	82	NULL	NULL	NULL	227808	25x⁷ + 20x³ - 40x⁴y⁶ - 32y⁶\t	129132	1	NULL	NULL
+129132	D041.\nResuelve la siguiente operación	4	82	NULL	NULL	NULL	227809	25x⁷ + 20x³ + 40x⁴y⁶ - 32y⁶\t	129132	0	NULL	NULL
+129132	D041.\nResuelve la siguiente operación	4	82	NULL	NULL	NULL	227810	25x⁴ + 20x³ - 40x⁴y⁶ + 32y⁶\t	129132	0	NULL	NULL
+129132	D041.\nResuelve la siguiente operación	4	82	NULL	NULL	NULL	227811	25x¹⁵ + 20x³ + 40x⁴y⁶ - 32y⁶\t	129132	0	NULL	NULL
+129133	D041.\nRealiza la siguiente división polinomial e indica el cociente y el residuo 	4	82	NULL	NULL	NULL	227812	-10	129133	0	NULL	NULL
+129133	D041.\nRealiza la siguiente división polinomial e indica el cociente y el residuo 	4	82	NULL	NULL	NULL	227813	-6	129133	0	NULL	NULL
+129133	D041.\nRealiza la siguiente división polinomial e indica el cociente y el residuo 	4	82	NULL	NULL	NULL	227814	-4	129133	0	NULL	NULL
+129133	D041.\nRealiza la siguiente división polinomial e indica el cociente y el residuo 	4	82	NULL	NULL	NULL	227815	x²+6x-16	129133	0	NULL	NULL
+129133	D041.\nRealiza la siguiente división polinomial e indica el cociente y el residuo 	4	82	NULL	NULL	NULL	227816	x²-10x-16	129133	0	NULL	NULL
+129133	D041.\nRealiza la siguiente división polinomial e indica el cociente y el residuo 	4	82	NULL	NULL	NULL	227817	-9	129133	1	NULL	NULL
+129133	D041.\nRealiza la siguiente división polinomial e indica el cociente y el residuo 	4	82	NULL	NULL	NULL	227818	x²+10x+16	129133	0	NULL	NULL
+129133	D041.\nRealiza la siguiente división polinomial e indica el cociente y el residuo 	4	82	NULL	NULL	NULL	227819	x²-4	129133	1	NULL	NULL
+129134	D041.\nRealiza la siguiente división polinomial y selecciona el cociente y el residuo. 	4	82	NULL	NULL	NULL	227820	10	129134	1	NULL	NULL
+129134	D041.\nRealiza la siguiente división polinomial y selecciona el cociente y el residuo. 	4	82	NULL	NULL	NULL	227821	11	129134	0	NULL	NULL
+129134	D041.\nRealiza la siguiente división polinomial y selecciona el cociente y el residuo. 	4	82	NULL	NULL	NULL	227822	x²+4x-12	129134	1	NULL	NULL
+129134	D041.\nRealiza la siguiente división polinomial y selecciona el cociente y el residuo. 	4	82	NULL	NULL	NULL	227823	x²-8x-12\t	129134	0	NULL	NULL
+129134	D041.\nRealiza la siguiente división polinomial y selecciona el cociente y el residuo. 	4	82	NULL	NULL	NULL	227824	5	129134	0	NULL	NULL
+129134	D041.\nRealiza la siguiente división polinomial y selecciona el cociente y el residuo. 	4	82	NULL	NULL	NULL	227825	7	129134	0	NULL	NULL
+129134	D041.\nRealiza la siguiente división polinomial y selecciona el cociente y el residuo. 	4	82	NULL	NULL	NULL	227826	x²+8x+12	129134	0	NULL	NULL
+129134	D041.\nRealiza la siguiente división polinomial y selecciona el cociente y el residuo. 	4	82	NULL	NULL	NULL	227827	x²-4	129134	0	NULL	NULL
+129135	D041.\nResuelve el siguiente binomio al cuadrado.\n(x+8)²	4	82	NULL	NULL	NULL	227828	x²+8x+16	129135	0	NULL	NULL
+129135	D041.\nResuelve el siguiente binomio al cuadrado.\n(x+8)²	4	82	NULL	NULL	NULL	227829	x²+16x+16	129135	0	NULL	NULL
+129135	D041.\nResuelve el siguiente binomio al cuadrado.\n(x+8)²	4	82	NULL	NULL	NULL	227830	x²+2x+64	129135	0	NULL	NULL
+129135	D041.\nResuelve el siguiente binomio al cuadrado.\n(x+8)²	4	82	NULL	NULL	NULL	227831	x²+8x+64	129135	0	NULL	NULL
+129135	D041.\nResuelve el siguiente binomio al cuadrado.\n(x+8)²	4	82	NULL	NULL	NULL	227832	x²+16x+64	129135	1	NULL	NULL
+129135	D041.\nResuelve el siguiente binomio al cuadrado.\n(x+8)²	4	82	NULL	NULL	NULL	227833	x²+2x+16	129135	0	NULL	NULL
+129136	D041.\nResuelve el siguiente binomio con término común. 	4	82	NULL	NULL	NULL	227834	x²+29x+29	129136	0	NULL	NULL
+129136	D041.\nResuelve el siguiente binomio con término común. 	4	82	NULL	NULL	NULL	227835	x²+507x+29	129136	0	NULL	NULL
+129136	D041.\nResuelve el siguiente binomio con término común. 	4	82	NULL	NULL	NULL	227836	x²+29x+26	129136	0	NULL	NULL
+129136	D041.\nResuelve el siguiente binomio con término común. 	4	82	NULL	NULL	NULL	227837	x²+507x+52	129136	0	NULL	NULL
+129136	D041.\nResuelve el siguiente binomio con término común. 	4	82	NULL	NULL	NULL	227838	x²+29x+208	129136	1	NULL	NULL
+129136	D041.\nResuelve el siguiente binomio con término común. 	4	82	NULL	NULL	NULL	227839	x²+29x-208\t	129136	0	NULL	NULL
+129136	D041.\nResuelve el siguiente binomio con término común. 	4	82	NULL	NULL	NULL	227840	x²-29x+208\t	129136	0	NULL	NULL
+129136	D041.\nResuelve el siguiente binomio con término común. 	4	82	NULL	NULL	NULL	227841	x²+3x+208\t	129136	0	NULL	NULL
+129137	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL	227842	w²+225	129137	0	NULL	NULL
+129137	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL	227843	225+w²	129137	0	NULL	NULL
+129137	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL	227844	30-w²	129137	0	NULL	NULL
+129137	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL	227845	w²-225	129137	1	NULL	NULL
+129137	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL	227846	30+w²	129137	0	NULL	NULL
+129137	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL	227847	225-w²	129137	0	NULL	NULL
+129137	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL	227848	w²+30	129137	0	NULL	NULL
+129137	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL	227849	w²-30	129137	0	NULL	NULL
+129152	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227962	z²-16	129152	0	NULL	NULL
+129152	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227963	64-z²	129152	1	NULL	NULL
+129152	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227964	z²-64	129152	0	NULL	NULL
+129152	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227965	16+z²	129152	0	NULL	NULL
+129152	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227966	z²+16	129152	0	NULL	NULL
+129152	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227967	16-z²	129152	0	NULL	NULL
+129152	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227968	64+z²	129152	0	NULL	NULL
+129152	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227969	z²+64	129152	0	NULL	NULL
+129153	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227970	x³+12x²+48x+64	129153	0	NULL	NULL
+129153	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227971	x³+12x²-48x-64	129153	0	NULL	NULL
+129153	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227972	x³-12x²+48x-64	129153	0	NULL	NULL
+129153	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227973	x³-12x²-48x-64	129153	0	NULL	NULL
+129153	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227974	x³-12x²+48x-64	129153	1	NULL	NULL
+129153	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL	227975	x³+12x²-48x+64\t	129153	0	NULL	NULL
+129154	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta.	4	79	NULL	NULL	NULL	227976	x=13 y=5\t	129154	0	NULL	NULL
+129154	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta.	4	79	NULL	NULL	NULL	227977	x=10 y=11\t	129154	0	NULL	NULL
+129154	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta.	4	79	NULL	NULL	NULL	227978	x=4  y=11\t	129154	0	NULL	NULL
+129154	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta.	4	79	NULL	NULL	NULL	227979	x=16 y=6	129154	0	NULL	NULL
+129154	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta.	4	79	NULL	NULL	NULL	227980	x=13 y=6	129154	0	NULL	NULL
+129154	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta.	4	79	NULL	NULL	NULL	227981	x=11 y=-2	129154	0	NULL	NULL
+129154	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta.	4	79	NULL	NULL	NULL	227982	x=11 y=6	129154	0	NULL	NULL
+129154	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta.	4	79	NULL	NULL	NULL	227983	x=11 y=5	129154	1	NULL	NULL
+129155	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	79	NULL	NULL	NULL	227984	x=-2 y=-3	129155	0	NULL	NULL
+129155	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	79	NULL	NULL	NULL	227985	x=-0 y=-7	129155	0	NULL	NULL
+129155	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	79	NULL	NULL	NULL	227986	x=-3 y=-2	129155	0	NULL	NULL
+129155	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	79	NULL	NULL	NULL	227987	x=-5 y=-2	129155	0	NULL	NULL
+129155	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	79	NULL	NULL	NULL	227988	x=-4 y=-8	129155	0	NULL	NULL
+129155	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	79	NULL	NULL	NULL	227989	x=0 y=6	129155	0	NULL	NULL
+129155	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	79	NULL	NULL	NULL	227990	x=-2 y=6	129155	1	NULL	NULL
+129155	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	79	NULL	NULL	NULL	227991	x=-2 y=7	129155	0	NULL	NULL
+129156	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	80	NULL	NULL	NULL	227992	x=1, y=-3, z=7	129156	0	NULL	NULL
+129156	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	80	NULL	NULL	NULL	227993	x=5, y=-1, z=4	129156	1	NULL	NULL
+129156	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	80	NULL	NULL	NULL	227994	x=5, y=4, z=5	129156	0	NULL	NULL
+129156	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	80	NULL	NULL	NULL	227995	x=4, y=-5, z=-1	129156	0	NULL	NULL
+129156	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	80	NULL	NULL	NULL	227996	x=-5, y=-4, z=4	129156	0	NULL	NULL
+129156	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	80	NULL	NULL	NULL	227997	x=10, y=-3, z=4	129156	0	NULL	NULL
+129156	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	80	NULL	NULL	NULL	227998	x=-1, y=4, z=5	129156	0	NULL	NULL
+129156	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	80	NULL	NULL	NULL	227999	x=1, y=5, z=0	129156	0	NULL	NULL
+129157	D001.\nResuelve. \n{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c}	5	36	NULL	NULL	NULL	228000	{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c} 	129157	1	NULL	NULL
+129159	D001.\nResuelve: \n{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c}	6	36	NULL	NULL	NULL	228002	{a} + {b} * {c} - {b} - {n} * {c} + {a}	129159	1	NULL	NULL
+129159	D001.\nResuelve: \n{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c}	6	36	NULL	NULL	NULL	228003	( {a} + {b} * {c} ) - {b} + {n} * {c} + {a} 	129159	0	NULL	NULL
+129159	D001.\nResuelve: \n{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c}	6	36	NULL	NULL	NULL	228004	{a} + {b} * {c} - {b} + {n} * {c} + {a} 	129159	0	NULL	NULL
+129159	D001.\nResuelve: \n{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c}	6	36	NULL	NULL	NULL	228005	( {a} + {b} * {c} - {b} + {n} * {c} + {a} * {c} ) / {c} 	129159	0	NULL	NULL
+129160	D004.\nUna laptop tiene un precio de $ {a} . Un descuento del {n}  % . ¿Cuánto cuesta con el descuento aplicado? 	5	98	NULL	NULL	NULL	228006	{a} - ( ( {a} * {n} ) / 100 )	129160	1	NULL	NULL
+129161	D034\n\nResuelve	3	196	NULL	NULL	NULL	228007	verdadero	129161	1	NULL	NULL
+129162	D038\n\n22x²y+9xy-16²z+7z³ sumar 16x²y+7y²z+22z²	4	78	NULL	NULL	NULL	228008	38x²y+9xy+23y²z+22z²+7z³	129162	0	NULL	NULL
+129162	D038\n\n22x²y+9xy-16²z+7z³ sumar 16x²y+7y²z+22z²	4	78	NULL	NULL	NULL	228009	38x²y+9xy+23y²z+29z³	129162	0	NULL	NULL
+129162	D038\n\n22x²y+9xy-16²z+7z³ sumar 16x²y+7y²z+22z²	4	78	NULL	NULL	NULL	228010	38x²y+9xy-9y²z+22z²+7z³	129162	1	NULL	NULL
+129162	D038\n\n22x²y+9xy-16²z+7z³ sumar 16x²y+7y²z+22z²	4	78	NULL	NULL	NULL	228011	38x²y+9xy-9y²z+29z³	129162	0	NULL	NULL
+129162	D038\n\n22x²y+9xy-16²z+7z³ sumar 16x²y+7y²z+22z²	4	78	NULL	NULL	NULL	228012	38x²y+9xy-9y²z+29z²	129162	0	NULL	NULL
+129162	D038\n\n22x²y+9xy-16²z+7z³ sumar 16x²y+7y²z+22z²	4	78	NULL	NULL	NULL	228013	38x²y+9xy+23y²z+29z²	129162	0	NULL	NULL
+129163	D038\n\nResuelve.	4	91	NULL	NULL	NULL	228014	4x+4y-5/2	129163	0	NULL	NULL
+129163	D038\n\nResuelve.	4	91	NULL	NULL	NULL	228015	3x+4y-5/2	129163	1	NULL	NULL
+129163	D038\n\nResuelve.	4	91	NULL	NULL	NULL	228016	3x+4y	129163	0	NULL	NULL
+129163	D038\n\nResuelve.	4	91	NULL	NULL	NULL	228017	4/x+6y-5/2	129163	0	NULL	NULL
+129163	D038\n\nResuelve.	4	91	NULL	NULL	NULL	228018	3x+4/y	129163	0	NULL	NULL
+129163	D038\n\nResuelve.	4	91	NULL	NULL	NULL	228019	3+4y-5x	129163	0	NULL	NULL
+129163	D038\n\nResuelve.	4	91	NULL	NULL	NULL	228020	4+6y-5y/x	129163	0	NULL	NULL
+129163	D038\n\nResuelve.	4	91	NULL	NULL	NULL	228021	3x+6y-5/2	129163	0	NULL	NULL
+129842	D016.\nLa expresión x∈(-∞,1/4] es la solución de 5x+2≤x+3	3	192	NULL	NULL	NULL	228700	verdadero	129842	1	NULL	NULL

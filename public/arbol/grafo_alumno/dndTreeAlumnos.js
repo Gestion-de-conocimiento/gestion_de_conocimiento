@@ -32,6 +32,8 @@ var nodos_ordenados = []
 var ramas = []
 var desplazamientoDeNodos = false;
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 async function draw_tree_rutas(error, treeData) {
 
 
@@ -1031,6 +1033,8 @@ async function draw_tree_rutas(error, treeData) {
     $('#modalDeCarga').modal('hide');
 }
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 async function draw_status_grafo(error, treeData) {
 
 
@@ -1705,11 +1709,12 @@ async function draw_status_grafo(error, treeData) {
                 // RA
         	
              gdc=ponderacion.gdc[ponderacion.nodos.indexOf(d.id.toString())]
+          
              if(gdc == 2){
                               return "#0ec472" //verde
                            }
              if(gdc == 1){
-                              return "	#FF8000" //naranja
+                              return "    #FF8000" //naranja
                            }
              if(gdc == 0){
                               return "#FF0000" //rojo
@@ -1722,7 +1727,7 @@ async function draw_status_grafo(error, treeData) {
                 //r colores=["#031DFA","#051CE7","#0117CE","#0416AE","#020E74","#000A5C","#010846","#000528"]
                 //var colores = ["#FA0303", "#FAA403", "#FAFA03", "#55FA03", "#03FAA8", "#034EFA", "#8D03FA", "#FA03E7"]
                 //var colores=["#031DFA","#031DFA","#031DFA","#031DFA","#031DFA","#031DFA","#031DFA","#031DFA"]
-                color = "#8D03FA"
+                color = "#FFFFFF"
                 
                 return color
 

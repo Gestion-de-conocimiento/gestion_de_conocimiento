@@ -1,0 +1,3393 @@
+Cargando nodos...
+Verificación del tema:  Cálculo  Integral
+Padre: Matematicas
+Experto:  84
+Estimacion bueno, hijo: 21
+Estimacion bueno, padre: 19
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 51
+Estimacion bueno, padre: 55
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 29
+Estimacion bueno, padre: 32
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 27
+Estimacion bueno, padre: 34
+Estimacion valida
+
+Padre: Cálculo  Diferencial
+Experto:  84
+Estimacion bueno, hijo: 21
+Estimacion bueno, padre: 18
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 51
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 29
+Estimacion bueno, padre: 26
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 27
+Estimacion bueno, padre: 28
+Estimacion valida
+
+
+Verificación del tema:  Antiderivadas
+Padre: Cálculo  Integral
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 21
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 51
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 29
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 27
+Estimacion invalida
+
+
+Verificación del tema:  Definición de la integral
+Padre: Antiderivadas
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 35
+Estimacion invalida
+
+
+Verificación del tema:  Reglas de integración inmediatas
+Padre: Definición de la integral
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 35
+Estimacion invalida
+
+
+Verificación del tema:  Métodos de integración
+Padre: Reglas de integración inmediatas
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 40
+Estimacion valida
+
+
+Verificación del tema:  Integral definida
+Padre: Métodos de integración
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 35
+Estimacion valida
+
+
+Verificación del tema:  Áreas bajo la curva
+Padre: Integral definida
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 25
+Estimacion valida
+
+
+Verificación del tema:  Sólido de revolución
+Padre: Áreas bajo la curva
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 20
+Estimacion valida
+
+
+Verificación del tema:  Volúmen de un sólido en revolución
+Padre: Sólido de revolución
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 15
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 15
+Estimacion invalida
+
+
+Verificación del tema:  Cálculo  Diferencial
+Padre: Matematicas
+Experto:  84
+Estimacion bueno, hijo: 18
+Estimacion bueno, padre: 19
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 55
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 26
+Estimacion bueno, padre: 32
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 28
+Estimacion bueno, padre: 34
+Estimacion valida
+
+Padre: Funciones  matemáticas
+Experto:  84
+Estimacion bueno, hijo: 18
+Estimacion bueno, padre: 19
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 56
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 26
+Estimacion bueno, padre: 29
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 28
+Estimacion bueno, padre: 32
+Estimacion valida
+
+
+Verificación del tema:  Límites y continuidad
+Padre: Cálculo  Diferencial
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 18
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 26
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 28
+Estimacion invalida
+
+
+Verificación del tema:  Derivada
+Padre: Límites y continuidad
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 35
+Estimacion invalida
+
+
+Verificación del tema:  Razón de cambio
+Padre: Derivada
+Experto:  84
+Estimacion bueno, hijo: 5
+Estimacion bueno, padre: 10
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 50
+Estimacion valida
+
+
+Verificación del tema:  Reglas de derivación
+Padre: Razón de cambio
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 5
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+
+
+Verificación del tema:  Razones de cambio relacionadas
+Padre: Reglas de derivación
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 30
+Estimacion valida
+
+
+Verificación del tema:  Optimizacion
+Padre: Razones de cambio relacionadas
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 25
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 15
+Estimacion invalida
+
+
+Verificación del tema:  Funciones  matemáticas
+Padre: Matematicas
+Experto:  84
+Estimacion bueno, hijo: 19
+Estimacion bueno, padre: 19
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 56
+Estimacion bueno, padre: 55
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 29
+Estimacion bueno, padre: 32
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 32
+Estimacion bueno, padre: 34
+Estimacion valida
+
+Padre: Trigonometría
+Experto:  84
+Estimacion bueno, hijo: 19
+Estimacion bueno, padre: 18
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 56
+Estimacion bueno, padre: 56
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 29
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 32
+Estimacion bueno, padre: 31
+Estimacion invalida
+
+
+Verificación del tema:  Intervalos
+Padre: Funciones  matemáticas
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 19
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 56
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 29
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 32
+Estimacion valida
+
+
+Verificación del tema:  Desigualdades - inecuaciones
+Padre: Intervalos
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 35
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 25
+Estimacion invalida
+
+
+Verificación del tema:  Conceptos de  funciones  matemáticas
+Padre: Desigualdades - inecuaciones
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Formas de expresar funciones matemáticas
+Padre: Conceptos de  funciones  matemáticas
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 25
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 40
+Estimacion valida
+
+
+Verificación del tema:  Dominio y rango de una función
+Padre: Formas de expresar funciones matemáticas
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 25
+Estimacion invalida
+
+
+Verificación del tema:  Funciones Trigonométricas
+Padre: Dominio y rango de una función
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+
+
+Verificación del tema:  Modelado de funciones
+Padre: Funciones Trigonométricas
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+
+Padre: Función  Valor absoluto
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 90
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+
+Padre: Funciones  Logarítmicas
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+
+Padre: Función  Exponencial
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+
+Padre: Función Polinomial
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+
+Padre: Función Cuadrática
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 35
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 50
+Estimacion valida
+
+Padre: Función  Lineal
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 50
+Estimacion valida
+
+
+Verificación del tema:  Función  Valor absoluto
+Padre: Dominio y rango de una función
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 90
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Funciones  Logarítmicas
+Padre: Dominio y rango de una función
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 40
+Estimacion valida
+
+
+Verificación del tema:  Función  Exponencial
+Padre: Dominio y rango de una función
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 40
+Estimacion valida
+
+
+Verificación del tema:  Función Polinomial
+Padre: Dominio y rango de una función
+Experto:  84
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Función Cuadrática
+Padre: Dominio y rango de una función
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Función  Lineal
+Padre: Dominio y rango de una función
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Geometría
+Padre: Matematicas
+Experto:  84
+Estimacion bueno, hijo: 18
+Estimacion bueno, padre: 19
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 56
+Estimacion bueno, padre: 55
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 36
+Estimacion bueno, padre: 32
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 34
+Estimacion invalida
+
+Padre: Álgebra
+Experto:  84
+Estimacion bueno, hijo: 18
+Estimacion bueno, padre: 19
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 56
+Estimacion bueno, padre: 57
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 36
+Estimacion bueno, padre: 34
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 39
+Estimacion valida
+
+
+Verificación del tema:  Álgebra  lineal
+Padre: Geometría
+Experto:  84
+Estimacion bueno, hijo: 17
+Estimacion bueno, padre: 18
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 54
+Estimacion bueno, padre: 56
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 32
+Estimacion bueno, padre: 36
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 29
+Estimacion bueno, padre: 35
+Estimacion valida
+
+Padre: Matematicas
+Experto:  84
+Estimacion bueno, hijo: 17
+Estimacion bueno, padre: 19
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 54
+Estimacion bueno, padre: 55
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 32
+Estimacion bueno, padre: 32
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 29
+Estimacion bueno, padre: 34
+Estimacion valida
+
+
+Verificación del tema:  Sistema de n ecuaciones lineales con n incógnitas
+Padre: Álgebra  lineal
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 17
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 54
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 32
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 29
+Estimacion invalida
+
+
+Verificación del tema:  Matrices
+Padre: Sistema de n ecuaciones lineales con n incógnitas
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+
+
+Verificación del tema:  Operaciones  con  matrices
+Padre: Matrices
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 45
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+
+
+Verificación del tema:  Determinantes
+Padre: Operaciones  con  matrices
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 45
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+
+Padre: Transpuesta
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+
+
+Verificación del tema:  Matriz  Inversa
+Padre: Determinantes
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+
+
+Verificación del tema:  Solución de  sistemas de  ecuaciones  por matrices
+Padre: Matriz  Inversa
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+
+Padre: Método de Gauss Jordan
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+
+Padre: Regla  de  Cramer
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+
+
+Verificación del tema:  Solución de problemas reales con álgebra lineal
+Padre: Solución de  sistemas de  ecuaciones  por matrices
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+
+
+Verificación del tema:  Método de Gauss Jordan
+Padre: Determinantes
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+
+
+Verificación del tema:  Regla  de  Cramer
+Padre: Determinantes
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+
+
+Verificación del tema:  Transpuesta
+Padre: Operaciones  con  matrices
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 45
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+
+
+Verificación del tema:  Trigonometría
+Padre: Álgebra  lineal
+Experto:  84
+Estimacion bueno, hijo: 18
+Estimacion bueno, padre: 17
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 56
+Estimacion bueno, padre: 54
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 32
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 31
+Estimacion bueno, padre: 29
+Estimacion invalida
+
+Padre: Matematicas
+Experto:  84
+Estimacion bueno, hijo: 18
+Estimacion bueno, padre: 19
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 56
+Estimacion bueno, padre: 55
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 32
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 31
+Estimacion bueno, padre: 34
+Estimacion valida
+
+
+Verificación del tema:  Tríangulos  oblicuángulos
+Padre: Trigonometría
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 18
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 56
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 31
+Estimacion invalida
+
+
+Verificación del tema:  Razones  trigonométricas
+Padre: Tríangulos  oblicuángulos
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+
+Padre: Círculo  unitarioo
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 25
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+
+
+Verificación del tema:  Ángulos y sus  razones  trigonométricas
+Padre: Razones  trigonométricas
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+
+
+Verificación del tema:  Identidades  trigonométricas
+Padre: Ángulos y sus  razones  trigonométricas
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 12
+Estimacion bueno, padre: 25
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+
+
+Verificación del tema:  Ley de los Cosenos
+Padre: Identidades  trigonométricas
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 12
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 10
+Estimacion invalida
+
+Padre: Tríangulos  oblicuángulos
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Ley de los Senos
+Padre: Ley de los Cosenos
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 40
+Estimacion valida
+
+
+Verificación del tema:  Solución de trángulos rectángulos
+Padre: Ley de los Senos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 25
+Estimacion invalida
+
+Padre: Ecuaciones trigonometricas
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 15
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 20
+Estimacion invalida
+
+
+Verificación del tema:  Solución de problemas reales con trigonometría
+Padre: Solución de trángulos rectángulos
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+
+
+Verificación del tema:  Ecuaciones trigonometricas
+Padre: Identidades  trigonométricas
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 12
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 10
+Estimacion invalida
+
+
+Verificación del tema:  Triángulos rectángulos
+Padre: Trigonometría
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 18
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 56
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 45
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 31
+Estimacion invalida
+
+
+Verificación del tema:  Círculo  unitarioo
+Padre: Triángulos rectángulos
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 80
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 45
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 40
+Estimacion valida
+
+
+Verificación del tema:  Principios de la Geometríaa
+Padre: Geometría
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 18
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 56
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 36
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 35
+Estimacion invalida
+
+
+Verificación del tema:  Plano cartesiano
+Padre: Principios de la Geometríaa
+Experto:  84
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Recta
+Padre: Plano cartesiano
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+
+
+Verificación del tema:  Circunferencia
+Padre: Recta
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 50
+Estimacion invalida
+
+
+Verificación del tema:  Elipse
+Padre: Circunferencia
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 70
+Estimacion valida
+
+
+Verificación del tema:  Hipérbola
+Padre: Elipse
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 15
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 25
+Estimacion invalida
+
+
+Verificación del tema:  Ángulos
+Padre: Principios de la Geometríaa
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 75
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Polígonos
+Padre: Ángulos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 75
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+
+
+Verificación del tema:  Triángulos
+Padre: Polígonos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 65
+Estimacion bueno, padre: 50
+Estimacion invalida
+
+
+Verificación del tema:  Cuadrilateros
+Padre: Triángulos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 65
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 65
+Estimacion invalida
+
+
+Verificación del tema:  Postulados y teoremas
+Padre: Cuadrilateros
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 65
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 70
+Estimacion valida
+
+
+Verificación del tema:  Perímetros áreas y volúmenes
+Padre: Postulados y teoremas
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 65
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+
+
+Verificación del tema:  Relación métrica de la circunferencia
+Padre: Perímetros áreas y volúmenes
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 65
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+
+
+Verificación del tema:  Congruencia de trángulos
+Padre: Perímetros áreas y volúmenes
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 65
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 50
+Estimacion invalida
+
+
+Verificación del tema:  Semezanjas de triangulos
+Padre: Congruencia de trángulos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+
+
+Verificación del tema:  Teorema de Euclides
+Padre: Semezanjas de triangulos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 70
+Estimacion valida
+
+
+Verificación del tema:  Teorema de Pitágoras
+Padre: Semezanjas de triangulos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+
+
+Verificación del tema:  Teorema de Thales de Mileto
+Padre: Semezanjas de triangulos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+
+
+Verificación del tema:  Álgebra
+Padre: Matematicas
+Experto:  84
+Estimacion bueno, hijo: 19
+Estimacion bueno, padre: 19
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 57
+Estimacion bueno, padre: 55
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 34
+Estimacion bueno, padre: 32
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 39
+Estimacion bueno, padre: 34
+Estimacion invalida
+
+Padre: Aritmetica
+Experto:  84
+Estimacion bueno, hijo: 19
+Estimacion bueno, padre: 24
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 57
+Estimacion bueno, padre: 59
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 34
+Estimacion bueno, padre: 35
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 39
+Estimacion bueno, padre: 45
+Estimacion valida
+
+
+Verificación del tema:  Expresiones algebraicas
+Padre: Álgebra
+Experto:  84
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 19
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 57
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 34
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 39
+Estimacion invalida
+
+
+Verificación del tema:  Operaciones básicas del álgebra
+Padre: Expresiones algebraicas
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Lenguaje común y lenguaje algebraico
+Padre: Operaciones básicas del álgebra
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 35
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+
+
+Verificación del tema:  Suma  y resta de  terminos algebraicos
+Padre: Lenguaje común y lenguaje algebraico
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+
+Verificación del tema:  Multiplicación de  términos algebraicos
+Padre: Suma  y resta de  terminos algebraicos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+
+Verificación del tema:  División de polinomio entre polinomio
+Padre: Multiplicación de  términos algebraicos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 60
+Estimacion valida
+
+Padre: Multiplicación de polinomios
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 50
+Estimacion valida
+
+Padre: División de polinomio entre monomio
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 60
+Estimacion valida
+
+
+Verificación del tema:  Multiplicación de polinomios
+Padre: Multiplicación de  términos algebraicos
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+
+
+Verificación del tema:  Factorización 
+Padre: Multiplicación de polinomios
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+
+Padre: División de  términos  algebraicos
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 45
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 30
+Estimacion invalida
+
+Padre: Fórmula general para ecuaciones de segundo grado
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 15
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+
+Verificación del tema:  Ecuaciones de  primer grado
+Padre: Factorización 
+Experto:  84
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 90
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+Padre:  Ecuaciones algebraicas
+Experto:  84
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 90
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+
+Verificación del tema:  Sistemas  de  ecuaciones 
+Padre: Ecuaciones de  primer grado
+Experto:  84
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 85
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 25
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 90
+Estimacion valida
+
+Padre: Métodos analíticos para la resolución de sistemas de ecuaciones
+Experto:  84
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Solución de problemas reales con sistemas de ecuaciones
+Padre: Sistemas  de  ecuaciones 
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+
+
+Verificación del tema:  Ecuaciones de segundo grado
+Padre: Factorización 
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+Padre: Productos notables
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+
+Verificación del tema:  Solución de problemas reales con ecuaciones de segundo grado
+Padre: Ecuaciones de segundo grado
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+
+
+Verificación del tema:  Productos notables
+Padre: Factorización 
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+Padre: Multiplicación de polinomios
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+
+
+Verificación del tema:  División de  términos  algebraicos
+Padre: Multiplicación de  términos algebraicos
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 45
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 60
+Estimacion valida
+
+
+Verificación del tema:  División de polinomio entre monomio
+Padre: División de  términos  algebraicos
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 45
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 30
+Estimacion invalida
+
+
+Verificación del tema:   Ecuaciones algebraicas
+Padre: Expresiones algebraicas
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Métodos analíticos para la resolución de sistemas de ecuaciones
+Padre:  Ecuaciones algebraicas
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+
+
+Verificación del tema:  Aritmetica
+Padre: Matematicas
+Experto:  84
+Estimacion bueno, hijo: 24
+Estimacion bueno, padre: 19
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 59
+Estimacion bueno, padre: 55
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 32
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 45
+Estimacion bueno, padre: 34
+Estimacion invalida
+
+
+Verificación del tema:  Fórmula general para ecuaciones de segundo grado
+Padre: Aritmetica
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 24
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 59
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 35
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 45
+Estimacion invalida
+
+
+Verificación del tema:  Operaciones Aritméticas 
+Padre: Aritmetica
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 24
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 59
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 35
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 45
+Estimacion invalida
+
+
+Verificación del tema:  Resta aritmética de números enteros
+Padre: Operaciones Aritméticas 
+Experto:  84
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 45
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 70
+Estimacion invalida
+
+
+Verificación del tema:  Operaciones  aritméticas  compuestas
+Padre: Resta aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 80
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 45
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 80
+Estimacion valida
+
+Padre: División de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+
+Padre: Multiplicación de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 80
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 85
+Estimacion valida
+
+Padre: Resta de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+Padre: Suma de números racionales 
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+Padre: División  aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 90
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+
+Padre: Jerarquías de las operaciones aritméticas
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 75
+Estimacion valida
+
+Padre: Suma aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 100
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 90
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 90
+Estimacion valida
+
+Padre: Exponentes de números racionales a numeros enteros
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+Padre: Multiplicación aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 100
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 85
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 80
+Estimacion valida
+
+
+Verificación del tema:  División  aritmética de números enteros
+Padre: Resta aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 90
+Estimacion bueno, padre: 80
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 45
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 80
+Estimacion valida
+
+Padre: Multiplicación aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 100
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 90
+Estimacion bueno, padre: 85
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 80
+Estimacion valida
+
+
+Verificación del tema:  Suma de números racionales 
+Padre: División  aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 90
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+
+Padre: Multiplicación aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 100
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 85
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 80
+Estimacion valida
+
+Padre: Ley de signos
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 35
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 90
+Estimacion valida
+
+Padre: Máximo común divisor 
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 80
+Estimacion valida
+
+Padre: Mínimo común múltiplo 
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 35
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 85
+Estimacion valida
+
+
+Verificación del tema:  Multiplicación de  números  racionales
+Padre: Suma de números racionales 
+Experto:  84
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+Padre: Multiplicación aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 100
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 85
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 80
+Estimacion invalida
+
+
+Verificación del tema:  División de  números  racionales
+Padre: Multiplicación de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 85
+Estimacion valida
+
+Padre: Resta de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+Padre: Suma de números racionales 
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Razón y proporciones
+Padre: División de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+Padre: Multiplicación de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 85
+Estimacion valida
+
+
+Verificación del tema:  Regla detres
+Padre: Razón y proporciones
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 75
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+Padre: División de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 75
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+Padre: Multiplicación de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 80
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 75
+Estimacion bueno, padre: 85
+Estimacion valida
+
+
+Verificación del tema:  Porcentajes
+Padre: Regla detres
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 45
+Estimacion bueno, padre: 75
+Estimacion valida
+
+Padre: Razón y proporciones
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 45
+Estimacion bueno, padre: 60
+Estimacion valida
+
+
+Verificación del tema:  Ley de exponentes
+Padre: División de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 25
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+
+Padre: Multiplicación de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 25
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 85
+Estimacion valida
+
+Padre: Resta de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+Padre: Suma de números racionales 
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Notación científica 
+Padre: Ley de exponentes
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 45
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+
+Padre: Exponentes de números enteros elevados a números enteros
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 45
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 80
+Estimacion valida
+
+
+Verificación del tema:  Radicales
+Padre: División de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 25
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 60
+Estimacion valida
+
+Padre: Multiplicación de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 25
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 85
+Estimacion valida
+
+Padre: Resta de  números  racionales
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 40
+Estimacion valida
+
+
+Verificación del tema:  Resta de  números  racionales
+Padre: Suma de números racionales 
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 40
+Estimacion invalida
+
+
+Verificación del tema:  Jerarquías de las operaciones aritméticas
+Padre: Operaciones Aritméticas 
+Experto:  84
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 40
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 75
+Estimacion bueno, padre: 70
+Estimacion invalida
+
+
+Verificación del tema:  Suma aritmética de números enteros
+Padre: Operaciones Aritméticas 
+Experto:  84
+Estimacion bueno, hijo: 100
+Estimacion bueno, padre: 30
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 90
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 40
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 90
+Estimacion bueno, padre: 70
+Estimacion invalida
+
+
+Verificación del tema:  Tablas de  multiplicar
+Padre: Suma aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 100
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 90
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 90
+Estimacion bueno, padre: 80
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 90
+Estimacion valida
+
+
+Verificación del tema:  Multiplicación aritmética de números enteros
+Padre: Tablas de  multiplicar
+Experto:  84
+Estimacion bueno, hijo: 100
+Estimacion bueno, padre: 80
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 80
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 90
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 70
+Estimacion invalida
+
+
+Verificación del tema:  Exponentes de números racionales a numeros enteros
+Padre: Multiplicación aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 100
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 85
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 80
+Estimacion valida
+
+
+Verificación del tema:  Exponentes de números enteros elevados a números enteros
+Padre: Multiplicación aritmética de números enteros
+Experto:  84
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 100
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 85
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 80
+Estimacion invalida
+
+
+Verificación del tema:  Conjuntos
+Padre: Aritmetica
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 24
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 59
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 35
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 45
+Estimacion invalida
+
+
+Verificación del tema:  Conjuntos Numericos 
+Padre: Conjuntos
+Experto:  84
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 60
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 25
+Estimacion bueno, padre: 50
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 80
+Estimacion invalida
+
+
+Verificación del tema:  Clasificación de los números
+Padre: Conjuntos Numericos 
+Experto:  84
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 80
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 50
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 25
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 80
+Estimacion invalida
+
+
+Verificación del tema:  Números racionales 
+Padre: Clasificación de los números
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 60
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 50
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 15
+Estimacion bueno, padre: 30
+Estimacion valida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 80
+Estimacion valida
+
+
+Verificación del tema:  Ley de signos
+Padre: Números racionales 
+Experto:  84
+Estimacion bueno, hijo: 30
+Estimacion bueno, padre: 20
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 15
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 90
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+
+Verificación del tema:  Común denominador 
+Padre: Números racionales 
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 20
+Estimacion valida
+Experto:  85
+Estimacion bueno, hijo: 70
+Estimacion bueno, padre: 70
+Estimacion invalida
+Experto:  113
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 15
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+
+Verificación del tema:  Máximo común divisor 
+Padre: Común denominador 
+Experto:  84
+Estimacion bueno, hijo: 10
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 40
+Estimacion bueno, padre: 35
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 80
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+
+Verificación del tema:  Mínimo común múltiplo 
+Padre: Común denominador 
+Experto:  84
+Estimacion bueno, hijo: 20
+Estimacion bueno, padre: 10
+Estimacion invalida
+Experto:  85
+Estimacion bueno, hijo: 60
+Estimacion bueno, padre: 70
+Estimacion valida
+Experto:  113
+Estimacion bueno, hijo: 35
+Estimacion bueno, padre: 35
+Estimacion invalida
+Experto:  121
+Estimacion bueno, hijo: 85
+Estimacion bueno, padre: 60
+Estimacion invalida
+
+

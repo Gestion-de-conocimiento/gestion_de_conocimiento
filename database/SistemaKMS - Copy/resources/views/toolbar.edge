@@ -1,0 +1,25 @@
+<body>
+  <h1>Editor de Fórmulas MathQuill</h1>
+  <div id="mathquill-editor"></div>
+  <button onclick="renderFormula()">Renderizar</button>
+  <div id="result"></div>
+
+<link rel="stylesheet" href="/mathquill/mathquill.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/mathquill/mathquill.js"></script>
+  <script>
+    var MQ = MathQuill.getInterface(2);
+    var mathField = MQ.MathField(document.getElementById('mathquill-editor'), {
+      handlers: {
+        edit: function() {
+          renderFormula();
+        }
+      }
+    });
+
+    function renderFormula() {
+      const latex = mathField.latex();
+      document.getElementById('result').innerHTML = latex;
+    }
+  </script>
+</body>

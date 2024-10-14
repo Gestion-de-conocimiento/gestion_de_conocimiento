@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sistema de gestión del conocimiento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/4e3c5501e7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    
+    {{style('adminlte/css/fontawesome-free/css/all.min.css') }}
+    {{style('css/main.css') }}
+    {{style('arbol/app.css')}}
+    {{style('arbol/d3-context-menu.css')}}
+    {{style('arbol/select2.css')}}
+    {{style('css/estilos.css')}}
+    {{style('adminlte/css/OverlayScrollbars.css')}}
+
+    <style>
+        .swal2-actions {
+            align-items: right !important;
+            justify-content: right !important;
+        }
+        .os-padding { 
+            z-index: auto !important; 
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 26px;
+            position: absolute;
+            top: 6px !important;
+            right: 3px;
+            width: 20px;
+        }
+        .select2-container--default .select2-selection--single {
+            background-color: #fff;
+            border: 1px solid #aaa;
+            border-radius: 11px;
+            height: 38px !important;
+        }
+    </style>
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <div id="app">
+        </div>
+    </div>
+
+    <script>
+        var idusuario = "{{auth.user.id}}";
+        var nombre = "{{auth.user.nombre}}";
+        var apellido_paterno = "{{auth.user.apellido_paterno}}";
+        var apellido_materno = "{{auth.user.apellido_materno}}";
+        var matricula = "{{auth.user.matricula}}";
+        var foto = "{{auth.user.foto}}";
+        var rol = "{{auth.user.id_rol}}";
+    </script>
+
+    {{script('arbol/jquery.js')}}
+    {{script('adminlte/js/bootstrap/bootstrap.bundle.min.js')}}
+    {{script('adminlte/js/OverlayScrollbars.min.js')}}
+    {{script('adminlte/js/adminlte.min.js')}}
+    {{script('js/main.js')}}
+    {{script('arbol/d3.v3.min.js')}}
+    {{script('arbol/experto/treeFunctions.js')}}
+    
+    
+    
+  
+    {{script('arbol/d3-context-menu.js')}}
+    {{script('arbol/underscore-min.js')}}
+    {{script('https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js')}}
+    {{script('arbol/fastclick.js')}}
+    {{script('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}
+    {{script('https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js')}}
+    {{script('https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js')}}
+  
+  
+    {{ script('arbol/experto/dndTree.js') }}
+    {{ script('arbol/grafo_alumno/dndTreeAlumnos.js') }}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            OverlayScrollbars(document.querySelectorAll('body'), { });
+        });
+    </script>
+</body>
+
+</html>

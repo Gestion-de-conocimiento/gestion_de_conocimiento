@@ -822,25 +822,38 @@ class PonderacionController {
     }
 
     async obtenerPoderacionesNodos({ response, auth }) {
-        //let userRaw = await Database.raw('SELECT matricula FROM users WHERE id = ?', [User.id]);
-        //Extraer la matrícula desde el resultado de la consulta
-        //console.log(userRaw);
-        //const matricula = 1830290;
-      const matricula = 1830141;
-        var output = execSync(`python3 red_bayesiana/metodo_rutas_evaluacion/abrirRed.py ${matricula}`, { encoding: 'utf-8' }); // the default is 'buffer'
-        var nodos = []
-        var gdc = []
-        output = output.split(",")
+    try {
+        // Obtén el usuario autenticado
+        const user = await auth.getUser();
+        
+        // Supongamos que la matrícula está almacenada en el modelo de usuario bajo el campo 'matricula'
+        const matricula = user.matricula;
+
+        // Verifica si la matrícula fue proporcionada
+        if (!matricula) {
+            return response.status(400).json({ error: 'Matrícula no encontrada en el usuario autenticado' });
+        }
+
+        // Llama al script de Python con la matrícula dinámica
+        var output = execSync(`python3 red_bayesiana/metodo_rutas_evaluacion/abrirRed.py ${matricula}`, { encoding: 'utf-8' });
+
+        var nodos = [];
+        var gdc = [];
+        output = output.split(",");
         for (let i = 0; i < output.length; i++) {
             output[i] = output[i].replace(/(\r\n|\n|\r)/gm, "");
-            var output2 = output[i].split("/")
-            nodos.push(output2[0])
-            gdc.push(output2[1])
-
+            var output2 = output[i].split("/");
+            nodos.push(output2[0]);
+            gdc.push(output2[1]);
         }
-        return response.json({ nodos, gdc })
 
+        return response.json({ nodos, gdc });
+    } catch (error) {
+        // Maneja cualquier error que ocurra al ejecutar el script de Python
+        return response.status(500).json({ error: 'Error al ejecutar el script de Python', details: error.message });
     }
+}
+
 
     async obtenerRA({ response, auth }) {
 

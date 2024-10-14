@@ -1,0 +1,123 @@
+id,nombre,rama 
+1,Matematicas,Area diciplinar
+52,Cálculo  Integral,rama
+202,Antiderivadas,Cálculo  Integral
+203,Definición de la integral,Cálculo  Integral
+204,Reglas de integración inmediatas,Cálculo  Integral
+205,Métodos de integración,Cálculo  Integral
+206,Integral definida,Cálculo  Integral
+207,Áreas bajo la curva,Cálculo  Integral
+208,Sólido de revolución,Cálculo  Integral
+209,Volúmen de un sólido en revolución,Cálculo  Integral
+51,Cálculo  Diferencial,rama
+196,Límites y continuidad,Cálculo  Diferencial
+197,Derivada,Cálculo  Diferencial
+198,Razón de cambio,Cálculo  Diferencial
+199,Reglas de derivación,Cálculo  Diferencial
+200,Razones de cambio relacionadas,Cálculo  Diferencial
+201,Optimizacion,Cálculo  Diferencial
+40,Funciones  matemáticas,rama
+191,Intervalos,Funciones  matemáticas
+192,Desigualdades - inecuaciones,Funciones  matemáticas
+41,Conceptos de  funciones  matemáticas,Funciones  matemáticas
+193,Formas de expresar funciones matemáticas,Funciones  matemáticas
+42,Dominio y rango de una función,Funciones  matemáticas
+194,Funciones Trigonométricas,Funciones  matemáticas
+195,Modelado de funciones,Funciones  matemáticas
+50,Función  Valor absoluto,Funciones  matemáticas
+49,Funciones  Logarítmicas,Funciones  matemáticas
+48,Función  Exponencial,Funciones  matemáticas
+47,Función Polinomial,Funciones  matemáticas
+46,Función Cuadrática,Funciones  matemáticas
+44,Función  Lineal,Funciones  matemáticas
+20,Geometría,rama
+13,Álgebra  lineal,rama
+186,Sistema de n ecuaciones lineales con n incógnitas,Álgebra  lineal
+10,Matrices,Álgebra  lineal
+71,Operaciones  con  matrices,Álgebra  lineal
+73,Determinantes,Álgebra  lineal
+76,Matriz  Inversa,Álgebra  lineal
+77,Solución de  sistemas de  ecuaciones  por matrices,Álgebra  lineal
+187,Solución de problemas reales con álgebra lineal,Álgebra  lineal
+75,Método de Gauss Jordan,Álgebra  lineal
+74,Regla  de  Cramer,Álgebra  lineal
+72,Transpuesta,Álgebra  lineal
+17,Trigonometría,rama
+53,Tríangulos  oblicuángulos,Trigonometría
+55,Razones  trigonométricas,Trigonometría
+57,Ángulos y sus  razones  trigonométricas,Trigonometría
+58,Identidades  trigonométricas,Trigonometría
+60,Ley de los Cosenos,Trigonometría
+188,Ley de los Senos,Trigonometría
+189,Solución de trángulos rectángulos,Trigonometría
+190,Solución de problemas reales con trigonometría,Trigonometría
+59,Ecuaciones trigonometricas,Trigonometría
+19,Triángulos rectángulos,Trigonometría
+54,Círculo  unitario,Trigonometría
+23,Principios de la Geometría,Geometría
+181,Plano cartesiano,Geometría
+182,Recta,Geometría
+183,Circunferencia,Geometría
+184,Elipse,Geometría
+185,Hipérbola,Geometría
+61,Ángulos,Geometría
+62,Polígonos,Geometría
+63,Triángulos,Geometría
+172,Cuadrilateros,Geometría
+173,Postulados y teoremas,Geometría
+174,Perímetros áreas y volúmenes,Geometría
+176,Relación métrica de la circunferencia,Geometría
+175,Congruencia de trángulos,Geometría
+177,Semezanjas de triangulos,Geometría
+180,Teorema de Euclides,Geometría
+179,Teorema de Pitágoras,Geometría
+178,Teorema de Thales de Mileto,Geometría
+14,Álgebra,rama
+24,Expresiones algebraicas,Álgebra
+82,Operaciones básicas del álgebra,Álgebra
+83,Lenguaje común y lenguaje algebraico,Álgebra
+86,Suma  y resta de  terminos algebraicos,Álgebra
+88,Multiplicación de  términos algebraicos,Álgebra
+165,División de polinomio entre polinomio,Álgebra
+163,Multiplicación de polinomios,Álgebra
+166,Factorización ,Álgebra
+81,Ecuaciones de  primer grado,Álgebra
+80,Sistemas  de  ecuaciones ,Álgebra
+170,Solución de problemas reales con sistemas de ecuaciones,Álgebra
+168,Ecuaciones de segundo grado,Álgebra
+169,Solución de problemas reales con ecuaciones de segundo grado,Álgebra
+167,Productos notables,Álgebra
+91,División de  términos  algebraicos,Álgebra
+164,División de polinomio entre monomio,Álgebra
+78, Ecuaciones algebraicas,Álgebra
+79,Métodos analíticos para la resolución de sistemas de ecuaciones,Álgebra
+2,Aritmetica,rama
+94,Fórmula general  para ecuaciones  de segundo grado,Aritmetica
+26,Operaciones Aritméticas ,Aritmetica
+37,Resta aritmética de números enteros,Aritmetica
+36,Operaciones  aritméticas  compuestas,Aritmetica
+39,División  aritmética de números enteros,Aritmetica
+30,Suma de números racionales ,Aritmetica
+99,Multiplicación de  números  racionales,Aritmetica
+95,División de  números  racionales,Aritmetica
+100,Razón y proporciones,Aritmetica
+97,Regla  detres,Aritmetica
+98,Porcentajes,Aritmetica
+31,Ley de exponentes,Aritmetica
+32,Notación científica ,Aritmetica
+96,Radicales,Aritmetica
+101,Resta de  números  racionales,Aritmetica
+35,Jerarquías de las operaciones aritméticas,Aritmetica
+6,Suma aritmética de números enteros,Aritmetica
+8,Tablas de  multiplicar,Aritmetica
+11,Multiplicación aritmética de números enteros,Aritmetica
+161,Exponentes de números racionales a numeros enteros,Aritmetica
+34,Exponentes de números enteros elevados a números enteros,Aritmetica
+12,Conjuntos,Aritmetica
+7,Conjuntos Numericos ,Aritmetica
+9,Clasificación de los números,Aritmetica
+25,Números racionales ,Aritmetica
+33,Ley de signos,Aritmetica
+27,Común denominador ,Aritmetica
+29,Máximo común divisor ,Aritmetica
+28,Mínimo común múltiplo ,Aritmetica

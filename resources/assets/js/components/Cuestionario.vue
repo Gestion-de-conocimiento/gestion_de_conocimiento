@@ -1,5 +1,5 @@
 <template>
-  <div class="content-wrapper">
+    <div class="content-wrapper">
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -42,12 +42,6 @@
                     <div id="quiz">
                       <p id="tag_topic"> <b> Tema: </b> </p>
                       <p id="progress"></p>
-                                   <div>
-    <h5>Wolfram</h5>
-    <wolfram :mensaje="mensajeParaHijo"/></wolfram>
-    <!-- Puedes agregar más contenido aquí -->
-  </div>
-            
 
                       <div id="contenedorDescripcion" hidden>
                         <p> <b> Descripción: </b> </p>
@@ -55,17 +49,21 @@
                       </div>
                       <p> <b> Pregunta: </b> </p>
                       <h3 id="question"> </h3>
+
                       <div id="contenedorSeptimoTipo" hidden>
                         <div ref="preguntaMathquill" contenteditable="false" id="preguntaMathquill" hidden></div>
                         <tool-bar-pregunta ref="hijoComponent" :dato="datoParaHijo"
                            id="hijoComponent"></tool-bar-pregunta>
+                        <button id="btnConeWolfram" @click="conexionWolfram()" hidden>BOTON FALSO 4</button> 
                                                 <button id="btnUpdCampo" @click="btnEditar($refs.hijoComponent.editarCampoMathquill())" hidden>
                           BOTON FALSO 2</button>
-                        <button id="btnUpdCampoLimpiar" @click="btnEditar($refs.hijoComponent.editarCampoMathquill())" 
-                         hidden > BOTON FALSO LIMPIAR</button>
                         <tool-bar ref="hijoComponente2" @mathquill-updated="handleMathquillUpdate2"
                           id="hijoComponente2"></tool-bar>
-                        <button id="btnUpdCampoRespuesta" @click="btnEditar3()" hidden>BOTON FALSO 3</button>
+                                                <button id="btnUpdCampoLimpiar2" @click="limpiarCampoQuill()" 
+                          hidden> BOTON FALSO LIMPIAR 2</button>
+                                          <button id="btnUpdCampoRespuesta" @click="btnEditar3()" hidden>BOTON FALSO 3</button>
+                 <button id="btnUpdCampoLimpiar" @click="btnEditar($refs.hijoComponent.limpiarCampoMathquill())" 
+                          hidden> BOTON FALSO LIMPIAR</button>
                       </div>
                       <p v-if="this.imagenesPregunta.length > 0"> <b> Imagenes: </b> </p>
                       <div class="row mt-3">
@@ -82,7 +80,7 @@
                     </div>
                     <div class="row">
                       <center>
-                        <button type="button" class="btn btn-primary btn-lg float-right " id="next">
+                        <button type="button" class="btn btn-primary btn-lg float-right" id="next">
                           <i class="fas fa-chevron-right"></i> Siguiente
                         </button>
                       </center>
@@ -320,37 +318,40 @@
   import ToolBarPregunta from "./ToolbarExpresionCuestionario.vue"; //importar el archivo donde se encuentra el toolbar
   import MathQuill from '@/components/mathquill/mathquill.js';
   import '@/components/mathquill/mathquill.css'; // Importar estilos CSS de MathQuill
- // import FormularioPaso from "./FormularioPaso.vue";
   import Wolfram from "./Wolfram.vue";
-
-    var cuestionarioTema;
-  /*var compa = '';
-  var respu = '';
-   var ata;*/
-   var apareceMen = false;
+  
+  var textoWolfram = '';//Es el texto que se pasa a wolfram va asi (Respuesta del usuario)==(Respuesta del servidor)
+  var respuestaServidor = '';//La respuesta que esta guardada en el servidor
+  var cuestionarioTemaFalso;//Esta variable es para llamar a una funcion y asi obtener la respuesta
+  var esValidoWolfram =false;//El resultado de wolfram se guarda aqui
+  var apareceMen = false;//Es para controlar un mensaje que se repetia
+  
   export default {
     components: {
       //'tool-bar':ToolBar, //definir el componente que se va insertar, en este caso el toolbar
       'tool-bar-pregunta': ToolBarPregunta,
       'tool-bar': ToolBar,
       'wolfram': Wolfram,
+      Wolfram,
       
     },
     mounted() {
-      this.obtenerContenidoMathQuill();
+          this.obtenerContenidoMathQuill();       
     },
     updated() {
+        this.obtenerRespuestas();
 
       const inputElement = document.querySelector('div#contenedorSeptimoTipo');
       if (!inputElement.hasAttribute("hidden")) {
         const nextBtn = document.getElementById('next');
         nextBtn.setAttribute('hidden', 'true');
-        //if (apareceMen == false) {
+        
+        if (apareceMen == false) {//Con esto un mensaje solo aparece una vez
           const textElement = document.createElement('p')
           textElement.textContent = 'Para confirmar su respuesta y ver el botón "siguiente", presione la tecla "Enter"'
           inputElement.appendChild(textElement)
-          //apareceMen = true;
-        //}
+          apareceMen = true;
+        }
       }
     },
     data() {
@@ -380,12 +381,11 @@
         datoParaRespuesta: '',
         mathquillTextB: '',
         descripcion2: '',
-        mensajeParaHijo: '',
-        compa: '',
-        ata: '',
-        respu: '',
+        query: '',
+        resul: null,
       };
-    },
+    }
+    ,
     async created() {
       await this.obtenerConfiguracion();
       await this.obtenerPonderaciones();
@@ -395,15 +395,21 @@
 
     },
     methods: {
-
+      
       obtenerContenidoMathQuill() {
-        var textoRespuestaExpresion = this.mathField.latex();
-        console.log("aaaaaaaaaa a " + textoRespuestaExpresion); // Obtener la expresión matemática en formato LaTeX
+        var textoRespuestaExpresion = this.mathField.latex(); // Obtener la expresión matemática en formato LaTeX
       },
       btnEditar(descripcion) {
         // Toma la pregunta actual y no la descripción
         this.datoParaHijo = document.getElementById("preguntaMathquill").innerHTML; // Se envía la sintaxis de la expresión al componente hijo
       },
+      conexionWolfram(){
+
+        this.fetchWolframData();
+
+      },limpiarCampoQuill(){
+       this.$refs.hijoComponente2.mathField.latex(''); 
+      }      ,
       btnEditar3() {
         this.$refs.hijoComponente2.insertEnter(); // Inserta un "Enter" en el campo de MathQuill
         const mathquillText = this.mathquillTextB; // Obtiene el texto almacenado en mathquillTextB
@@ -414,45 +420,51 @@
         this.$refs.hijoComponente2.insertEnter();
         var opc = document.getElementById("input_respuesta");
         opc.value = text.replace(/{\\frac\{([^{}]+)\}\{([^{}]+)\}}/g, "$1/$2"); // Reemplaza los caracteres de escape de nueva línea por saltos de línea reales
-        console.log('texto de mathQuill en Componente A');
-
+        
       },
+    async fetchWolframData() {
+      //Esta es la conexion con el Wolfram
+      try {
 
+        const response = await axios.post('/wolfram-query', { query:  textoWolfram})
+        
+        this.resul = response.data.result
+        if(this.resul == 'yes'){
+           esValidoWolfram = true;
+           }else{
+            esValidoWolfram = false;
+           }
+        console.log('Result:', this.resul)
+        console.log('Query:', this.query)
+      } catch (error) {
+        console.error('Error retrieving data:', error)
+       esValidoWolfram = false;
+      }
+      console.log('mm: '+esValidoWolfram);
+    },
       handleMathquillUpdate2(mathquillText) {
         const textarea = document.querySelectorAll('#input2 textarea[autocapitalize="off"][autocomplete="off"][autocorrect="off"][spellcheck="false"][x-palm-disable-ste-all="true"]')[1];
         console.log('texto de mathQuill en Componente B:', mathquillText);
         //this.updateInputRespuesta(mathquillText);
         this.mathquillTextB = mathquillText; // Almacena el texto de MathQuill en mathquillTextB
         this.asignWolf(mathquillText);
+         console.log("Cromp " + textoWolfram);
+
       },asignWolf(text) {
-
-         
-        //console.log("text a "+ata);
-        //this.mensajeParaHijo = ata;
-        this.compa = text.replace(/{\\frac\{([^{}]+)\}\{([^{}]+)\}}/g, "$1/$2");
-        //this.obtenerRespuestas();
-//         compa = '(' + compa + ')' + '==' + '(' + respu + ')';
-        console.log("Cromp " + this.compa);
-
-        this.mensajeParaHijo = this.compa;
+        textoWolfram = text.replace(/{\\frac\{([^{}]+)\}\{([^{}]+)\}}/g, "$1/$2");
+        textoWolfram = textoWolfram.substring(textoWolfram.indexOf("=")+1 );
+        respuestaServidor = respuestaServidor.substring(respuestaServidor.indexOf("=")+1 );
+        textoWolfram = '(' + textoWolfram + ')' + '==' + '(' + respuestaServidor + ')';
       },
       handleInput(event) {
         // Manejar la entrada en el campo de texto MathQuill si es necesario
       },
-      obtenerRespuestas: async function() {
 
-        /*const btnRes = document.getElementById('btnUpdCampoRespuesta');
-        btnRes.click();*/
-
-        if (cuestionarioTema.getQuestionIndex().type == 7) {
-          var textoRespuestaExpresionparaWolfram = document.getElementById("input_respuesta").value;
-          console.log("eeeeee " + textoRespuestaExpresionparaWolfram);
-          //alert(textoRespuestaExpresionparaWolfram)
-        }
+      obtenerRespuestas: async function(text) {
 
         await axios({
           method: 'get',
-          url: '/pregunta/respuestas/' + cuestionarioTema.getQuestionIndex().id
+          url: '/pregunta/respuestas/' + cuestionarioTemaFalso.getQuestionIndex().id
         }).then(
           result => {
             var res = [];
@@ -462,24 +474,22 @@
               id_opcion_correcta.push(result.data[i].id_opcion);
             }
 
-            if (cuestionarioTema.getQuestionIndex().type == 5 || cuestionarioTema.getQuestionIndex().type ==
+            if (cuestionarioTemaFalso.getQuestionIndex().type == 5 || cuestionarioTemaFalso.getQuestionIndex().type ==
               6) {
-              var power = Math.pow(10, cuestionarioTema.getQuestionIndex().decimales);
+              var power = Math.pow(10, cuestionarioTemaFalso.getQuestionIndex().decimales);
               //console.log("Respuesta antes de la funcion "+res[0]);
-              res = [Math.round(_this.generarRespuesta(cuestionarioTema.getQuestionIndex().id,
+              res = [Math.round(_this.generarRespuesta(cuestionarioTemaFalso.getQuestionIndex().id,
                 res[0], id_opcion_correcta[0]) * power) / power];
               //label.innerHTML = Math.round(_this.generarRespuesta(cuestionarioTema.getQuestionIndex().id,choices[i], opcionesAux[i].id_opcion) * power) / power;
             }
 
-            cuestionarioTema.getQuestionIndex().answer = res;
+            cuestionarioTemaFalso.getQuestionIndex().answer = res;
           }, error => {
             console.error(error)
           }
         )
         var vala = 'x';
-        if (cuestionarioTema.guess(vala)) {}
-
-
+        if (cuestionarioTemaFalso.guess(vala)) {}
       },
       obtenerPonderaciones: async function() {
         await axios({
@@ -487,14 +497,16 @@
           url: "/obtenerPonderaciones/" + matricula
         }).then(async result => {
 
-          if (result.data == -1) {
+          if (result.data == -1) {            
+            console.log("Un tema evaluado", result.data);
+
             await this.obtenerPrimerTema();
             await this.obtenerDescrpcion();
             await this.getopic();
             await this.getpreguntas();
-            this.mensajeParaHijo = '';
-          } else if (result.data.detenerse === false) {
-            this.mensajeParaHijo = '';
+
+          } else if (result.data.detenerse == false) {
+
             this.ultimoTema = result.data.ultimo;
             this.datosEvaluacion = result.data;
             console.log("Otro tema evaluado");
@@ -737,7 +749,7 @@
 
         }
 
-
+      
         /* ESTA ES LA PARTE DEL CUESTIONARIO */
         function Quiz(questions) {
           this.score = 0;
@@ -774,14 +786,13 @@
           this.value = value;
           this.decimales = decimales;
           this.imagenes = imagenes;
-          //respu = this.answer[0];
         }
 
         Question.prototype.isCorrectAnswer = function(choice) {
-
           var correcta = false;
 
-          this.respu = this.answer[0].toString().toLowerCase();
+          respuestaServidor = this.answer[0].toString().toLowerCase();
+          
           switch (this.type) {
             case 1:
               if (choice == this.answer[0].toString().toLowerCase())
@@ -844,35 +855,50 @@
                   correcta = true;
               break;
             case 7:
-              if (choice == this.answer[0].toString().toLowerCase())
+              if (choice == this.answer[0].toString().toLowerCase()){
                 correcta = true;
+              }else{
+              const btnRes2 = document.getElementById('btnConeWolfram');
+                btnRes2.click();
+
+                if(esValidoWolfram == true){
+                correcta = true;
+                }
+              }
               break;
           }
           return correcta;
         }
-        var tipo = this.configuracion.ponde_estricta; //
-        cuestionarioTema = new Quiz(questions);
-
+        var tipo = this.configuracion.ponde_estricta;
+        var cuestionarioTema = new Quiz(questions);
+        cuestionarioTemaFalso = new Quiz(questions);
         console.log(questions);
-
+      
         //Boton de siguiente pregunta
-
-        document.getElementById("next").addEventListener("click", async function() {
-
-
-          const btnRes = document.getElementById('btnUpdCampoRespuesta');
-          btnRes.click();
-
+        document.getElementById("next").addEventListener("click", async function(evento) {
+          /*botonSig.disabled = true;
+          
+          evento.target.disabled = true;
+          */
+          evento.preventDefault();
+           console.log("Cramp " + textoWolfram);
+          
           if (cuestionarioTema.getQuestionIndex().type == 7) {
+                    const btnRes = document.getElementById('btnUpdCampoRespuesta');
+          btnRes.click();
+          const btnLim = document.getElementById('btnUpdCampoLimpiar');
+          btnLim.click();
+          const btnLim2 = document.getElementById('btnUpdCampoLimpiar2');
+          btnLim2.click();
             var textoRespuestaExpresionparaWolfram = document.getElementById("input_respuesta").value
             console.log("eeeeee " + textoRespuestaExpresionparaWolfram)
-            alert(textoRespuestaExpresionparaWolfram)
+            //alert(textoRespuestaExpresionparaWolfram)
           }
-
+        
 
           console.log("Quizz");
           console.log(cuestionarioTema);
-
+        
 
           await axios({
             method: 'get',
@@ -909,7 +935,9 @@
             case 1:
 
               var opc = document.getElementById("input_respuesta");
+              console.log("la re1"+opc);
               var resp = opc.value.toString().toLowerCase();
+              console.log("la re1.2"+resp);
               resp = resp.trim();
               resp = resp.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g,
                 "");
@@ -918,7 +946,7 @@
                 _this.$swal.fire({
                   position: 'center',
                   icon: 'warning',
-                  title: 'Por favor ingresa una respuesta válida',
+                  title: 'Por favor ingresa1 una respuesta válida',
                   showConfirmButton: false,
                   timer: 1500
                 })
@@ -933,14 +961,14 @@
               /* Validación para la pregunta númerica */
             case 2:
               var opc = document.getElementById("input_respuesta");
-
+console.log("la re2"+opc);
               if (opc.value == "") {
                 //_this.$swal.fire("Por favor ingresa una respuesta valida");
 
                 _this.$swal.fire({
                   position: 'center',
                   icon: 'warning',
-                  title: 'Por favor ingresa una respuesta válida',
+                  title: 'Por favor ingresa2 una respuesta válida',
                   showConfirmButton: false,
                   timer: 1500
                 })
@@ -972,7 +1000,7 @@
                 _this.$swal.fire({
                   position: 'center',
                   icon: 'warning',
-                  title: 'Selecciona una respuesta',
+                  title: 'Selecciona una3 respuesta',
                   showConfirmButton: false,
                   timer: 1500
                 })
@@ -1000,7 +1028,7 @@
                 _this.$swal.fire({
                   position: 'center',
                   icon: 'warning',
-                  title: 'Selecciona una respuesta',
+                  title: 'Selecciona una4 respuesta',
                   showConfirmButton: false,
                   timer: 1500
                 })
@@ -1027,17 +1055,18 @@
 
             case 5:
               var opc = document.getElementById("input_respuesta");
+              console.log("la re5"+opc);
               var resp = opc.value.toString().toLowerCase();
+              console.log("la re5.2"+resp);
               resp = resp.trim();
-              resp = resp.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g,
-                "");
+              resp = resp.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, "");
 
               if (resp == "") {
                 //_this.$swal.fire("Por favor ingresa una respuesta valida");
                 _this.$swal.fire({
                   position: 'center',
                   icon: 'warning',
-                  title: 'Por favor ingresa una respuesta válida',
+                  title: 'Por favor ingresa5 una respuesta válida',
                   showConfirmButton: false,
                   timer: 1500
                 })
@@ -1064,7 +1093,7 @@
                 _this.$swal.fire({
                   position: 'center',
                   icon: 'warning',
-                  title: 'Selecciona una respuesta',
+                  title: 'Selecciona una 6respuesta',
                   showConfirmButton: false,
                   timer: 1500
                 })
@@ -1097,7 +1126,7 @@
                 this.$swal.fire({
                   position: 'center',
                   icon: 'warning',
-                  title: 'Por favor ingresa una respuesta válida',
+                  title: 'Por favor ingresa7 una respuesta válida',
                   showConfirmButton: false,
                   timer: 1500
                 });
@@ -1106,11 +1135,8 @@
               if (cuestionarioTema.guess(resp)) {
                 respuestas_correctas++;
               } else {
-
-
-                //if();
                 respuestas_incorretas++;
-                //}
+                
               }
               break;
           }
@@ -1147,11 +1173,13 @@
             })
           }
 
-          this.mensajeParaHijo = '';
-          cuestionarioTema.nextQuestion();
-          populate();
 
+          cuestionarioTema.nextQuestion();
+          cuestionarioTemaFalso.nextQuestion();
+          populate();
+        
         });
+      
         let _this = this
         async function populate() {
 
@@ -1198,7 +1226,6 @@
 
               const btn = document.getElementById('btnUpdCampo');
               btn.click(); // Supongo que este botón realiza alguna acción adicional
-
 
             } else {
               contenedor7.setAttribute('hidden', true);

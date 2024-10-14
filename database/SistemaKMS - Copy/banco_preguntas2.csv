@@ -1,0 +1,256 @@
+id	pregunta	tipo	id_tema	created_at	updated_at	id_imagen
+121820	D003\nRepresenta la diferencia de dos o más elementos. \nNota: se espera solo una palabra.	1	26	NULL	NULL	NULL
+121821	D001.\nEsta es la jerarquía correcta de operaciones:\n1. Paréntesis\n2. Exponentes \n3. Multiplicación y División\n4. Suma y Resta\n	3	36	NULL	NULL	NULL
+121822	D003\nRepresenta el producto de dos o más elementos. \nNota: se espera solo una palabra.	1	26	NULL	NULL	NULL
+121823	D001.\nResuelve:\n	2	36	NULL	NULL	NULL
+121824	D003.\nPropiedades de la suma: conmutativa, uniformidad, asociativa, disociativa.	3	26	NULL	NULL	NULL
+121825	D003.\nLa operación inversa de la multiplicación es la raiz.	3	26	NULL	NULL	NULL
+121827	D001.\nResuelve: 	4	36	NULL	NULL	NULL
+121828	D003.\nLa operación inversa de la suma es:	4	26	NULL	NULL	NULL
+121829	D002.\nDos variables con números diferentes pero mismo signo se ______ y se mantiene la variable. 	1	86	NULL	NULL	NULL
+121830	D002.\nSe pueden sumar o restar las potencias en una suma o resta algebraica. 	3	86	NULL	NULL	NULL
+121831	D003.\nLa operación inversa de la multiplicación es:	4	26	NULL	NULL	NULL
+121832	D003.\nLa operación inversa de la potenciación es:	4	26	NULL	NULL	NULL
+121833	D003.\nAl ir a la universidad durante la semana pasada, en transporte y almuerzo: el Lunes gaste ${a}, el Martes ${b}, Miércoles ${c}, Jueves $ {d} y el Viernes ${e}. ¿El gasto de la semana fue?	5	26	NULL	NULL	NULL
+121834	D001.\nResuelve: \n{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c}	5	36	NULL	NULL	NULL
+121835	D003\n¿Cuál es el resultado de la siguiente expresión?\n528+312+51	2	26	NULL	NULL	NULL
+121836	D003\n¿Cuál es el resultado de la siguiente expresión?\n28*12	2	26	NULL	NULL	NULL
+121837	D003\n¿Cuál  es el resultado de la siguiente expresión?\n1327-718\n	2	26	NULL	NULL	NULL
+121838	D003\n¿Cuál es el resultado de la siguiente expresión?\n1024/32	2	26	NULL	NULL	NULL
+121840	D004\nEs una razón de proporcionalidad que representa una cantidad compara con 100.\nNota: Se espera una sola palabra.	1	98	NULL	NULL	NULL
+121841	D004\nEl 25% de 1200	2	98	NULL	NULL	NULL
+121842	D004\nUna pantalla tiene un descuento de 10% si su valor es de $12,000 ¿De cuánto es el descuento?	2	98	NULL	NULL	NULL
+121843	D004.\nPara denotar porcentaje usamos el  símbolo de ÷	3	98	NULL	NULL	NULL
+121844	D004.\nUn celular nuevo tiene el precio de $18000. Tiene un 15% de descuento. Si lo compro, ¿Cuánto me costará?	4	98	NULL	NULL	NULL
+121845	D005.\nResuelve:	2	96	NULL	NULL	NULL
+121846	D005. \nResuelve:	2	96	NULL	NULL	NULL
+121847	D005.\nLa raíz cuadrada de un número consiste en encontrar un número que multiplicado por si mismo nos de el valor que tenemos	3	96	NULL	NULL	NULL
+121850	D005. \nOperación inversa a la potencia 	1	96	NULL	NULL	NULL
+121851	D006\nEvalúa la ecuación cuadrática\n	2	94	NULL	NULL	NULL
+121852	D006.\nLa fórmula general para resolver ecuaciones cuadráticas es:	3	94	NULL	NULL	NULL
+121853	D006.\nAl resolver:	4	94	NULL	NULL	NULL
+121855	D007.\nIndica con una palabra el grado de la siguiente ecuación algebraica 	1	78	NULL	NULL	NULL
+121856	D007.\nResuelve:	2	78	NULL	NULL	NULL
+121857	D007.\nLa suma de tres números consecutivos da 21. ¿Cuáles son esos números? 	4	78	NULL	NULL	NULL
+121858	D007.\nAl resolver una ecuación algebraica de segundo grado, siempre se obtienen dos raíces. 	3	78	NULL	NULL	NULL
+121859	D007.\n¿Cuál es el valor de x que satisface la igualdad?	4	78	NULL	NULL	NULL
+121860	D009.\nEn una división de polinomio entre monomio, el residuo es siempre cero. 	3	164	NULL	NULL	NULL
+121861	D009.\nDetermine el grado del cociente de: 	4	164	NULL	NULL	NULL
+121862	D011. \nCuando escribimos Gf= {(x,y) | x ϵ Df } hacemos referencia a la representación _______ de una función.	1	193	NULL	NULL	NULL
+121863	D011.\nLa forma verbal de una función corresponde a un enunciado que involucra datos, incógnitas y relaciones verbales entre ellos 	3	193	NULL	NULL	NULL
+121864	D011.\nLos datos en la siguiente tabla corresponden a una relación ______. 	1	193	NULL	NULL	NULL
+121865	D011.\nLos datos en la siguiente tabla corresponden a una relación ______. 	1	193	NULL	NULL	NULL
+121866	D011.\nLa siguiente expresión es una función en forma algebraica. 	3	193	NULL	NULL	NULL
+121867	D011.\nLa forma verbal de una función es la forma más sencilla de representar una función	3	193	NULL	NULL	NULL
+121868	D011.\nEl perímetro de un triangulo equilátero que es 3L. La funcion del área de dicho triangulo se expresa de la siguiente manera: 	3	193	NULL	NULL	NULL
+121869	D011.\nSeleccione la fórmula que corresponda para obtener el área sombreada de la siguiente figura. 	4	193	NULL	NULL	NULL
+121870	D013.\nLa representación geométrica de f(x) = ax + b corresponde a una ____.	1	44	NULL	NULL	NULL
+121871	D013.\n¿Qué condición debe cumplir la función f(x} = ax+ b, para afirmar que representa una recta inclinada a la izquierda? 	4	44	NULL	NULL	NULL
+121872	D013.\nConsidere f(x)= ½ x + 1. ¿Cuál es el valor de la ordenada de A(½, f(x)? \nExpresa tu respuesta en fracción.	2	44	NULL	NULL	NULL
+121873	D013.\nConsidere f(x)=x. ¿Cuál es su ángulo de inclinación? 	2	44	NULL	NULL	NULL
+121874	D011.\nUna recta con pendiente positiva representa a una función decreciente.	3	44	NULL	NULL	NULL
+121875	D013. \nDetermina la ecuación que corresponde a una recta paralela a f(x)=⅔x+1	4	44	NULL	NULL	NULL
+121876	D013.\nUna recta pasa por los puntos A(3,4) y B(-1,5).\nObtener su ordenada al origen.\nExpresa tu respuesta en fracción. 	2	44	NULL	NULL	NULL
+121877	D015. \nEs el conjunto de parejas ordenadas, tales que dos parejas distintas no pueden tener el mismo primer elemento.	1	41	NULL	NULL	NULL
+121878	D015. \nSi f(x)= x² + 2x + 5 entonces f(-1) es igual a: 	2	41	NULL	NULL	NULL
+121879	D015.\nObtén f(½) para la siguiente función:	2	41	NULL	NULL	NULL
+121880	D015.\nLa siguiente imagen representa una función:	3	41	NULL	NULL	NULL
+121881	D015.\nCuando una recta paralela al eje de las ordenadas corta a una gráfica en dos o más puntos, decimos que la gráfica corresponde a una función	3	41	NULL	NULL	NULL
+121882	D015.\nEl volumen de una caja sin tapa de lado x es 	4	41	NULL	NULL	NULL
+121883	D015.\nEl área de un triangulo equilátero de lado  l corresponde a: 	4	41	NULL	NULL	NULL
+121884	D015.\nEl intervalo (0,∞) corresponde al dominio de f(x)=x²	3	41	NULL	NULL	NULL
+121885	D017.\nSelecciona los cuatro grandes grupos en los cuales se clasifican los números reales. 	4	9	NULL	NULL	NULL
+121886	D017.\n¿Cuál es el número real que arroja como resultado en la siguiente expresión? 	2	9	NULL	NULL	NULL
+121887	D017.\nEl número ¾ es un ejemplo de un número entero 	3	9	NULL	NULL	NULL
+121888	D017.\nEl valor de π (3.1415...) es un ejemplo de un número...	4	9	NULL	NULL	NULL
+121889	D017.\nPara armar un rompecabezas se necesitan {t} piezas.\n¿Cuántas piezas se necesitan para armar {m} rompecabezas? 	5	9	NULL	NULL	NULL
+121890	D017.\nPara armar un corredor, un carpintero necesita {h} horas.\n¿Cuántas horas se necesitan para armar {m} corredores? 	6	9	NULL	NULL	NULL
+121891	D019. \nEs una colección de elementos considerados en si mismo como un objeto	1	12	NULL	NULL	NULL
+121892	D019.\nSean los conjuntos A={8,4,3,5,9,1) y B={2,10,7,6}. ¿Cuál es el resultado de la operación A∩B?	2	12	NULL	NULL	NULL
+121893	D019.\nSean los conjuntos A={1,3}, B={2,9}, C={1,2,3,9} y D={1,2,3,9}. El resultado de la operación de A∪B  es igual a D	3	12	NULL	NULL	NULL
+121894	D019.\nSean los conjuntos A={3,4,7,6}, B={1,3,4,9}, C={2,6,3,8} y D={9,7,6,1}. Completa lo siguiente 6 ∉ ... 	4	12	NULL	NULL	NULL
+121895	D021.\nOperación básica de las matemáticas que permite distribuir un todo en partes iguales.\n	1	39	NULL	NULL	NULL
+121896	D021.\nAl realizar la división 5325/3. ¿Cuál es el resultado?	2	39	NULL	NULL	NULL
+121897	D021.\nCuando se realiza una división de números enteros la cantidad resultante siempre es mayor que la cantidad  que se dividió	3	39	NULL	NULL	NULL
+121898	D021.\n¿Cuál es el resultado de realizar la división 10428/3?	4	39	NULL	NULL	NULL
+121899	D023.\nNombre que recibe la operación de multiplicar por si mismo un numero dos o más veces. 	1	34	NULL	NULL	NULL
+121900	D023.\nResuelve lo siguiente: (-6)³	2	34	NULL	NULL	NULL
+121901	D023.\nLa siguiente operación es correcta: (-3)²=-9	3	34	NULL	NULL	NULL
+121902	D023.\nEl resultado de la siguiente operación (-4)³ es igual a 	4	34	NULL	NULL	NULL
+121903	\nD021.\nEn un videojuego el número de pruebas que hay que superar en cada nivel es el doble de las del nivel anterior. Si en el nivel 1 hay dos pruebas cuantas habrá en el nivel {n} ?	6	34	NULL	NULL	NULL
+121904	\nD025.\nLa jerarquía de operaciones es una convención matemática que establece el orden en que deben realizarse operaciones de cálculo combinados en un mismo enumerado matemático.\n	3	35	NULL	NULL	NULL
+121905	D025.\nResuelve:	2	35	NULL	NULL	NULL
+121906	D025.\nEl resultado de la operación presentada en la imagen es -8	3	35	NULL	NULL	NULL
+121907	D027.\n¿Cuál es el resultado de realizar la siguiente operación?\n	2	33	NULL	NULL	NULL
+121908	D027.\nEl resultado de la operación mostrada en la imagen es -6?	3	33	NULL	NULL	NULL
+121909	D027.\n¿Cuál es el resultado de 5(-1)+8(-3)+20 ?	4	33	NULL	NULL	NULL
+121910	D029.\nLuis y Pablo comen en la misma taquería, pero Luis asiste cada 20 días y Pablo cada 38. ¿Dentro de cuantos días volverán a encontrarse? \n	2	28	NULL	NULL	NULL
+121911	D029.\n¿Cuál es el mínimo común múltiplo de 12,18 y 42?	4	28	NULL	NULL	NULL
+121912	D031.\nDetermina el resultado de la operación presentada en la imagen. 	2	99	NULL	NULL	NULL
+121913	D031.\n¿Cuál es el resultado de la operación presentada en la imagen?	4	99	NULL	NULL	NULL
+121914	D033.\nDetermina el resultado de la operación presentada en la imagen. 	2	25	NULL	NULL	NULL
+121915	D033.\nLuis fue al mandado y compró lo siguiente: 3/4 kg de zanahoria, 1/2 kg de manzana, 1/4 kg de uvas y 1/5 kg de chile.\n¿Cuántos kg de verdura y frutas compró en total?	4	25	NULL	NULL	NULL
+121916	D008\nUna división algebraica se compone por el dividendo y divisor.\n¿Qué nombre recibe el resultado de efectuar esa división?	1	91	NULL	NULL	NULL
+121917	D008.\nPara poder realizar una división algebraica se debe tener:\nmayor o igual grado en el dividendo que en el divisor.	3	91	NULL	NULL	NULL
+121918	D008.\nEn	4	91	NULL	NULL	NULL
+121919	D010.\nEs el conjunto de valores que toma la variable independiente.	1	42	NULL	NULL	NULL
+121920	D010.\nEs el conjunto de todos los valores de una pareja ordenada correspondiente a una función.	1	42	NULL	NULL	NULL
+121922	D010.\nResuelve	3	42	NULL	NULL	NULL
+121923	D010.\nResuelve	3	42	NULL	NULL	NULL
+121924	D005.\nLa respuesta a la operación √32 es 4√2	3	96	NULL	NULL	NULL
+121927	D005.\nResuelve:	3	96	NULL	NULL	NULL
+121929	D010.\nResuelve	3	42	NULL	NULL	NULL
+121930	D010.\nResuelve.	4	42	NULL	NULL	NULL
+121931	D010.\nPara el dominio de f(x)=1/x+7 la solución es R-{7} ó (-∞,-7)∪(-7,∞)	3	42	NULL	NULL	NULL
+121932	D014.\nLos elementos que componen una división son dividendo, divisor, _______ y residuo	1	91	NULL	NULL	NULL
+121933	D014. \nAl dividir el término 3ab⁴ entre -2ab, el grado de la literal en b en el resultado es:	2	91	NULL	NULL	NULL
+121934	D014.\nEl resultado de la operación presentada en la imagen es correcto. 	3	91	NULL	NULL	NULL
+121935	D010.\nPara el dominio de la función que se muestra en la imagen es:	4	42	NULL	NULL	NULL
+121936	D010.\nPara el dominio de la función de f(x)=1/x²+2x-3 la solución es   IR-{-3,1}	3	42	NULL	NULL	NULL
+121937	D014.\nEl resultado de la operación mostrada en la imagen es:	4	91	NULL	NULL	NULL
+121938	D012.\nEs el dominio de la función exponencial.\nNota: Introducir la respuesta en minúscula.	1	48	NULL	NULL	NULL
+121939	D012.\nEl valor de la función exponencial es:\nNota: Introducir la respuesta con letras y en minúscula.	1	48	NULL	NULL	NULL
+121940	D012.\nCorresponde al valor de la función exponencial evaluada en 1.\nNota: Introducir la respuesta con cuatro decimales después del punto.	2	48	NULL	NULL	NULL
+121941	D012.\nResuelve.\nNota: Introducir la respuesta con número.	2	48	NULL	NULL	NULL
+121942	D012.\nLa función exponencial es decreciente.	3	48	NULL	NULL	NULL
+121943	D012.\nPara la función exponencial el rango es (0,∞)	3	48	NULL	NULL	NULL
+121944	D012.\nResuelve.\n	4	48	NULL	NULL	NULL
+121945	D012.\nResuelve	4	48	NULL	NULL	NULL
+121946	D014.\nLa regla para dividir un polinomio de un monomio consiste en dividir cada término del polinomio entre monomio. 	3	164	NULL	NULL	NULL
+121947	D014.\n¿Cuál es el resultado de la operación presentada en la imagen?\nIndica el exponente de menor grado en la literal b del resultado. 	2	164	NULL	NULL	NULL
+121948	D014.\nEl resultado de la operación presentada en la imagen es correcto. 	3	164	NULL	NULL	NULL
+121949	D014.\nLa operación presentada en la imagen siguiente es correcta.	3	164	NULL	NULL	NULL
+121950	D014. \nPara poder realizar una división de un polinomio entre otro polinomio, se debe ordenar el dividendo y el divisor con relación a la misma\nvariable	3	165	NULL	NULL	NULL
+121951	D014.\nEl resultado de la operación presentada en la imagen. el coeficiente del primer cociente es..	2	165	NULL	NULL	NULL
+121952	D014.\nLa operación presentada en la siguiente imagen es correcta. 	3	165	NULL	NULL	NULL
+121953	D014.\nEl resultado de dividir 11a³-3a⁵-46a²+32 entre 8-3a²-6a es	4	165	NULL	NULL	NULL
+121954	D014.\nLa expresión (a + b)² se desarrolla como el cuadrado a mas el ______ de a por b mas el cuadrado de b	1	167	NULL	NULL	NULL
+121955	D014.\nEn la expresión (3x + 5/2 y)² , el coeficiente del término xy es	2	167	NULL	NULL	NULL
+121956	D014.\nEn la expresión (2a - 3b)³, el desarrollo del binomio al cubo es (8a³ - 6a²b + 6ab² - 27b³)	3	167	NULL	NULL	NULL
+121957	D014.\nEl producto notable (2x² − 3b²)\nSe puede expresar como :	4	167	NULL	NULL	NULL
+121958	D016.\nEs una relación de orden entre dos expresiones algebraicas.\nNota: se espera solo una palabra.	1	192	NULL	NULL	NULL
+121960	D016.\nEs la solución de 2x+1>0	2	192	NULL	NULL	NULL
+121962	D016.\nLa solución de 2x+1≥0  es x=1/2	3	192	NULL	NULL	NULL
+121963	D016. La solución de 5x-1≤0  es  (-∞, 1/5]	3	192	NULL	NULL	NULL
+121965	D018.\nDetermina el resultado de la siguiente operación 2/3+3/4-1/2	2	27	NULL	NULL	NULL
+121966	D018.\nEl mínimo común denominador de las fracciones  1/3,  1/5, 1/6 es el número 30?	3	27	NULL	NULL	NULL
+121967	D018. \nEl mínimo común denominador de los denominadores  6, 9 y 15 es	4	27	NULL	NULL	NULL
+121969	D020.\nLa fracción irreductible equivalente a 735/1050 es:	2	7	NULL	NULL	NULL
+121970	D020.\n¿Cuándo se reparte un pastel entre los invitados  de una fiesta, la cantidad de pastel que le toca a cada uno de los invitados es un número entero?	3	7	NULL	NULL	NULL
+121971	D022.\nNombre que recibe el resultado de una división.\nNota: responda con una sola palabra.	1	95	NULL	NULL	NULL
+121972	D022.\nResuelve la siguiente operación: 3/4 ÷ 3/2	4	95	NULL	NULL	NULL
+121973	D022.\n¿El resultado de la división 5/2 ÷ 3/4 es 15/8?	3	95	NULL	NULL	NULL
+121974	D022.\nEl resultado de dividir 8/7 ÷  7/2 es: 	4	95	NULL	NULL	NULL
+121975	D024.\nTodo valor dentro de una raíz se puede expresar como un valor elevado a una potencia. Dicha potencia es una 	1	161	NULL	NULL	NULL
+121976	D024.\nDeterminar el valor de la siguiente operación que se muestra en la imagen y representa la respuesta en fracción.	2	161	NULL	NULL	NULL
+121977	D024.\n¿El resultado de la operación que se muestra en la imagen es 2/4?	3	161	NULL	NULL	NULL
+121978	D024.\n¿Cuál es el resultado de realizar la siguiente operación que se muestra en la imagen?	4	161	NULL	NULL	NULL
+122145	D026.\nDada la siguiente operación que se presenta en la imagen,  expresa el resultado en fracción.\n	2	31	NULL	NULL	NULL
+122146	D026.\nResuelve.	3	31	NULL	NULL	NULL
+122147	D028.\nCalcular el M.C.D.  de 20,48 y 72	2	29	NULL	NULL	NULL
+122148	D028.\nLuis quiere enlosar un piso de 360 cm con baldosas cuadradas lo mas grande posibles ¿Cuánto debe medir el lado de las baldosas?	4	29	NULL	NULL	NULL
+122149	D030.\nResuelve la siguiente operación\n(-3)(-4)(-6)(-10)(-1)	2	11	NULL	NULL	NULL
+122150	D030.\nEl resultado de la operación (-2)(3)(+8)(-5) ¿es igual a 240?	3	11	NULL	NULL	NULL
+122151	D030.\nEl resultado de realizar la siguiente operación es: \n(2)(-3)(-1)(4)	4	11	NULL	NULL	NULL
+122153	D014.\nEs una igualdad en la que hay una o varias cantidades desconocidas llamadas incógnitas	1	78	NULL	NULL	NULL
+122154	D014.\nEs el mayor exponente que tiene la incógnita en la ecuación	1	78	NULL	NULL	NULL
+122155	D014.\nResuelva la siguiente ecuación\n3x+3=10	2	78	NULL	NULL	NULL
+122156	D014.\nResuelva la siguiente ecuación\n3x-5=2x-2	2	78	NULL	NULL	NULL
+122157	D014.\nLas raíces o soluciones de una ecuación son los valores de las incógnitas  que satisfacen la ecuación. 	3	78	NULL	NULL	NULL
+122158	D014.\nPara la ecuación 4x-5=-x+5, con x= 1 se satisface la ecuación	3	78	NULL	NULL	NULL
+122159	D014.\nResolver la ecuación:\n5x=8x-15\nEl valor de x que la satisface es:	4	78	NULL	NULL	NULL
+122160	D014.\nResolver la ecuación:\n8x-4+3x=7x+x+14\nEl valor de x que la satisface es:	4	78	NULL	NULL	NULL
+122162	D014.\nComo se le llama a la expresión algebraica que consta de un solo termino como la que se muestra en la imagen	1	86	NULL	NULL	NULL
+122163	D014.\nComo se le llama a la expresión algebraica que\nconsta de más de un solo término\ncomo:\nA+c-y,  x³+2x²-x+3	1	86	NULL	NULL	NULL
+122164	D014.\nEs un polinomio que consta de dos\ntérminos como se muestra en la imagen\n	1	86	NULL	NULL	NULL
+122165	D014.\nIndicar el grado del polinomio de la\nsiguiente expresión algebraica que se muestra en la imagen	2	86	NULL	NULL	NULL
+122166	D014.\nIndicar el grado absoluto del polinomio\nde la siguiente expresión algebraica que se muestra en la imagen	2	86	NULL	NULL	NULL
+122167	D014.\nPara sumar o restar dos términos algebraicos, es necesario que dichos términos tengan las mimas variables, elevados al mismo exponente, con el mismo signo	3	86	NULL	NULL	NULL
+122168	D014.\nLa suma de los términos:\n-3x²y-5xy+4yx²-xy = x²y-6yx	3	86	NULL	NULL	NULL
+122169	D014.\nSimplificar las siguientes expresiones\nalgebraicas:\n3a²b – 8 a²b – 7a²b + 3a²b²	4	86	NULL	NULL	NULL
+122170	D014.\nSimplificar las siguientes expresiones\nalgebraicas:\n5x³y-6yx+7xy-yx³-4x²y-xy+4yx³+2xy	4	86	NULL	NULL	NULL
+122171	D014.\nSimplificar las siguientes expresiones algebraicas:\n3ab-2ab²-4ab-a²b+3ab-5b²a+8a	4	86	NULL	NULL	NULL
+122172	D014.\nPara multiplicar un término algebraico por otro término algebraico, el procedimiento consiste en multiplicar\nlos coeficientes y para la parte literal aplicar la ley de los ________. El signo del producto estará dado por la ley de\nlos signos	1	88	NULL	NULL	NULL
+122173	D014.\nMultiplicación de potencias de la misma base: Es igual a la base\nelevada al exponente que resulta de _______ los exponentes de los factores	1	88	NULL	NULL	NULL
+122174	D014.\nResuelva lo de la siguiente imagen.\n	2	88	NULL	NULL	NULL
+122175	D014.\nResuelva lo de la siguiente imagen.	2	88	NULL	NULL	NULL
+122176	D014.\nResuelva la siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL
+122177	D014.\nResuelva las siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL
+122178	D014.\nResuelva las siguientes multiplicaciones que se muestran en la imagen.	4	88	NULL	NULL	NULL
+122179	D014.\nResuelva lo siguiente.	4	94	NULL	NULL	NULL
+122180	D014.\nEn la expresión x²-2x-15=0 encontrar los valores de x, que satisfacen la ecuación	4	94	NULL	NULL	NULL
+122181	D014.\nLa fórmula cuadrática puede usarse\npara resolver cualquier ecuación de la\nforma ax² + bx + c = 0.	3	94	NULL	NULL	NULL
+122182	D014.\nPara la expresión 5x²+5x-30=0\nLos valores de x que la satisfacen son:	4	94	NULL	NULL	NULL
+122183	D014.\nEncontrar la solución de la expresión 2x²-7x+3=0	4	94	NULL	NULL	NULL
+122184	D016.\nLa solución de 2x+1>0    es x>-1/2	3	192	NULL	NULL	NULL
+122185	D016.\nLa solución de 5x+2≤x+3   es   x∈(-∞,1/4]	3	192	NULL	NULL	NULL
+122186	D016.\nEl dibujo que se muestra en la imagen, ¿es la representación de la expresión y>x en el plano cartesiano?	3	192	NULL	NULL	NULL
+122187	D032.\nRealiza la suma de las siguientes cantidades en notación científica:\n4.53x10⁻⁴+6.38x10⁻³=	4	32	NULL	NULL	NULL
+122188	D032.\nEl peso aproximado de la Tierra es de 5,975,000,000,000,000,000,000,000 kg. Su representación en notación científica equivale a: 	4	32	NULL	NULL	NULL
+122189	D016.\nDado dos números a y b, se cumple una de las soluciones a>b, a<b, a=b. A esto se le llama ley de la tricotomía.	3	192	NULL	NULL	NULL
+122190	D020.\n¿Las categorías en las que se clasifican los numero en función de sus diferentes características son los conjuntos numéricos?	3	7	NULL	NULL	NULL
+122191	D018.\n¿El número que resulta de calcular el mínimo común múltiplo de los denominadores  de dos o mas fracciones es el mínimo común denominador?	3	27	NULL	NULL	NULL
+122192	D001.\nLa aritmética se basa en expresiones numéricas en las que pueden aparecer varias operaciones. 	3	36	NULL	NULL	NULL
+122193	D001.\nLas operaciones aritméticas compuestas son expresiones numéricas  en las que solo aparecen sumas y restas	3	36	NULL	NULL	NULL
+122194	D005.\nResuelve la siguiente operación.\n	1	96	NULL	NULL	NULL
+122195	D005.\nUna manera de expresar el resultado de la operación presentada en la imagen. 	4	96	NULL	NULL	NULL
+122196	D007.\nLa base de un rectángulo mide tres veces lo que su ancho. Si su perímetro es de 8 * {a} . ¿Cuánto mide la base?\n	5	78	NULL	NULL	NULL
+122197	D011.\nIdentifica cuál de las opciones no corresponde a la representación de una función	4	193	NULL	NULL	NULL
+122198	D011. \nFunción que corresponde a una parábola vertical con vértice en el origen  que abre hacia abajo, desplazada 3 unidades hacia arriba sobre el eje de las ordenadas. 	4	193	NULL	NULL	NULL
+122199	D013. \nLa función f(x) = -2x+2 corresponde a una recta inclinada a la izquierda que corta al eje de las ordenadas en y = 2	3	44	NULL	NULL	NULL
+122200	D013.\nDetermina la ecuación que representa una recta con pendiente de -2 y ordenada al origen 5	4	44	NULL	NULL	NULL
+122201	D015. \nPara f(x)= log x. Obtener f(½)	4	41	NULL	NULL	NULL
+122202	D015.\nPara f(x) = x². Obtener f(x-n)-f(x)	4	41	NULL	NULL	NULL
+122203	D023. \nEn una ciudad hay {m} barrios. Cada barrio tiene {m} rascacielos. En cada rascacielos hay {m} plantas. En cada planta hay {m} viviendas. ¿Cuántas viviendas hay en total? 	5	34	NULL	NULL	NULL
+122204	D025.\nDeterminar el valor de la siguiente operación \n7(3-1)-3[1-(2)(2)]-2(4+1)(2+1)\n	4	35	NULL	NULL	NULL
+122205	D025.\n¿Cuál es el resultado de la siguiente operación?\n{a} ² + ( {b} + {c} ) - 2 * {a} - 3 * ( {a} - {c} )	5	35	NULL	NULL	NULL
+122206	D035.\nLa suma de tres números diferentes 	4	83	NULL	NULL	NULL
+122207	D035.\nEl doble de un número disminuido en tres unidades	4	83	NULL	NULL	NULL
+122208	D035.\nx²+4x es	4	83	NULL	NULL	NULL
+122209	D035\nx²-y² es 	4	83	NULL	NULL	NULL
+122210	D035.\nEl cuadrado de la diferencia de dos números diferentes	4	83	NULL	NULL	NULL
+122211	D035.\nCinco veces la diferencia de dos números al cuadrado se expresa como 5(x-y)²	3	83	NULL	NULL	NULL
+122212	D035.\nEl cubo de la diferencia del doble de un número y otro diferente se expresa como (2x-y)³	3	83	NULL	NULL	NULL
+122213	D035.\nEl doble de la diferencia de dos números diferentes se expresa como	4	83	NULL	NULL	NULL
+122214	D035.\nEl triple del cuadrado de la suma de dos números se expresa como 	4	83	NULL	NULL	NULL
+122215	D035.\nLa operación representada en la imagen se puede expresar como 	4	83	NULL	NULL	NULL
+122221	D037.\nElige el cociente  y el residuo.\n	4	164	NULL	NULL	NULL
+122222	D039.\nLa fórmula para resolver una ecuación de segundo grado es la presentada en la imagen 	3	94	NULL	NULL	NULL
+122223	D039.\nLas soluciones para la ecuación 6x²-7x-3 son:	4	94	NULL	NULL	NULL
+129118	D041.\nResuelve la siguiente multiplicación	4	88	NULL	NULL	NULL
+129119	D041.\nResuelve la siguiente operación 	4	88	NULL	NULL	NULL
+129120	D041. Resuelve la siguiente operación.\n	4	163	NULL	NULL	NULL
+129121	D041.\nResuelve la siguiente operación.\n	4	163	NULL	NULL	NULL
+129122	D041.\nRealiza la siguiente operación.\nDe 11x + 11y + 11z sumar 11x + 6xy + 12y	4	82	NULL	NULL	NULL
+129123	D041.\nRealiza la siguiente operación.\nDe 7x + 9xy + 5y sumar 10x + 6y	4	82	NULL	NULL	NULL
+129124	D041.\nRealiza la siguiente operación.\nDe 36x + 24xy + 36y restar 25x - 6xy 	4	82	NULL	NULL	NULL
+129125	D041. \nRealiza la siguiente operación e indica el número que corresponde a la respuesta.\nRestar 5x - 26yz + 6z de 47x + 49yz - 3z	4	82	NULL	NULL	NULL
+129126	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL
+129127	D041.\nRealiza la siguiente operación e indica la respuesta correcta	4	82	NULL	NULL	NULL
+129128	D041.\nRealiza la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL
+129129	D041.\nRealiza la siguiente operación e indica la respuesta correcta. \n	4	82	NULL	NULL	NULL
+129130	D041.\nResuelve la siguiente operación e indica la respuesta correcta.	4	82	NULL	NULL	NULL
+129131	D041.\nResuelve la siguiente multiplicación.\n	4	82	NULL	NULL	NULL
+129132	D041.\nResuelve la siguiente operación	4	82	NULL	NULL	NULL
+129133	D041.\nRealiza la siguiente división polinomial e indica el cociente y el residuo 	4	82	NULL	NULL	NULL
+129134	D041.\nRealiza la siguiente división polinomial y selecciona el cociente y el residuo. 	4	82	NULL	NULL	NULL
+129135	D041.\nResuelve el siguiente binomio al cuadrado.\n(x+8)²	4	82	NULL	NULL	NULL
+129136	D041.\nResuelve el siguiente binomio con término común. 	4	82	NULL	NULL	NULL
+129137	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL
+129141	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL
+129142	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL
+129144	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL
+129146	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL
+129150	D041.\nResuelve la operación. 	4	167	NULL	NULL	NULL
+129152	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL
+129153	D041.\nResuelve la siguiente operación	4	167	NULL	NULL	NULL
+129154	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta.	4	79	NULL	NULL	NULL
+129155	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	79	NULL	NULL	NULL
+129156	D041.\nResuelve el siguiente sistema de ecuaciones y elige la respuesta correcta. 	4	80	NULL	NULL	NULL
+129157	D001.\nResuelve. \n{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c}	5	36	NULL	NULL	NULL
+129159	D001.\nResuelve: \n{a} + {b} * {c} - ( {b} - {n} * {c} ) + ( {a} * {c} ) / {c}	6	36	NULL	NULL	NULL
+129160	D004.\nUna laptop tiene un precio de $ {a} . Un descuento del {n}  % . ¿Cuánto cuesta con el descuento aplicado? 	5	98	NULL	NULL	NULL
+129161	D034\n\nResuelve	3	196	NULL	NULL	NULL
+129162	D038\n\n22x²y+9xy-16²z+7z³ sumar 16x²y+7y²z+22z²	4	78	NULL	NULL	NULL
+129163	D038\n\nResuelve.	4	91	NULL	NULL	NULL
+129842	D016.\nLa expresión x∈(-∞,1/4] es la solución de 5x+2≤x+3	3	192	NULL	NULL	NULL

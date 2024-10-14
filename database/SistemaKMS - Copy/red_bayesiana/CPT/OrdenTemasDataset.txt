@@ -1,0 +1,118 @@
+0 Matematicas
+1 Cálculo  Integral
+2 Antiderivadas
+3 Definición de la integral
+4 Reglas de integración inmediatas
+5 Métodos de integración6 Integral definida7 Áreas bajo la curva
+8 Sólido de revolución
+9 Volúmen de un sólido en revolución10 Cálculo  Diferencial
+11 Límites y continuidad
+12 Derivada
+13 Razón de cambio
+14 Reglas de derivación
+15 Razones de cambio relacionadas
+16 Optimizacion17 Funciones  matemáticas
+18 Intervalos
+19 Desigualdades - inecuaciones
+20 Conceptos de  funciones  matemáticas
+21 Formas de expresar funciones matemáticas
+22 Dominio y rango de una función
+23 Funciones Trigonométricas
+24 Modelado de funciones
+25 Función  Valor absoluto
+26 Funciones  Logarítmicas
+27 Función  Exponencial
+28 Función Polinomial
+29 Función Cuadrática
+30 Función  Lineal
+31 Geometría
+32 Álgebra  lineal
+33 Sistema de n ecuaciones lineales con n incógnitas
+34 Matrices
+35 Operaciones  con  matrices
+36 Determinantes
+37 Matriz  Inversa
+38 Solución de  sistemas de  ecuaciones  por matrices
+39 Solución de problemas reales con álgebra lineal
+40 Método de Gauss Jordan
+41 Regla  de  Cramer
+42 Transpuesta
+43 Trigonometría
+44 Tríangulos  oblicuángulos
+45 Razones  trigonométricas
+46 Ángulos y sus  razones  trigonométricas
+47 Identidades  trigonométricas
+48 Ley de los Cosenos
+49 Ley de los Senos
+50 Solución de trángulos rectángulos
+51 Solución de problemas reales con trigonometría
+52 Ecuaciones trigonometricas
+53 Triángulos rectángulos
+54 Círculo  unitarioo
+55 Principios de la Geometríaa
+56 Plano cartesiano
+57 Recta
+58 Circunferencia
+59 Elipse
+60 Hipérbola
+61 Ángulos
+62 Polígonos
+63 Triángulos
+64 Cuadrilateros
+65 Postulados y teoremas
+66 Perímetros áreas y volúmenes
+67 Relación métrica de la circunferencia
+68 Congruencia de trángulos
+69 Semezanjas de triangulos
+70 Teorema de Euclides
+71 Teorema de Pitágoras
+72 Teorema de Thales de Mileto
+73 Álgebra
+74 Expresiones algebraicas
+75 Operaciones básicas del álgebra
+76 Lenguaje común y lenguaje algebraico
+77 Suma  y resta de  terminos algebraicos
+78 Multiplicación de  términos algebraicos
+79 División de polinomio entre polinomio
+80 Multiplicación de polinomios
+81 Factorización
+82 Ecuaciones de  primer grado
+83 Sistemas  de  ecuaciones
+84 Solución de problemas reales con sistemas de ecuaciones
+85 Ecuaciones de segundo grado
+86 Solución de problemas reales con ecuaciones de segundo grado
+87 Productos notables
+88 División de  términos  algebraicos
+89 División de polinomio entre monomio
+90  Ecuaciones algebraicas
+91 Métodos analíticos para la resolución de sistemas de ecuaciones
+92 Aritmetica
+93 Fórmula general para ecuaciones de segundo grado
+94 Operaciones Aritméticas
+95 Resta aritmética de números enteros
+96 Operaciones  aritméticas  compuestas
+97 División  aritmética de números enteros
+98 Suma de números racionales
+99 Multiplicación de  números  racionales
+100 División de  números  racionales
+101 Razón y proporciones
+102 Regla detres
+103 Porcentajes
+104 Ley de exponentes
+105 Notación científica
+106 Radicales
+107 Resta de  números  racionales
+108 Jerarquías de las operaciones aritméticas
+109 Suma aritmética de números enteros
+110 Tablas de  multiplicar
+111 Multiplicación aritmética de números enteros
+112 Exponentes de números racionales a numeros enteros
+113 Exponentes de números enteros elevados a números enteros
+114 Conjuntos
+115 Conjuntos Numericos
+116 Clasificación de los números
+117 Números racionales
+118 Ley de signos
+119 Común denominador
+120 Máximo común divisor
+121 Mínimo común múltiplo

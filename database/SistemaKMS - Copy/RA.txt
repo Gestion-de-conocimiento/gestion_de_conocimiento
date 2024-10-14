@@ -1,0 +1,86 @@
+Conjuntos
+Operaciones Aritméticas 
+Fórmula general para ecuaciones de segundo grado
+Suma aritmética de números enteros
+Conjuntos Numéricos
+Jerarquías de las operaciones aritméticas
+Resta aritmética de números enteros
+Tablas de  multiplicar
+Clasificación de los números
+Multiplicación aritmética de números enteros
+Números racionales 
+Común denominador 
+Exponentes de números racionales a numeros enteros
+Exponentes de números enteros elevados a números enteros
+División  aritmética de números enteros
+Ley de signos
+Mínimo común múltiplo 
+Máximo común divisor 
+Suma de números racionales 
+Multiplicación de  números  racionales
+Resta de  números  racionales
+División de  números  racionales
+Ley de exponentes
+Operaciones  aritméticas  compuestas
+Radicales
+Razón y proporciones
+Notación científica 
+Regla de tres
+Porcentajes
+Factorización 
+Productos notables
+Solución de problemas reales con ecuaciones de segundo grado
+Solución de problemas reales con sistemas de ecuaciones
+
+Sistema de n ecuaciones lineales con n incógnitas
+Matrices
+Operaciones  con  matrices
+Método de Gauss Jordan
+Matriz  Inversa
+Regla  de  Cramer
+Solución de  sistemas de  ecuaciones  por matrices
+Solución de problemas reales con álgebra lineal
+
+Factorización 
+División de polinomio entre polinomio
+Productos notables
+Solución de problemas reales con ecuaciones de segundo grado
+Solución de problemas reales con sistemas de ecuaciones
+
+Tríangulos Oblicuángulos
+Razones  trigonométricas
+Ángulos y sus  razones  trigonométricas
+Identidades  trigonométricas
+Ecuaciones trigonometricas
+
+Elipse
+Hipérbola
+Postulados y teoremas
+
+Intervalos
+Desigualdades - inecuaciones
+Conceptos de  funciones  matemáticas
+Formas de expresar funciones matemáticas
+Dominio y rango de una función
+Funciones Trigonométricas
+Función  Lineal
+Función Cuadrática
+Función Polinomial
+Función  Exponencial
+Funciones  Logarítmicas
+Función  Valor absoluto
+Modelado de funciones
+
+Límites y continuidad
+Derivada
+Razón de cambio
+Reglas de derivación
+Razones de cambio relacionadas
+Optimizacion
+
+Métodos de integración
+Integral definida
+Áreas bajo la curva
+Sólido de revolución
+Volúmen de un sólido en revolución
+

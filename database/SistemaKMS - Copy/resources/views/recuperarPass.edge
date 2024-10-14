@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{ style('css/main.css') }}
+
+    
+    <title>Sistema de gestión de conocimiento</title>
+	
+		<script src="https://kit.fontawesome.com/4e3c5501e7.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  
+		{{style('adminlte/css/fontawesome-free/css/all.min.css') }}
+		{{style('adminlte/css/adminlte/adminlte.min.css') }}
+	
+		<style>
+	
+			body {
+				/*background: #f5f5f6;*/
+				background: #ffffff;
+				color: #222;
+				padding: 0;
+				margin: 0;
+				font-family: Roboto, Arial, sans-serif;
+				font-weight: normal;
+				font-style: normal;
+				line-height: 1.5;
+				position: relative;
+				cursor: auto;
+			}
+			
+		</style>
+</head>
+<body class="hold-transition login-page" style="background-image: url('imagenes/fondo/universidad.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    
+		<div class="login-box">
+			<!-- /.login-logo -->
+			<div class="card card-outline card-primary">
+				<div class="card-header text-center">
+					<img src="/imagenes/fondo/logo_azul.png" alt="logo" style="width: 150px; " />
+					<br>
+					<a href="#" class="h3"><b>Sistema de gestión del conocimiento</b> </a>
+				</div>
+				<div class="card-body">
+					<p class="login-box-msg">Recuperar contraseña </p>
+
+					<form action="/enviarCorreo" method="post">
+						{{ csrfField() }}
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="Matricula" name="matricula" id="matricula" onkeydown="comprobarMensajes()">
+							<div class="input-group-append">
+								<div class="input-group-text">
+									<span class="fas fa-envelope"></span>
+								</div>
+							</div>
+						</div>
+				 
+						
+						<div id="div_error_contrasena" style="display: none;" class="alert alert-warning alert-dismissible fade show" role="alert">
+					   	<span id="error_contrasena"> </span>
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+					  </div>
+					
+						<div id="div_error_matricula" style="display: none;" class="alert alert-warning alert-dismissible fade show" role="alert">
+							<span id="error_matricula"> </span>
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						
+						<div class="row">
+							<div class="col-12">
+								<button type="submit" class="btn btn-primary btn-block">Recuperar contraseña</button>
+							</div>
+							
+							<!-- /.col -->
+						</div>
+					</form>
+
+
+					<!-- /.social-auth-links -->
+
+			 
+				</div>
+				<!-- /.card-body -->
+			</div>
+			<!-- /.card -->
+		</div>
+		<!-- /.login-box -->
+	
+    
+		{{script('adminlte/js/jquery/jquery.min.js')}}
+		{{script('adminlte/js/bootstrap/bootstrap.bundle.min.js')}}
+		{{script('adminlte/js/adminlte.min.js')}}
+		
+	<script>
+
+	  let uri = window.location.href;
+		var div_error_matricula = document.getElementById("div_error_matricula");
+	 	var div_error_contrasena = document.getElementById("div_error_contrasena");
+		
+		
+		function comprobarMensajes(){
+			div_error_matricula.style.display = "none";
+			div_error_contrasena.style.display = "none";
+		}
+		
+	  	if( uri.includes("?") ){
+				uri = window.location.href.split('?');
+				var error = uri[1].split('=')[1];
+				//alert(error);
+
+				if(error == 1){
+					var error_matricula = document.getElementById("error_matricula");
+					error_matricula.innerHTML = " <i class='fas fa-exclamation-circle'></i> Usuario no encontrado."
+					div_error_matricula.style.display = "block";
+				}else if (error == 2){
+					var error_contrasena = document.getElementById("error_contrasena");
+					error_contrasena.innerHTML = " <i class='fas fa-exclamation-circle'></i> Contraseña incorrecta.";
+					div_error_contrasena.style.display = "block";
+				}
+
+				window.history.pushState('page2', 'Title', '/');
+			
+	  	}
+	</script>
+</body>
+</html>

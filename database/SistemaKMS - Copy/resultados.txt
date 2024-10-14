@@ -1,0 +1,122 @@
+Porcentajes,2
+Teorema de Thales de Mileto,3
+Teorema de Pitágoras,3
+Teorema de Euclides,3
+Notación científica ,3
+Radicales,1
+Regla detres,3
+Solución de problemas reales con ecuaciones de segundo grado,1
+Semezanjas de triangulos,3
+Ley de exponentes,1
+División de  números  racionales,3
+Resta de  números  racionales,3
+Ecuaciones de segundo grado,3
+Congruencia de trángulos,3
+Relación métrica de la circunferencia,3
+Solución de problemas reales con álgebra lineal,1
+Solución de problemas reales con trigonometría,3
+Modelado de funciones,1
+Volúmen de un sólido en revolución,3
+Suma de números racionales ,1
+Función  Lineal,3
+Función Cuadrática,3
+Función Polinomial,3
+Función  Exponencial,2
+Funciones  Logarítmicas,2
+Función  Valor absoluto,3
+Solución de  sistemas de  ecuaciones  por matrices,1
+División de polinomio entre monomio,3
+División de polinomio entre polinomio,1
+Factorización ,1
+Productos notables,1
+Perímetros áreas y volúmenes,1
+Ley de los Senos,3
+Solución de trángulos rectángulos,3
+Funciones Trigonométricas,2
+Sólido de revolución,3
+Mínimo común múltiplo ,3
+Máximo común divisor ,3
+Ecuaciones trigonometricas,2
+Ley de los Cosenos,3
+Regla  de  Cramer,1
+Método de Gauss Jordan,1
+Matriz  Inversa,1
+División de  términos  algebraicos,3
+Razón y proporciones,3
+Multiplicación de polinomios,3
+Postulados y teoremas,1
+Hipérbola,1
+Optimizacion,1
+Áreas bajo la curva,3
+Común denominador ,3
+Ley de signos,3
+Exponentes de números enteros elevados a números enteros,3
+División  aritmética de números enteros,3
+Dominio y rango de una función,3
+Identidades  trigonométricas,2
+Determinantes,3
+Multiplicación de  términos algebraicos,3
+Multiplicación de  números  racionales,3
+Exponentes de números racionales a numeros enteros,3
+Solución de problemas reales con sistemas de ecuaciones,1
+Cuadrilateros,1
+Elipse,2
+Razones de cambio relacionadas,1
+Integral definida,3
+Multiplicación aritmética de números enteros,3
+Números racionales ,3
+Ángulos y sus  razones  trigonométricas,2
+Triángulos,3
+Transpuesta,3
+Sistemas  de  ecuaciones ,3
+Suma  y resta de  terminos algebraicos,3
+Circunferencia,3
+Formas de expresar funciones matemáticas,3
+Reglas de derivación,2
+Métodos de integración,3
+Tablas de  multiplicar,3
+Clasificación de los números,3
+Operaciones  aritméticas  compuestas,3
+Conceptos de  funciones  matemáticas,3
+Razones  trigonométricas,2
+Polígonos,3
+Operaciones  con  matrices,1
+Métodos analíticos para la resolución de sistemas de ecuaciones,3
+Ecuaciones de  primer grado,3
+Lenguaje común y lenguaje algebraico,3
+Recta,3
+Razón de cambio,1
+Reglas de integración inmediatas,3
+Suma aritmética de números enteros,3
+Conjuntos Numericos ,3
+Matrices,1
+Jerarquías de las operaciones aritméticas,3
+Resta aritmética de números enteros,3
+Círculo  unitarioo,3
+Ángulos,3
+ Ecuaciones algebraicas,3
+Operaciones básicas del álgebra,3
+Plano cartesiano,3
+Desigualdades - inecuaciones,1
+Derivada,1
+Definición de la integral,2
+Conjuntos,3
+Triángulos rectángulos,3
+Principios de la Geometríaa,3
+Expresiones algebraicas,3
+Operaciones Aritméticas ,3
+Tríangulos  oblicuángulos,2
+Fórmula general para ecuaciones de segundo grado,2
+Sistema de n ecuaciones lineales con n incógnitas,1
+Intervalos,2
+Límites y continuidad,3
+Antiderivadas,1
+Aritmetica,3
+Álgebra  lineal,2
+Álgebra,3
+Trigonometría,2
+Geometría,3
+Funciones  matemáticas,1
+Cálculo  Diferencial,2
+Cálculo  Integral,2
+Matematicas,2

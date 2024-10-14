@@ -1,0 +1,38 @@
+a{
+  cursor: pointer;
+}
+.select2-container {
+width: 100% !important;
+}
+
+.animated {
+   -webkit-animation-duration: 0.6s;
+   animation-duration: 0.6s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+}
+
+.swal2-actions {
+  display: flex;
+  z-index: 1;
+  flex-wrap: wrap;
+  align-items: right;
+  justify-content: right;
+  width: 100%;
+  margin: 1.25em
+  auto 0;
+}
+
+svg {
+  max-width: 100%
+}
+
+.swal2-actions {
+  display: flex;
+  z-index: 1;
+  flex-wrap: wrap;
+  align-items: right;
+  justify-content: right;
+  width: 100%;
+  margin: 1.25em auto 0;
+}
