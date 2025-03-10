@@ -88,10 +88,13 @@ export default {
   if (temasString) {
     try {
       this.temas = JSON.parse(temasString);
-      console.log('Temas recibidos:', this.temas); // Imprime los temas en la consola
+      
+      // Filtrar los temas para omitir aquellos con grado de conocimiento 2
+      const temasFiltrados = this.temas.filter(tema => tema.grado_de_conocimiento !== 2);
+      console.log('Temas recibidos (sin grado 2):', temasFiltrados); // Imprime los temas filtrados en la consola
 
       // Extraer e imprimir solo los números de la propiedad 'tema'
-      this.temaIds = this.temas.map(tema => tema.tema).filter(num => num !== undefined);
+      this.temaIds = temasFiltrados.map(tema => tema.tema).filter(num => num !== undefined);
       console.log('IDs de temas a enviar:', this.temaIds); // Aquí lo agregas
 
     } catch (error) {
@@ -105,20 +108,22 @@ export default {
         this.temaActual--;
       }
     },
-     async temaSiguiente() {
+ async temaSiguiente() {
   if (this.temas[this.temaActual - 1].revisado) {
     if (this.temaActual < this.totalTemas) {
       this.temaActual++;
     } else if (this.temaActual === this.totalTemas) {
       try {
-        // Ejecutar la evaluación (script Python)
         console.log("Ejecutando evaluación...");
         const response = await axios.post('/api/ejecutar-evaluacion');
-        console.log("Respuesta del servidor:", response.data); // Mensaje de éxito o error
+        console.log("Respuesta del servidor:", response.data);
         alert('Evaluación completada y script Python ejecutado.');
-
-        // Si la evaluación se ejecuta correctamente, reiniciar el progreso
+        
+        // Llama al método para reiniciar el progreso
         await this.resetProgreso();
+
+        // Redirige a la página de evaluación
+        this.$router.push({ path: '/Evaluacion' });
       } catch (error) {
         console.error('Error al ejecutar la evaluación:', error);
         alert('Hubo un error al ejecutar la evaluación. Inténtalo de nuevo.');

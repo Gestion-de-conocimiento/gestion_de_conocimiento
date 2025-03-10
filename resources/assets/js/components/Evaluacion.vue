@@ -27,14 +27,7 @@
             <div class="card shadow">
               <div class="card-header">
                 <h3 class="card-title mt-2"> <b> Evaluacion </b> </h3>
-                <div class="card-tools">
-                  <div class="" style="width: 150px;">
-                    <button type="button" class="btn btn-primary float-right " data-toggle="modal"
-                      data-target="#exampleModal">
-                      <i class="fas fa-calculator"></i>
-                    </button>
-                  </div>
-                </div>
+                
               </div>
               <div class="card-body">
                 <div class="row">
@@ -108,210 +101,10 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="modal animated animate__bounceIn" id="exampleModal" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel"> Calculadora </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <input type="text" class="form-control" id="campo_calculadora" style="text-align:right;font-size:35px;">
-              </div>
-              <div class="form-group">
-                <table style="table-layout: fixed; width: 100%;">
-                  <tr>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('ac')"
-                        style="width: 100%; height: 100%;">AC</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('(')"
-                        style="width: 100%; height: 100%;">(</button> </td>
-                    <td> <button class="btn btn-primary" v-on:click="botonesCalculadora(')')"
-                        style="width: 100%; height: 100%;">)</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('/')"
-                        style="width: 100%; height: 100%;">/</button> </td>
-                  </tr>
-                  <tr>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('7')"
-                        style="width: 100%; height: 100%;">7</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('8')"
-                        style="width: 100%; height: 100%;">8</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('9')"
-                        style="width: 100%; height: 100%;">9</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('*')"
-                        style="width: 100%; height: 100%;">*</button> </td>
-                  </tr>
-                  <tr>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('4')"
-                        style="width: 100%; height: 100%;">4</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('5')"
-                        style="width: 100%; height: 100%;">5</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('6')"
-                        style="width: 100%; height: 100%;">6</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('+')"
-                        style="width: 100%; height: 100%;">+</button> </td>
-                  </tr>
-                  <tr>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('1')"
-                        style="width: 100%; height: 100%;">1</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('2')"
-                        style="width: 100%; height: 100%;">2</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('3')"
-                        style="width: 100%; height: 100%;">3</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('-')"
-                        style="width: 100%; height: 100%;">-</button> </td>
-                  </tr>
-
-                  <tr>
-                    <td> <button class="btn btn-primary " data-toggle="modal" data-target="#funciones"
-                        style="width: 100%; height: 100%;">fun</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('0')"
-                        style="width: 100%; height: 100%;">0</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('.')"
-                        style="width: 100%; height: 100%;">.</button> </td>
-                    <td> <button class="btn btn-primary " v-on:click="botonesCalculadora('=')"
-                        style="width: 100%; height: 100%;">=</button></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade bd-example-modal-lg" id="funciones" tabindex="-1" role="dialog"
-        aria-labelledby="funcionesModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Funciones</h5>
-            </div>
-            <div class="modal-body">
-
-              <div class="row">
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' abs (')">abs</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' acos (')">acos</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' acosh (')">acosh</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' asin (')">asin</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' asinh (')">asinh</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' atan (')">atan</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' atan2 (')">atan2</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' atanh (')">atanh</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' bindec (')">bindec</button>
-                  </div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' ceil (')">ceil</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' cos (')">cos</button></div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' cosh (')">cosh</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' decbin (')">decbin</button>
-                  </div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' decoct (')">decoct</button>
-                  </div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' deg2rad (')">deg2rad</button>
-                  </div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' exp (')">exp</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' expm1 (')">expm1</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' floor (')">floor</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' log10 (')">log10</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' log1p (')">log1p</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' log (')">log</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' max (')">max</button></div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' min (')">min</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' pi ( )')">pi</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' pow (')">pow</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' rad2deg (')">rad2deg</button>
-                  </div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' round (')">round</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' sin (')">sin</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' sinh (')">sinh</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' sqrt (')">sqrt</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' tan (')">tan</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' tanh (')">tanh</button></div>
-                </div>
-                <div class="col-1">
-                  <div><button class="btn btn-primary " v-on:click="botonesCalculadora(' ,')">,</button></div>
-                </div>
-              </div>
-
-            </div>
-            <!--button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button-->
-          </div>
-
-        </div>
-      </div>
-    </div>
+      
+       <!--Inicia comentar-->
+    
+      <!--Termina de comentar -->
   </div>
 </template>
 <script>
@@ -532,11 +325,14 @@ export default {
         } else {
           console.log("Ya ha terminado el cuestionario");
           alert("Ya se ha terminado de evaluar");
+          this.$router.push({ path: '/aprender' });
         }
       }, error => {
         console.error(error)
       })
-    },    obtenerPregu: async function () {
+    },  
+    
+    obtenerPregu: async function () {
       this.tra = false;
       while(this.tra == false){
       await axios({
@@ -610,6 +406,7 @@ export default {
           var largo = this.tolong-1
           if(this.numTem >= largo || 0 >= this.tolong){
             alert("Ya se ha terminado de evaluar la rama");
+            this.$router.push({ path: '/aprender' });
           }else{
           if(this.grado != 2){
              this.numTem = this.numTem + 1;
@@ -1028,28 +825,32 @@ if(cuestionarioTema != null){
             break;
           /* Validación para la pregunta númerica */
           case 2:
-            var opc = document.getElementById("input_respuesta");
+              var opc = document.getElementById("input_respuesta");
 
-            if (opc.value == "") {
-              //_this.$swal.fire("Por favor ingresa una respuesta valida");
+              if (opc.value == "") {
+                //_this.$swal.fire("Por favor ingresa una respuesta valida");
 
-              _this.$swal.fire({
-                position: 'center',
-                icon: 'warning',
-                title: 'Por favor ingresa una respuesta válida',
-                showConfirmButton: false,
-                timer: 1500
-              })
+                _this.$swal.fire({
+                  position: 'center',
+                  icon: 'warning',
+                  title: 'Seleccione una respuesta',
+                  showConfirmButton: false,
+                  timer: 1500
+                })
+               
 
-              return;
-            }
+                return;
+              }
 
-            if (cuestionarioTema.guess(opc.value))
-              respuestas_correctas++;
-            else
-              respuestas_incorretas++;
+              if (cuestionarioTema.guess(opc.value)) {
+                respuestas_correctas++;
+                console.log("Respuesta correcta: " + opc.value); // Muestra la respuesta correcta
+              } else {
+                respuestas_incorretas++;
+                console.log("Respuesta incorrecta: " + opc.value); // Muestra la respuesta incorrecta
+              }
 
-            break;
+              break;
           case 3:
 
             var input_verdadero = document.getElementById("input_verdadero");
@@ -1214,7 +1015,7 @@ if(cuestionarioTema != null){
           cuestionarioTema.score = cuestionarioTema.score + 1;
           //_this.$swal.fire('Correcta');
           _this.$swal.fire({
-            position: 'top-end',
+            position: 'center',
             icon: 'success',
             title: 'Respuesta correcta',
             showConfirmButton: false,
@@ -1235,7 +1036,7 @@ if(cuestionarioTema != null){
           //_this.$swal.fire('Incorrecta');
 
           _this.$swal.fire({
-            position: 'top-end',
+            position: 'center',
             icon: 'warning',
             title: 'Respuesta incorrecta',
             showConfirmButton: false,
@@ -1476,12 +1277,13 @@ if(cuestionarioTema != null){
               break;
               case 7:
                 var input_respuesta = document.createElement("input");
-                input_respuesta.type = "text";
+                input_respuesta.type = "hidden";
                 input_respuesta.id = "input_respuesta";
                 var zona_botones = document.getElementById("buttons");
-                zona_botones.innerHTML = " <b> Respuesta: </b> <br>";
                 zona_botones.appendChild(input_respuesta);
                 break;
+
+              
           }
           //showProgress();
         }

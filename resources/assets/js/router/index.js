@@ -33,6 +33,7 @@ import VistaEspecial from '@/components/VistaEspecial.vue'; // La vista para ram
 import VistaGeneral from '@/components/VistaGeneral.vue'; // La vista para ramas con otros grados
 import VistaRama from '@/components/VistaRama.vue'
 import Evaluacion from '@/components/Evaluacion'
+import DashboardAlumno from '@/components/DashBoardAlumno'
 Vue.use(Router)
 
 export default new Router({
@@ -76,6 +77,11 @@ export default new Router({
 	      path:'/configurarCuestionario',
 	      name: 'ConfiguracionCuestionario',
 	      component: ConfiguracionCuestionario
+    },
+     {
+	      path:'/dashboardAlumno',
+	      name: 'DashboardAlumno',
+	      component: DashboardAlumno
     },
     {
        path:'/cuestionario',

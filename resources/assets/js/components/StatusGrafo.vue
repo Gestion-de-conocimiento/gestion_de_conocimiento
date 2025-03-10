@@ -5,12 +5,12 @@
                 <div class="row mb-2">
                     <div class="col-sm-6">
                         <h1 class="page-title m-0">
-                            Status Grafo
+                            Estatus de dominio
                         </h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#"> Status Grafo </a></li>
+                            <li class="breadcrumb-item"><a href="#"> Estatus de dominio </a></li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->

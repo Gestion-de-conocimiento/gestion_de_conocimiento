@@ -99,6 +99,15 @@
 						</router-link>
 					</li>
           
+          <!-- <li v-if="this.id_rol==1 || this.id_rol==3" class="nav-item">							
+						<router-link class="nav-link" id="navAccesos" to="/configurarCuestionario">
+							<i class="fas fa-cogs nav-icon"></i> 
+							<p>
+								Dashboard
+							</p>
+						</router-link>
+					</li> -->
+          
           
           <li v-if="this.id_rol==1 || this.id_rol==3" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/configuracion/modulo">
@@ -114,7 +123,7 @@
 						<router-link class="nav-link" id="navAccesos" to="/cuestionario">
 							<i class="fas fa-clipboard-check nav-icon"></i>
 							<p>
-								Contestar
+								Evaluación diagnóstica
 							</p>
 						</router-link>
 					</li>
@@ -208,11 +217,11 @@
 					</li>
           
           
-					<li v-if="this.id_rol == 4" class="nav-item mb-5">
+					<li v-if="this.id_rol == 4" class="nav-item">
 						<router-link class="nav-link" id="navAccesos" to="/statusGrafo">
 							<i class="fas fa-folder-open nav-icon"></i>
 							<p>
-								Status Grafo
+								Estatus de dominio
 							</p>
 						</router-link>
 					</li>
@@ -252,7 +261,7 @@
 					</li>
           
           
-          <li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==4" class="nav-item">							
+          <li v-if="this.id_rol==1 || this.id_rol==4" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/aprender">
 							<i class="fas fa-chalkboard-teacher nav-icon"></i> 
 							<p>
@@ -260,11 +269,11 @@
 							</p>
 						</router-link>
 					</li>
-                    <li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==4" class="nav-item mb-5">							
+          <li v-if="this.id_rol==1 || this.id_rol==4" class="nav-item mb-3">							
 						<router-link class="nav-link" id="navAccesos" to="/evaluacion">
 							<i class="fas fa-chalkboard-teacher nav-icon"></i> 
 							<p>
-								Evaluacion
+								Evaluación
 							</p>
 						</router-link>
 					</li>

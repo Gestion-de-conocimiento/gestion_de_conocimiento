@@ -4044,14 +4044,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
@@ -4129,179 +4122,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
- // Importar el hook para la navegación
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       botonesRamas: {},
-      // Objeto para almacenar las ramas y sus nombres
       gradosPorRama: {},
-      // Almacena los grados de conocimiento por rama
       temasPorRama: {},
-      // Almacena los temas por rama para el orden de enseñanza
-      //branchLabels: [],
-      //resultadoArray: [], // Array que contendrá el resultado de la API
-      //ramasUnicas: [], // Array para almacenar las ramas únicas
-      //temasPorRama: [],
-
-      /* ramas:[],//utilizado actualmente
-       mostrarRamas: false,
-        ramasMap: {
-       2: 'Aritmética',
-       3: 'Álgebra',
-       4: 'Geometría',
-       5: 'Álgebra Lineal',
-       6: 'Trigonometría',
-       7: 'Funciones Matemáticas',
-       8: 'Cálculo Diferencial',
-       9: 'Cálculo Integral',
-      },*/
-      pregunta: [],
-      pCalculadas: [],
-      pCalculadasMultiples: [],
-      opciones: [],
-      comodines: [],
-      configuracion: [],
-      topic: [],
-      numero_tema: 0,
-      imagenesPregunta: [],
-      imagenActual: '',
-      imagenActualNombre: '',
-      salidaModulo: '',
-      ordenEvaluacion: [],
-      ponderacion: 0,
-      estatus: [],
-      ultimoTema: 0,
-      datosEvaluacion: {},
-      temasAEvaluar: [96, 26, 44, 91],
-      temaAEvaluarActual: 0
+      firstBlueButtonIndex: null,
+      areButtonsDisabled: false
     };
   },
-
-  /*computed: {
-  // Computed property para filtrar las ramas que estén entre 2 y 9
-  ramasFiltradas() {
-    return this.ramas.filter(rama => rama >= 2 && rama <= 9);
-  }
-  },*/
   created: function created() {
-    var _this2 = this;
+    var _this = this;
 
     return _asyncToGenerator(
     /*#__PURE__*/
@@ -4311,7 +4144,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _this2.obtenerConfiguracion();
+              return _this.startHighlighting();
 
             case 2:
             case "end":
@@ -4322,12 +4155,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }))();
   },
   methods: {
-    /* Pickle(){
-      //console.log("Hola")
-       
-    },*/
-    Pickle: function () {
-      var _Pickle = _asyncToGenerator(
+    Pickle: function Pickle() {
+      var _this2 = this;
+
+      return _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
         var result;
@@ -4335,61 +4166,49 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                _context2.prev = 0;
-                console.log("Hola");
-                _context2.next = 4;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default()({
-                  method: 'get',
-                  url: "/obtenerMatricula/" + matricula
-                });
+                _this2.firstBlueButtonIndex = null;
+                _this2.areButtonsDisabled = false; // Resetea el estado de los botones
 
-              case 4:
+                _context2.prev = 2;
+                _context2.next = 5;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/obtenerMatricula/" + matricula);
+
+              case 5:
                 result = _context2.sent;
-                //console.log(result.data); // Revisa la estructura de result.data
-                // Mapear las ramas y sus nombres
-                this.botonesRamas = this.mapearRamas(result.data.temas_por_rama);
-                this.gradosPorRama = this.mapearGrados(result.data.temas_por_rama);
-                this.temasPorRama = result.data.temas_por_rama;
-                _context2.next = 13;
+                console.log("La matrícual es:", result);
+                _this2.botonesRamas = _this2.mapearRamas(result.data.temas_por_rama);
+                _this2.gradosPorRama = _this2.mapearGrados(result.data.temas_por_rama);
+                _this2.temasPorRama = result.data.temas_por_rama; // Determinar el primer botón no dominado
+
+                _this2.firstBlueButtonIndex = Object.keys(_this2.botonesRamas).findIndex(function (rama) {
+                  return !_this2.gradosPorRama[rama];
+                });
+                _context2.next = 16;
                 break;
 
-              case 10:
-                _context2.prev = 10;
-                _context2.t0 = _context2["catch"](0);
+              case 13:
+                _context2.prev = 13;
+                _context2.t0 = _context2["catch"](2);
                 console.error("Ocurrió un error en la solicitud:", _context2.t0);
 
-              case 13:
+              case 16:
               case "end":
                 return _context2.stop();
             }
           }
-        }, _callee2, this, [[0, 10]]);
-      }));
-
-      function Pickle() {
-        return _Pickle.apply(this, arguments);
-      }
-
-      return Pickle;
-    }(),
+        }, _callee2, null, [[2, 13]]);
+      }))();
+    },
     mapearRamas: function mapearRamas(temasPorRama) {
       var nombresRamas = {
         2: '1. Aritmética',
-        // Añadida la tilde en la 'e'
         3: '2. Álgebra',
-        // Correcto
         4: '3. Geometría',
-        // Correcto
         5: '4. Álgebra lineal',
-        // Correcto
         6: '5. Trigonometría',
-        // Correcto
         7: '6. Funciones matemáticas',
-        // Correcto
         8: '7. Cálculo diferencial',
-        // Correcto
-        9: '8. Cálculo integral' // Correcto
-
+        9: '8. Cálculo integral'
       };
       var botones = {};
 
@@ -4422,19 +4241,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
       return grados;
     },
-    getButtonClass: function getButtonClass(rama) {
-      return this.gradosPorRama[rama] ? 'btn-secondary' : 'btn-primary';
-    },
-    //Función handleRamaClick para pasar los temas por rama como un string Json
     handleRamaClick: function handleRamaClick(rama) {
-      console.log("Bot\xF3n de la rama ".concat(rama, " clickeado"));
-      var nombreRama = this.botonesRamas[rama]; // Imprimir los temas de la rama seleccionada
-
-      console.log("Temas para la rama ".concat(nombreRama, ":"), this.temasPorRama[rama]); // Aquí pasamos los temas por rama como un string JSON
-
-      var temasString = JSON.stringify(this.temasPorRama[rama]);
+      var nombreRama = this.botonesRamas[rama];
+      var temasString = JSON.stringify(this.temasPorRama[rama]); // Verifica si el botón es gris (rama dominada)
 
       if (this.gradosPorRama[rama]) {
+        // Redirige a la vista especial
         this.$router.push({
           name: 'vista-especial',
           params: {
@@ -4446,6 +4258,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           }
         });
       } else {
+        // Redirige a la vista general
         this.$router.push({
           name: 'vista-general',
           params: {
@@ -4458,1568 +4271,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         });
       }
     },
-    obtenerPrimerTema: function () {
-      var _obtenerPrimerTema = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
-        var _this3 = this;
-
-        var parametros;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
-          while (1) {
-            switch (_context3.prev = _context3.next) {
-              case 0:
-                parametros = this.configuracion.rbm + "/" + matricula;
-                console.log(parametros);
-                _context3.next = 4;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default()({
-                  method: 'get',
-                  url: "/arbol/caminosmodulo/" + parametros
-                }).then(function (result) {
-                  _this3.ultimoTema = result.data.tema;
-                }, function (error) {
-                  console.error(error);
-                });
-
-              case 4:
-              case "end":
-                return _context3.stop();
-            }
-          }
-        }, _callee3, this);
-      }));
-
-      function obtenerPrimerTema() {
-        return _obtenerPrimerTema.apply(this, arguments);
-      }
-
-      return obtenerPrimerTema;
-    }(),
-    storeResult: function () {
-      var _storeResult = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(ponderacion) {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
-          while (1) {
-            switch (_context4.prev = _context4.next) {
-              case 0:
-                this.pregunta = [];
-                _context4.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/score/add', {
-                  id_tema: this.topic[0].id,
-                  ponderacion: ponderacion,
-                  clasificacion: 1
-                }).then(function (res) {})["catch"](function (err) {
-                  console.log(err);
-                });
-
-              case 3:
-                _context4.next = 5;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default()({
-                  method: 'get',
-                  url: '/arbol/obtenerCaminos/' + this.topic[0].id
-                }).then(function (result) {}, function (error) {
-                  console.error(error);
-                });
-
-              case 5:
-              case "end":
-                return _context4.stop();
-            }
-          }
-        }, _callee4, this);
-      }));
-
-      function storeResult(_x) {
-        return _storeResult.apply(this, arguments);
-      }
-
-      return storeResult;
-    }(),
-    getopic: function () {
-      var _getopic = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5() {
-        var _this4 = this;
-
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee5$(_context5) {
-          while (1) {
-            switch (_context5.prev = _context5.next) {
-              case 0:
-                _context5.next = 2;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default()({
-                  method: 'get',
-                  url: 'topic/getopic/' + this.ultimoTema
-                }).then(function (result) {
-                  _this4.topic = result.data[0];
-                }, function (error) {
-                  console.error(error);
-                });
-
-              case 2:
-              case "end":
-                return _context5.stop();
-            }
-          }
-        }, _callee5, this);
-      }));
-
-      function getopic() {
-        return _getopic.apply(this, arguments);
-      }
-
-      return getopic;
-    }(),
-
-    /*-------------------------------------------------------configuración del número de preguntas-----------------------------*/
-    obtenerConfiguracion: function obtenerConfiguracion() {
-      var _this5 = this;
-
-      axios__WEBPACK_IMPORTED_MODULE_1___default()({
-        method: 'get',
-        url: 'cuestionario/obtenerconfiguracion'
-      }).then(function (result) {
-        _this5.configuracion = result.data;
-        console.log("Configuracion");
-        console.log(_this5.configuracion);
-      }, function (error) {
-        console.error(error);
-      });
-      /*-------------------------------------------------------Termina la configuración del número de preguntas-----------------------------*/
-    },
-    getpreguntas: function () {
-      var _getpreguntas = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee8() {
-        var _this6 = this;
-
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee8$(_context9) {
-          while (1) {
-            switch (_context9.prev = _context9.next) {
-              case 0:
-                console.log("Obtener preguntas del tema: " + this.ultimoTema);
-                return _context9.abrupt("return", axios__WEBPACK_IMPORTED_MODULE_1___default()({
-                  method: 'get',
-                  url: 'pregunta/showPreguntas/' + this.ultimoTema
-                }).then(
-                /*#__PURE__*/
-                function () {
-                  var _ref = _asyncToGenerator(
-                  /*#__PURE__*/
-                  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee7(result) {
-                    var _loop, _i3, i;
-
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee7$(_context8) {
-                      while (1) {
-                        switch (_context8.prev = _context8.next) {
-                          case 0:
-                            _this6.pregunta = result.data.banco_preguntas;
-                            _loop =
-                            /*#__PURE__*/
-                            _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _loop(_i3) {
-                              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _loop$(_context7) {
-                                while (1) {
-                                  switch (_context7.prev = _context7.next) {
-                                    case 0:
-                                      _this6.pregunta[_i3].imagenes = [];
-                                      _context7.next = 3;
-                                      return axios__WEBPACK_IMPORTED_MODULE_1___default()({
-                                        method: 'get',
-                                        url: '/imagen/pregunta/' + _this6.pregunta[_i3].id_pregunta
-                                      }).then(
-                                      /*#__PURE__*/
-                                      function () {
-                                        var _ref2 = _asyncToGenerator(
-                                        /*#__PURE__*/
-                                        _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6(resultado) {
-                                          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee6$(_context6) {
-                                            while (1) {
-                                              switch (_context6.prev = _context6.next) {
-                                                case 0:
-                                                  _this6.pregunta[_i3].imagenes = resultado.data.imagenes[0];
-
-                                                case 1:
-                                                case "end":
-                                                  return _context6.stop();
-                                              }
-                                            }
-                                          }, _callee6);
-                                        }));
-
-                                        return function (_x3) {
-                                          return _ref2.apply(this, arguments);
-                                        };
-                                      }(), function (error) {
-                                        console.error(error);
-                                      });
-
-                                    case 3:
-                                    case "end":
-                                      return _context7.stop();
-                                  }
-                                }
-                              }, _loop);
-                            });
-                            _i3 = 0;
-
-                          case 3:
-                            if (!(_i3 < _this6.pregunta.length)) {
-                              _context8.next = 8;
-                              break;
-                            }
-
-                            return _context8.delegateYield(_loop(_i3), "t0", 5);
-
-                          case 5:
-                            _i3++;
-                            _context8.next = 3;
-                            break;
-
-                          case 8:
-                            console.log(_this6.pregunta);
-
-                            for (i = 0; i < _this6.pregunta.length; i++) {
-                              if (_this6.pregunta[i].tipo == 5) _this6.pCalculadas[i] = _this6.pregunta[i].id_pregunta;else if (_this6.pregunta[i].tipo == 6) _this6.pCalculadasMultiples[i] = _this6.pregunta[i].id_pregunta;
-                            }
-
-                            _context8.next = 12;
-                            return _this6.getComodines();
-
-                          case 12:
-                            return _context8.abrupt("return", result.data);
-
-                          case 13:
-                          case "end":
-                            return _context8.stop();
-                        }
-                      }
-                    }, _callee7);
-                  }));
-
-                  return function (_x2) {
-                    return _ref.apply(this, arguments);
-                  };
-                }(), function (error) {
-                  console.error(error);
-                }));
-
-              case 2:
-              case "end":
-                return _context9.stop();
-            }
-          }
-        }, _callee8, this);
-      }));
-
-      function getpreguntas() {
-        return _getpreguntas.apply(this, arguments);
-      }
-
-      return getpreguntas;
-    }(),
-    getComodines: function () {
-      var _getComodines = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee10() {
-        var _this7 = this;
-
-        var preguntasCalculadas;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee10$(_context11) {
-          while (1) {
-            switch (_context11.prev = _context11.next) {
-              case 0:
-                preguntasCalculadas = this.pCalculadas.concat(this.pCalculadasMultiples);
-                axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('pregunta/getComodines/', {
-                  pregunta: preguntasCalculadas
-                }).then(
-                /*#__PURE__*/
-                function () {
-                  var _ref3 = _asyncToGenerator(
-                  /*#__PURE__*/
-                  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee9(result) {
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee9$(_context10) {
-                      while (1) {
-                        switch (_context10.prev = _context10.next) {
-                          case 0:
-                            _this7.comodines = result.data.comodines;
-                            _context10.next = 3;
-                            return _this7.convertirComodines();
-
-                          case 3:
-                          case "end":
-                            return _context10.stop();
-                        }
-                      }
-                    }, _callee9);
-                  }));
-
-                  return function (_x4) {
-                    return _ref3.apply(this, arguments);
-                  };
-                }())["catch"](function (err) {
-                  console.log(err);
-                });
-
-              case 2:
-              case "end":
-                return _context11.stop();
-            }
-          }
-        }, _callee10, this);
-      }));
-
-      function getComodines() {
-        return _getComodines.apply(this, arguments);
-      }
-
-      return getComodines;
-    }(),
-    convertirComodines: function () {
-      var _convertirComodines = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee11() {
-        var i, valor, separado, random, j, power;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee11$(_context12) {
-          while (1) {
-            switch (_context12.prev = _context12.next) {
-              case 0:
-                for (i = 0; i < this.comodines.length; i++) {
-                  valor = this.comodines[i].valor;
-                  separado = valor.split("~");
-                  if (separado.length == 2) this.comodines[i].valor = Math.random() * (parseInt(separado[0]) - parseInt(separado[1])) + parseInt(separado[1]);else {
-                    separado = valor.split(",");
-                    random = Math.round(Math.random() * (separado.length - 1));
-                    this.comodines[i].valor = parseInt(separado[random]);
-                  }
-
-                  for (j = 0; j < this.pregunta.length; j++) {
-                    if (this.pregunta[j].tipo == 5 || this.pregunta[j].tipo == 6) {
-                      if (this.pregunta[j].id_pregunta == this.comodines[i].id_pregunta) {
-                        power = Math.pow(10, this.pregunta[j].decimales);
-                        this.comodines[i].valor = Math.round(this.comodines[i].valor * power) / power;
-                      }
-                    }
-                  }
-                }
-
-                _context12.next = 3;
-                return this.reemplazarComodinesEnPregunta();
-
-              case 3:
-              case "end":
-                return _context12.stop();
-            }
-          }
-        }, _callee11, this);
-      }));
-
-      function convertirComodines() {
-        return _convertirComodines.apply(this, arguments);
-      }
-
-      return convertirComodines;
-    }(),
-    reemplazarComodinesEnPregunta: function () {
-      var _reemplazarComodinesEnPregunta = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee12() {
-        var i, comodinesPregunta, j, k;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee12$(_context13) {
-          while (1) {
-            switch (_context13.prev = _context13.next) {
-              case 0:
-                for (i = 0; i < this.pregunta.length; i++) {
-                  if (this.pregunta[i].tipo == 5) {
-                    comodinesPregunta = [];
-
-                    for (j = 0; j < this.comodines.length; j++) {
-                      if (this.pregunta[i].id_pregunta == this.comodines[j].id_pregunta) {
-                        comodinesPregunta.push(this.comodines[j]);
-                      }
-                    }
-
-                    for (k = 0; k < comodinesPregunta.length; k++) {
-                      while (this.pregunta[i].pregunta.indexOf(comodinesPregunta[k].comodin) != -1) {
-                        this.pregunta[i].pregunta = this.pregunta[i].pregunta.replace(comodinesPregunta[k].comodin, comodinesPregunta[k].valor);
-                      }
-                    }
-                  } //console.log(this.pregunta[i].pregunta);
-
-
-                  if (this.pregunta[i].tipo == 6) {
-                    comodinesPregunta = [];
-
-                    for (j = 0; j < this.comodines.length; j++) {
-                      if (this.pregunta[i].id_pregunta == this.comodines[j].id_pregunta && this.comodines[j].esrespuesta == 1) comodinesPregunta.push(this.comodines[j]);
-                    }
-
-                    for (k = 0; k < comodinesPregunta.length; k++) {
-                      while (this.pregunta[i].pregunta.indexOf(comodinesPregunta[k].comodin) != -1) {
-                        this.pregunta[i].pregunta = this.pregunta[i].pregunta.replace(comodinesPregunta[k].comodin, comodinesPregunta[k].valor);
-                      }
-                    }
-                  }
-                } //}
-
-
-                _context13.next = 3;
-                return this.cargarCuestionario(this.topic[0].nombre_tema, this.pregunta);
-
-              case 3:
-              case "end":
-                return _context13.stop();
-            }
-          }
-        }, _callee12, this);
-      }));
-
-      function reemplazarComodinesEnPregunta() {
-        return _reemplazarComodinesEnPregunta.apply(this, arguments);
-      }
-
-      return reemplazarComodinesEnPregunta;
-    }(),
-    getopciones: function getopciones(id) {
-      return axios__WEBPACK_IMPORTED_MODULE_1___default()({
-        method: 'get',
-        url: '/pregunta/opciones/' + id
-      }).then(function (result) {
-        return result.data;
-      }, function (error) {
-        console.error(error);
-      });
-    },
-    desplegarImagen: function desplegarImagen(img, nombre) {
-      this.imagenActual = img;
-      this.imagenActualNombre = nombre;
-      $("#modalParaVerImagenes").modal();
-    },
-    cargarCuestionario: function () {
-      var _cargarCuestionario = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee16(topic, prguntass) {
-        var questions, i, pregunta, tipo, id, up, down, value, decimales, imagenesPregunta, Quiz, Question, cuestionarioTema, _this, populate, _populate, guess, showScores, _showScores;
-
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee16$(_context17) {
-          while (1) {
-            switch (_context17.prev = _context17.next) {
-              case 0:
-                _showScores = function _ref11() {
-                  _showScores = _asyncToGenerator(
-                  /*#__PURE__*/
-                  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee15() {
-                    var gameOverHTML, element;
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee15$(_context16) {
-                      while (1) {
-                        switch (_context16.prev = _context16.next) {
-                          case 0:
-                            gameOverHTML = "<h1>Resultados</h1>";
-                            gameOverHTML += "<center> <h4>Estos son tus resultados</h4> </center>";
-                            gameOverHTML += "<center> <table><tr><th>Tema</th><th>Dominio</th></tr>";
-                            _context16.next = 5;
-                            return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/arbol/obtenerResultados').then(function (res) {
-                              for (var i = 0; i < res.data.length; i++) {
-                                if (res.data[i].clasificacion == 1) {
-                                  gameOverHTML += "<tr style='background-color: rgb(0,195,255);' >";
-                                } else {
-                                  gameOverHTML += "<tr>";
-                                }
-
-                                gameOverHTML += "<td> " + res.data[i].nombre + "</td>";
-                                gameOverHTML += "<td> " + res.data[i].ponderacion + " % </td>";
-                                gameOverHTML += "</tr>";
-                              }
-
-                              gameOverHTML += "</table> </center>";
-                              gameOverHTML += " <center> <h4> Los temas <b style='color: rgb(0,195,255);'> azules</b> son los temas evaluados en el cuestionario </h4> </center>";
-                              gameOverHTML += " <br> <center> <h6> Muchas gracias por participar. </h6> </center>";
-                              gameOverHTML += "<center> <h6> Ya puedes cerrar esta ventana </h6> </center>";
-                            })["catch"](function (err) {
-                              console.log(err);
-                            });
-
-                          case 5:
-                            element = document.getElementById("quiz");
-                            element.innerHTML = gameOverHTML;
-
-                          case 7:
-                          case "end":
-                            return _context16.stop();
-                        }
-                      }
-                    }, _callee15);
-                  }));
-                  return _showScores.apply(this, arguments);
-                };
-
-                showScores = function _ref10() {
-                  return _showScores.apply(this, arguments);
-                };
-
-                guess = function _ref9() {
-                  var answers = cuestionarioTema.getQuestionIndex().answer;
-                  var choices = cuestionarioTema.getQuestionIndex().choices;
-                  opc_check = 0;
-
-                  for (var i = 0; i < choices.length; i++) {
-                    var opc = document.getElementById("opc_" + i);
-
-                    if (opc.checked == true) {
-                      if (opc_check == answers.length) {
-                        opc.checked = false;
-                      } else {
-                        opc.checked = true;
-                      }
-
-                      opc_check++;
-                    }
-                  }
-                };
-
-                _populate = function _ref8() {
-                  _populate = _asyncToGenerator(
-                  /*#__PURE__*/
-                  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee14() {
-                    var total, element, imgstr, ii, tema, opcionesAux, choices, input_respuesta, zona_botones, div_verdadero, div_falso, label_verdadero, label_falso, input_verdadero, input_falso, i, label, span, button, power;
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee14$(_context15) {
-                      while (1) {
-                        switch (_context15.prev = _context15.next) {
-                          case 0:
-                            if (!cuestionarioTema.isEnded()) {
-                              _context15.next = 4;
-                              break;
-                            }
-
-                            if (cuestionarioTema.questions.length > 0) {
-                              total = Math.round(cuestionarioTema.score / cuestionarioTema.questions.length * 100);
-
-                              if (!_this.datosEvaluacion.detenerse) {
-                                cuestionarioTema = "";
-                                questions = [];
-                                _this.ponderacion = total;
-
-                                _this.enviarPonderacion(); //_this.getpreguntas();
-
-                              } else {
-                                showScores();
-                              }
-                            }
-
-                            _context15.next = 73;
-                            break;
-
-                          case 4:
-                            document.getElementById("buttons").innerHTML = "";
-                            element = document.getElementById("question").innerHTML = cuestionarioTema.getQuestionIndex().text;
-                            imgstr = "";
-                            _this.imagenesPregunta = [];
-
-                            for (ii = 0; ii < cuestionarioTema.getQuestionIndex().imagenes.length; ii++) {
-                              imgstr = "/imagenes/preguntas/" + cuestionarioTema.getQuestionIndex().imagenes[ii].nombre;
-
-                              _this.imagenesPregunta.push(imgstr);
-
-                              console.log(_this.imagenesPregunta);
-                            }
-
-                            console.log(cuestionarioTema.getQuestionIndex().imagenes);
-                            tema = document.getElementById("tag_topic");
-                            tema.innerHTML = " <b> Tema: </b> " + _this.topic[0].nombre_tema;
-
-                            if (!(cuestionarioTema.getQuestionIndex().type == 4)) {
-                              _context15.next = 15;
-                              break;
-                            }
-
-                            _context15.next = 15;
-                            return axios__WEBPACK_IMPORTED_MODULE_1___default()({
-                              method: 'get',
-                              url: '/pregunta/opciones/' + cuestionarioTema.getQuestionIndex().id
-                            }).then(function (result) {
-                              var ops = [];
-
-                              for (var i = 0; i < result.data.length; i++) {
-                                ops.push(result.data[i].opcion);
-                              }
-
-                              cuestionarioTema.getQuestionIndex().choices = ops;
-                            }, function (error) {
-                              console.error(error);
-                            });
-
-                          case 15:
-                            opcionesAux = [];
-
-                            if (!(cuestionarioTema.getQuestionIndex().type == 6)) {
-                              _context15.next = 19;
-                              break;
-                            }
-
-                            _context15.next = 19;
-                            return axios__WEBPACK_IMPORTED_MODULE_1___default()({
-                              method: 'get',
-                              url: '/pregunta/opcionescalculadasmultiples/' + cuestionarioTema.getQuestionIndex().id
-                            }).then(function (result) {
-                              var ops = [];
-
-                              for (var i = 0; i < result.data.length; i++) {
-                                ops.push(result.data[i].opcion);
-                                opcionesAux.push(result.data[i]);
-                              }
-
-                              cuestionarioTema.getQuestionIndex().choices = ops;
-                            }, function (error) {
-                              console.error(error);
-                            });
-
-                          case 19:
-                            choices = cuestionarioTema.getQuestionIndex().choices;
-                            _context15.t0 = cuestionarioTema.getQuestionIndex().type;
-                            _context15.next = _context15.t0 === 1 ? 23 : _context15.t0 === 2 ? 30 : _context15.t0 === 3 ? 37 : _context15.t0 === 4 ? 60 : _context15.t0 === 5 ? 64 : _context15.t0 === 6 ? 71 : 73;
-                            break;
-
-                          case 23:
-                            input_respuesta = document.createElement("input");
-                            input_respuesta.type = "text";
-                            input_respuesta.id = "input_respuesta";
-                            zona_botones = document.getElementById("buttons");
-                            zona_botones.innerHTML = " <b> Respuesta: </b> <br>";
-                            zona_botones.appendChild(input_respuesta);
-                            return _context15.abrupt("break", 73);
-
-                          case 30:
-                            input_respuesta = document.createElement("input");
-                            input_respuesta.type = "text"; // se cambió de number a text para que acepte fracciones
-
-                            input_respuesta.id = "input_respuesta";
-                            zona_botones = document.getElementById("buttons");
-                            zona_botones.innerHTML = "<b> Respuesta: </b> <br>";
-                            zona_botones.appendChild(input_respuesta);
-                            return _context15.abrupt("break", 73);
-
-                          case 37:
-                            div_verdadero = document.createElement("div");
-                            div_falso = document.createElement("div");
-                            label_verdadero = document.createElement("label");
-                            label_verdadero.innerHTML = " Verdadero";
-                            label_falso = document.createElement("label");
-                            label_falso.innerHTML = " Falso";
-                            input_verdadero = document.createElement("input");
-                            input_verdadero.type = "radio";
-                            input_verdadero.name = "truefalse";
-                            input_verdadero.id = "input_verdadero";
-                            input_falso = document.createElement("input");
-                            input_falso.type = "radio";
-                            input_falso.name = "truefalse";
-                            input_falso.id = "input_falso";
-                            div_verdadero.appendChild(input_verdadero);
-                            div_verdadero.appendChild(label_verdadero);
-                            div_falso.appendChild(input_falso);
-                            div_falso.appendChild(label_falso);
-                            zona_botones = document.getElementById("buttons");
-                            zona_botones.innerHTML = " <b> Respuesta: </b> <br>";
-                            zona_botones.appendChild(div_verdadero);
-                            zona_botones.appendChild(div_falso);
-                            return _context15.abrupt("break", 73);
-
-                          case 60:
-                            zona_botones = document.getElementById("buttons");
-                            zona_botones.innerHTML = " <b> Respuesta: </b> <br>";
-
-                            for (i = 0; i < choices.length; i++) {
-                              label = document.createElement("label");
-                              label.innerHTML = choices[i];
-                              label.className = "container";
-                              label.id = "opcl_" + i;
-                              span = document.createElement("checkmark");
-                              span.className = "checkmark";
-                              button = document.createElement("input");
-                              button.type = "checkbox";
-                              button.text = choices[i];
-                              button.id = "opc_" + i;
-                              label.appendChild(button);
-                              label.appendChild(span); //zona_botones.innerHTML = "Respuesta: <br>";
-
-                              zona_botones.appendChild(label);
-                            }
-
-                            return _context15.abrupt("break", 73);
-
-                          case 64:
-                            input_respuesta = document.createElement("input");
-                            input_respuesta.type = "number";
-                            input_respuesta.id = "input_respuesta";
-                            zona_botones = document.getElementById("buttons");
-                            zona_botones.innerHTML = "<b> Respuesta: </b> <br>";
-                            zona_botones.appendChild(input_respuesta);
-                            return _context15.abrupt("break", 73);
-
-                          case 71:
-                            for (i = 0; i < choices.length; i++) {
-                              label = document.createElement("label"); //label.innerHTML = choices[i];
-
-                              power = Math.pow(10, opcionesAux[i].decimales);
-                              label.innerHTML = Math.round(_this.generarRespuesta(cuestionarioTema.getQuestionIndex().id, choices[i], opcionesAux[i].id_opcion) * power) / power;
-                              label.className = "container";
-                              label.id = "opcl_" + i;
-                              span = document.createElement("checkmark");
-                              span.className = "checkmark";
-                              button = document.createElement("input");
-                              button.type = "checkbox"; //button.text = choices[i];
-
-                              button.text = Math.round(_this.generarRespuesta(cuestionarioTema.getQuestionIndex().id, choices[i], opcionesAux[i].id_opcion) * power) / power;
-                              button.id = "opc_" + i;
-                              label.appendChild(button);
-                              label.appendChild(span);
-                              zona_botones = document.getElementById("buttons");
-                              zona_botones.innerHTML = " <b> Respuesta: </b> <br>";
-                              zona_botones.appendChild(label);
-                            }
-
-                            return _context15.abrupt("break", 73);
-
-                          case 73:
-                          case "end":
-                            return _context15.stop();
-                        }
-                      }
-                    }, _callee14);
-                  }));
-                  return _populate.apply(this, arguments);
-                };
-
-                populate = function _ref7() {
-                  return _populate.apply(this, arguments);
-                };
-
-                Question = function _ref6(id, text, choices, answer, type, up, down, value, decimales, imagenes) {
-                  this.id = id;
-                  this.text = text;
-                  this.choices = choices;
-                  this.answer = answer;
-                  this.type = type;
-                  this.up = up;
-                  this.down = down;
-                  this.value = value;
-                  this.decimales = decimales;
-                  this.imagenes = imagenes;
-                };
-
-                Quiz = function _ref5(questions) {
-                  this.score = 0;
-                  this.questions = questions;
-                  this.questionIndex = 0;
-                };
-
-                //console.log("Se va a cargar el cuestionario con el tema " + topic);
-                questions = [];
-
-                for (i = 0; i < prguntass.length; i++) {
-                  pregunta = prguntass[i].pregunta;
-                  tipo = Number(prguntass[i].tipo);
-                  id = prguntass[i].id_pregunta;
-                  up = 0;
-                  down = 0;
-                  value = 0;
-                  decimales = 0;
-                  imagenesPregunta = prguntass[i].imagenes;
-
-                  if (prguntass[i].tipo == 2 || prguntass[i].tipo == 5 || prguntass[i].tipo == 6) {
-                    up = prguntass[i].aplicableArriba;
-                    down = prguntass[i].aplicableAnbajo;
-                    value = prguntass[i].rango;
-                  }
-
-                  if (prguntass[i].tipo == 5 || prguntass[i].tipo == 6) {
-                    decimales = prguntass[i].decimales;
-                  }
-
-                  questions.push(new Question(id, pregunta, [], [], tipo, up, down, value, decimales, imagenesPregunta));
-                }
-                /* ESTA ES LA PARTE DEL CUESTIONARIO */
-
-
-                Quiz.prototype.getQuestionIndex = function () {
-                  return this.questions[this.questionIndex];
-                };
-
-                Quiz.prototype.guess = function (answer) {
-                  return this.getQuestionIndex().isCorrectAnswer(answer);
-                };
-
-                Quiz.prototype.isEnded = function () {
-                  return this.questionIndex === this.questions.length;
-                };
-
-                Quiz.prototype.nextQuestion = function () {
-                  this.questionIndex++;
-                };
-
-                Quiz.prototype.getImages = function () {
-                  return this.getQuestionIndex().imagenes;
-                };
-
-                Question.prototype.isCorrectAnswer = function (choice) {
-                  var correcta = false;
-
-                  switch (this.type) {
-                    case 1:
-                      if (choice == this.answer[0].toString().toLowerCase()) correcta = true;
-                      break;
-
-                    case 2:
-                      //validar que si entra una fracción tomarla como texto 
-                      var isfraccion = this.answer[0].search('/');
-                      console.log("SI ES FRACCION " + isfraccion);
-
-                      if (isfraccion >= 0) {
-                        if (choice == this.answer[0].toString()) {
-                          correcta = true;
-                        }
-                      } else {
-                        this.answer[0] = Number(this.answer[0]);
-                        var arriba = this.answer[0] + Math.abs(Number(this.answer[0] * this.value * this.up));
-                        var abajo = this.answer[0] - Math.abs(Number(this.answer[0] * this.value * this.down));
-
-                        if (choice >= abajo && choice <= arriba) {
-                          correcta = true;
-                        }
-                      }
-
-                      break;
-
-                    case 3:
-                      if (choice == this.answer[0]) correcta = true;
-                      break;
-
-                    case 4:
-                      for (var i = 0; i < this.answer.length; i++) {
-                        if (choice == this.answer[i]) {
-                          correcta = true;
-                        }
-                      }
-
-                      break;
-
-                    case 5:
-                      this.answer[0] = Number(this.answer[0]);
-                      var arriba = this.answer[0] + Math.abs(Number(this.answer[0] * this.value * this.up));
-                      var abajo = this.answer[0] - Math.abs(Number(this.answer[0] * this.value * this.down));
-
-                      if (choice >= abajo && choice <= arriba) {
-                        correcta = true;
-                      }
-
-                      break;
-
-                    case 6:
-                      for (var i = 0; i < this.answer.length; i++) {
-                        if (choice == this.answer[i]) correcta = true;
-                      }
-
-                      break;
-                  }
-
-                  return correcta;
-                };
-
-                tipo = this.configuracion.ponde_estricta; //
-
-                cuestionarioTema = new Quiz(questions);
-                console.log(questions); //Boton de siguiente pregunta
-
-                document.getElementById("next").addEventListener("click",
-                /*#__PURE__*/
-                _asyncToGenerator(
-                /*#__PURE__*/
-                _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee13() {
-                  var respuestas_correctas, respuestas_incorretas, opc, resp, input_verdadero, input_falso, chequeada, i, lbl, opcion_text;
-                  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee13$(_context14) {
-                    while (1) {
-                      switch (_context14.prev = _context14.next) {
-                        case 0:
-                          console.log("Quizz");
-                          console.log(cuestionarioTema); //AQUI SE OBTIENE LA RESPUESTA A LA PREGUNTA
-
-                          _context14.next = 4;
-                          return axios__WEBPACK_IMPORTED_MODULE_1___default()({
-                            method: 'get',
-                            url: '/pregunta/respuestas/' + cuestionarioTema.getQuestionIndex().id
-                          }).then(function (result) {
-                            var res = [];
-                            var id_opcion_correcta = [];
-
-                            for (var i = 0; i < result.data.length; i++) {
-                              res.push(result.data[i].opcion);
-                              id_opcion_correcta.push(result.data[i].id_opcion);
-                            }
-
-                            if (cuestionarioTema.getQuestionIndex().type == 5 || cuestionarioTema.getQuestionIndex().type == 6) {
-                              var power = Math.pow(10, cuestionarioTema.getQuestionIndex().decimales); //console.log("Respuesta antes de la funcion "+res[0]);
-
-                              res = [Math.round(_this.generarRespuesta(cuestionarioTema.getQuestionIndex().id, res[0], id_opcion_correcta[0]) * power) / power]; //label.innerHTML = Math.round(_this.generarRespuesta(cuestionarioTema.getQuestionIndex().id,choices[i], opcionesAux[i].id_opcion) * power) / power;
-                            }
-
-                            cuestionarioTema.getQuestionIndex().answer = res;
-                          }, function (error) {
-                            console.error(error);
-                          });
-
-                        case 4:
-                          respuestas_correctas = 0;
-                          respuestas_incorretas = 0;
-                          _context14.t0 = cuestionarioTema.getQuestionIndex().type;
-                          _context14.next = _context14.t0 === 1 ? 9 : _context14.t0 === 2 ? 18 : _context14.t0 === 3 ? 24 : _context14.t0 === 4 ? 34 : _context14.t0 === 5 ? 41 : _context14.t0 === 6 ? 50 : 57;
-                          break;
-
-                        case 9:
-                          opc = document.getElementById("input_respuesta");
-                          resp = opc.value.toString().toLowerCase();
-                          resp = resp.trim();
-                          resp = resp.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, "");
-
-                          if (!(resp == "")) {
-                            _context14.next = 16;
-                            break;
-                          }
-
-                          _this.$swal.fire({
-                            position: 'center',
-                            icon: 'warning',
-                            title: 'Por favor ingresa una respuesta válida',
-                            showConfirmButton: false,
-                            timer: 1500
-                          });
-
-                          return _context14.abrupt("return");
-
-                        case 16:
-                          if (cuestionarioTema.guess(resp)) respuestas_correctas++;else respuestas_incorretas++;
-                          return _context14.abrupt("break", 57);
-
-                        case 18:
-                          opc = document.getElementById("input_respuesta");
-
-                          if (!(opc.value == "")) {
-                            _context14.next = 22;
-                            break;
-                          }
-
-                          //_this.$swal.fire("Por favor ingresa una respuesta valida");
-                          _this.$swal.fire({
-                            position: 'center',
-                            icon: 'warning',
-                            title: 'Por favor ingresa una respuesta válida',
-                            showConfirmButton: false,
-                            timer: 1500
-                          });
-
-                          return _context14.abrupt("return");
-
-                        case 22:
-                          if (cuestionarioTema.guess(opc.value)) respuestas_correctas++;else respuestas_incorretas++;
-                          return _context14.abrupt("break", 57);
-
-                        case 24:
-                          input_verdadero = document.getElementById("input_verdadero");
-                          input_falso = document.getElementById("input_falso");
-                          resp = "";
-                          if (input_verdadero.checked && !input_falso.checked) resp = "verdadero";
-                          if (input_falso.checked && !input_verdadero.checked) resp = "falso";
-
-                          if (!(input_verdadero.checked === false && input_falso.checked === false)) {
-                            _context14.next = 32;
-                            break;
-                          }
-
-                          //_this.$swal.fire("Por favor selecciona una respuesta");
-                          _this.$swal.fire({
-                            position: 'center',
-                            icon: 'warning',
-                            title: 'Selecciona una respuesta',
-                            showConfirmButton: false,
-                            timer: 1500
-                          });
-
-                          return _context14.abrupt("return");
-
-                        case 32:
-                          if (cuestionarioTema.guess(resp)) respuestas_correctas++;else respuestas_incorretas++;
-                          return _context14.abrupt("break", 57);
-
-                        case 34:
-                          chequeada = false;
-
-                          for (i = 0; i < cuestionarioTema.getQuestionIndex().choices.length; i++) {
-                            opc = document.getElementById("opc_" + i);
-
-                            if (opc.checked) {
-                              chequeada = true;
-                            }
-                          }
-
-                          if (chequeada) {
-                            _context14.next = 39;
-                            break;
-                          }
-
-                          //_this.$swal.fire("Por favor selecciona una respuesta");
-                          _this.$swal.fire({
-                            position: 'center',
-                            icon: 'warning',
-                            title: 'Selecciona una respuesta',
-                            showConfirmButton: false,
-                            timer: 1500
-                          });
-
-                          return _context14.abrupt("return");
-
-                        case 39:
-                          for (i = 0; i < cuestionarioTema.getQuestionIndex().choices.length; i++) {
-                            opc = document.getElementById("opc_" + i);
-
-                            if (opc.checked) {
-                              lbl = document.getElementById("opcl_" + i);
-                              opcion_text = lbl.innerHTML.split("<")[0]; //Obtener el texto del check
-
-                              if (cuestionarioTema.guess(opcion_text)) {
-                                respuestas_correctas++;
-                              } else {
-                                respuestas_incorretas++;
-                              }
-                            }
-                          }
-
-                          return _context14.abrupt("break", 57);
-
-                        case 41:
-                          opc = document.getElementById("input_respuesta");
-                          resp = opc.value.toString().toLowerCase();
-                          resp = resp.trim();
-                          resp = resp.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, "");
-
-                          if (!(resp == "")) {
-                            _context14.next = 48;
-                            break;
-                          }
-
-                          //_this.$swal.fire("Por favor ingresa una respuesta valida");
-                          _this.$swal.fire({
-                            position: 'center',
-                            icon: 'warning',
-                            title: 'Por favor ingresa una respuesta válida',
-                            showConfirmButton: false,
-                            timer: 1500
-                          });
-
-                          return _context14.abrupt("return");
-
-                        case 48:
-                          if (cuestionarioTema.guess(opc.value)) respuestas_correctas++;else respuestas_incorretas++;
-                          return _context14.abrupt("break", 57);
-
-                        case 50:
-                          chequeada = false;
-
-                          for (i = 0; i < cuestionarioTema.getQuestionIndex().choices.length; i++) {
-                            opc = document.getElementById("opc_" + i);
-
-                            if (opc.checked) {
-                              chequeada = true;
-                            }
-                          }
-
-                          if (chequeada) {
-                            _context14.next = 55;
-                            break;
-                          }
-
-                          _this.$swal.fire({
-                            position: 'center',
-                            icon: 'warning',
-                            title: 'Selecciona una respuesta',
-                            showConfirmButton: false,
-                            timer: 1500
-                          });
-
-                          return _context14.abrupt("return");
-
-                        case 55:
-                          for (i = 0; i < cuestionarioTema.getQuestionIndex().choices.length; i++) {
-                            opc = document.getElementById("opc_" + i);
-
-                            if (opc.checked) {
-                              lbl = document.getElementById("opcl_" + i);
-                              opcion_text = lbl.innerHTML.split("<")[0];
-
-                              if (cuestionarioTema.guess(opcion_text)) {
-                                respuestas_correctas++;
-                              } else {
-                                respuestas_incorretas++;
-                              }
-                            }
-                          }
-
-                          return _context14.abrupt("break", 57);
-
-                        case 57:
-                          if (respuestas_correctas == cuestionarioTema.getQuestionIndex().answer.length && respuestas_incorretas == 0) {
-                            cuestionarioTema.score = cuestionarioTema.score + 1; //_this.$swal.fire('Correcta');
-
-                            _this.$swal.fire({
-                              position: 'top-end',
-                              icon: 'success',
-                              title: 'Respuesta correcta',
-                              showConfirmButton: false,
-                              timer: 1500
-                            });
-                          } else if (respuestas_correctas > 0 && respuestas_incorretas == 0 && tipo == 0) {
-                            cuestionarioTema.score = cuestionarioTema.score + respuestas_correctas / cuestionarioTema.getQuestionIndex().answer.length; //_this.$swal.fire("Parcialmente correcta");
-
-                            _this.$swal.fire({
-                              position: 'top-end',
-                              icon: 'success',
-                              title: 'Respuesta parcialmente correcta',
-                              showConfirmButton: false,
-                              timer: 1500
-                            });
-                          } else {
-                            //_this.$swal.fire('Incorrecta');
-                            _this.$swal.fire({
-                              position: 'top-end',
-                              icon: 'warning',
-                              title: 'Respuesta incorrecta',
-                              showConfirmButton: false,
-                              timer: 1500
-                            });
-                          }
-
-                          cuestionarioTema.nextQuestion();
-                          populate();
-
-                        case 60:
-                        case "end":
-                          return _context14.stop();
-                      }
-                    }
-                  }, _callee13);
-                })));
-                _this = this;
-                //showProgress();
-                ; //Asegurar que solo sean checkeados las posibles respuestas
-
-                ;
-                /*function showProgress() {
-                  var currentQuestionNumber = cuestionarioTema.questionIndex + 1;
-                  var element = document.getElementById("progress");
-                  element.innerHTML = "<b> Progreso: </b>" + currentQuestionNumber + " de " + questionIndex.questions
-                    .length;
-                };*/
-
-                ;
-                populate();
-
-              case 24:
-              case "end":
-                return _context17.stop();
-            }
-          }
-        }, _callee16, this);
-      }));
-
-      function cargarCuestionario(_x5, _x6) {
-        return _cargarCuestionario.apply(this, arguments);
-      }
-
-      return cargarCuestionario;
-    }(),
-    generarRespuesta: function generarRespuesta(id, res, id_opcion_actual) {
-      res = res.trim();
-      var count = 0;
-
-      function deg2rad(valor) {
-        return valor / 180 * Math.PI;
-      }
-
-      function binTodecimal(binstr) {
-        return binstr.split('').reverse().reduce(function (x, y, i) {
-          return y === '1' ? x + Math.pow(2, i) : x;
-        }, 0);
-      }
-
-      function roundTo(value, places) {
-        var power = Math.pow(10, places);
-        return Math.round(value * power) / power;
-      }
-
-      function operacion(nombreOperacion, valor) {
-        valor = valor + "";
-        valor = valor.split(",");
-
-        switch (nombreOperacion) {
-          case "abs":
-            return Math.abs(valor[0]);
-            break;
-
-          case "acos":
-            return Math.acos(valor[0]);
-            break;
-
-          case "acosh":
-            return Math.acosh(valor[0]);
-            break;
-
-          case "asin":
-            return Math.asin(valor[0]);
-            break;
-
-          case "asinh":
-            return Math.asinh(valor[0]);
-            break;
-
-          case "atan2":
-            return Math.atan2(valor[0], valor[1]);
-            break;
-
-          case "atan":
-            return Math.atan(valor[0]);
-            break;
-
-          case "atanh":
-            return Math.atan(valor[0]);
-            break;
-
-          case "bindec":
-            return binTodecimal(valor[0]);
-            break;
-
-          case "ceil":
-            return Math.ceil(valor[0]);
-            break;
-
-          case "cos":
-            return Math.cos(valor[0]);
-            break;
-
-          case "cosh":
-            return Math.cosh(valor[0]);
-            break;
-
-          case "decbin":
-            return valor[0].toString(2);
-            break;
-
-          case "decoct":
-            return valor[0].toString(8);
-            break;
-
-          case "deg2rad":
-            return deg2rad(valor[0]);
-            break;
-
-          case "exp":
-            return Math.exp(valor[0]);
-            break;
-
-          case "expm1":
-            return Math.expm1(valor[0]);
-            break;
-
-          case "floor":
-            return Math.floor(valor[0]);
-            break;
-
-          case "is_finite":
-            return isFinite(valor[0]);
-            break;
-
-          case "is_infinite":
-            return !isFinite(valor[0]);
-            break;
-
-          case "is_nan":
-            return isNaN(valor[0]);
-            break;
-
-          case "log10":
-            return Math.log10(valor[0]);
-            break;
-
-          case "log1p":
-            return Math.log1p(valor[0]);
-            break;
-
-          case "log":
-            return Math.log(valor[0]);
-            break;
-
-          case "max":
-            return Math.max.apply(null, valor);
-            break;
-
-          case "min":
-            return Math.min.apply(null, valor);
-            break;
-
-          case "pi":
-            return Math.PI;
-            break;
-
-          case "pow":
-            return Math.pow(valor[0], valor[1]);
-
-          case "rad2deg":
-            return valor[0] * (180 / Math.PI);
-            break;
-
-          case "round":
-            return roundTo(valor[0], valor[1]);
-            break;
-
-          case "sin":
-            return Math.sin(valor[0]);
-            break;
-
-          case "sinh":
-            return Math.sinh(valor[0]);
-            break;
-
-          case "sqrt":
-            return Math.sqrt(valor[0]);
-            break;
-
-          case "tan":
-            return Math.tan(valor[0]);
-            break;
-
-          case "tanh":
-            return Math.tanh(valor[0]);
-            break;
-        }
-      }
-
-      var Pila =
-      /*#__PURE__*/
-      function () {
-        function Pila() {
-          _classCallCheck(this, Pila);
-
-          this.items = [];
-        }
-
-        _createClass(Pila, [{
-          key: "incluir",
-          value: function incluir(element) {
-            this.items.push(element);
-            return this.items;
-          }
-        }, {
-          key: "extraer",
-          value: function extraer() {
-            return this.items.pop();
-          }
-        }, {
-          key: "tamano",
-          value: function tamano() {
-            return this.items.length;
-          }
-        }, {
-          key: "estaVacia",
-          value: function estaVacia() {
-            if (this.items.length == 0) return true;else return false;
-          }
-        }, {
-          key: "inspeccionar",
-          value: function inspeccionar() {
-            return this.items[this.items.length - 1];
-          }
-        }, {
-          key: "print",
-          value: function print() {//console.log(this.items);
-          }
-        }]);
-
-        return Pila;
-      }();
-
-      function infija_a_sufija(expresionInfija) {
-        var precedencia = {};
-        precedencia["*"] = 3;
-        precedencia["/"] = 3;
-        precedencia["+"] = 2;
-        precedencia["-"] = 2;
-        precedencia["("] = 1;
-        var pilaOperadores = new Pila();
-        var listaSufija = [];
-        var listaSimbolos = expresionInfija.split(" ");
-
-        for (var simbolo in listaSimbolos) {
-          if ('+-*/()'.indexOf(listaSimbolos[simbolo]) == -1) listaSufija.push(listaSimbolos[simbolo]); //AÑADE ELEMENTO A LA LISTA
-          else if (listaSimbolos[simbolo] == '(') pilaOperadores.incluir(listaSimbolos[simbolo]);else if (listaSimbolos[simbolo] == ')') {
-              var simboloTope = pilaOperadores.extraer();
-
-              while (simboloTope != '(') {
-                listaSufija.push(simboloTope);
-                simboloTope = pilaOperadores.extraer();
-              }
-            } else {
-              while (!pilaOperadores.estaVacia() && precedencia[pilaOperadores.inspeccionar()] >= precedencia[listaSimbolos[simbolo]]) {
-                listaSufija.push(pilaOperadores.extraer());
-              }
-
-              pilaOperadores.incluir(listaSimbolos[simbolo]);
-            }
-        }
-
-        while (!pilaOperadores.estaVacia()) {
-          listaSufija.push(pilaOperadores.extraer());
-        }
-
-        return listaSufija.join(" ");
-      }
-
-      function evaluacionNotacionSufija(expresionSufija) {
-        var pilaOperandos = new Pila();
-        var listaSimbolos = expresionSufija.split(" ");
-        var operando2;
-        var operando1;
-        var resultado;
-
-        for (var simbolo in listaSimbolos) {
-          if ("+-*/()".indexOf(listaSimbolos[simbolo]) == -1) pilaOperandos.incluir(parseFloat(listaSimbolos[simbolo]));else {
-            operando2 = pilaOperandos.extraer();
-            operando1 = pilaOperandos.extraer();
-            resultado = hacerAritmetica(listaSimbolos[simbolo], operando1, operando2);
-            pilaOperandos.incluir(resultado);
-          }
-        }
-
-        return pilaOperandos.extraer();
-      }
-
-      function hacerAritmetica(operador, operandoIzquierda, operandoDerecha) {
-        if (operador == "*") return operandoIzquierda * operandoDerecha;else if (operador == "/") return operandoIzquierda / operandoDerecha;else if (operador == "+") return operandoIzquierda + operandoDerecha;else return operandoIzquierda - operandoDerecha;
-      }
-
-      function evaluar(expresion) {
-        var separado = expresion.split(",");
-
-        if (separado.length > 1) {
-          var sufija = infija_a_sufija(separado[0].trim());
-          resultado = evaluacionNotacionSufija(sufija) + " , ";
-
-          for (var i = 1; i < separado.length; i++) {
-            sufija = infija_a_sufija(separado[i].trim());
-            if (i < separado.length - 1) resultado += evaluacionNotacionSufija(sufija) + " , ";else resultado += evaluacionNotacionSufija(sufija);
-          }
-        } else {
-          var sufija = infija_a_sufija(expresion);
-          var resultado = evaluacionNotacionSufija(sufija.trim());
-        }
-
-        return resultado;
-      }
-
-      function analizar(expresion) {
-        expresion.trim();
-        var estracto = "";
-        var abiertos = 0;
-        var cerrados = 0;
-        var interior = "";
-        var reemplazar = "";
-        var activado = false;
-        var analizandoInterior = false;
-        var expresionNueva = expresion;
-
-        for (var i = 0; i < expresion.length; i++) {
-          if (expresion[i].charCodeAt() >= 97 && expresion[i].charCodeAt() <= 122) activado = true;
-          if (activado && expresion[i] != "(" && analizandoInterior == false) estracto += expresion[i];
-
-          if (activado && expresion[i] == "(" && analizandoInterior == false) {
-            analizandoInterior = true;
-            reemplazar = estracto;
-          }
-
-          if (analizandoInterior) {
-            reemplazar += expresion[i];
-            if (expresion[i] == "(") abiertos++;
-            if (expresion[i] == ")") cerrados++;
-
-            if (abiertos == cerrados) {
-              abiertos = 0;
-              cerrados = 0;
-              activado = false;
-              analizandoInterior = false;
-              interior = interior.substr(2, interior.length - 3);
-              interior = analizar(interior.trim());
-              var interiorEvaluado = evaluar(interior.trim());
-              if (!isNaN(interiorEvaluado)) expresionNueva = expresionNueva.replace(interior, interiorEvaluado);
-              if (!isNaN(interiorEvaluado)) reemplazar = reemplazar.replace(interior, interiorEvaluado);
-              var resultado = operacion(estracto.trim(), interiorEvaluado);
-              if (!isNaN(resultado)) expresionNueva = expresionNueva.replace(reemplazar, resultado);
-              interior = "";
-              estracto = "";
-              reemplazar = "";
-            } else interior += expresion[i];
-          }
-        }
-
-        return expresionNueva;
-      } //console.log("res antes "+res)
-
-
-      if (id != -1) {
-        var comodinesPregunta = [];
-
-        for (var j = 0; j < this.comodines.length; j++) {
-          if (id == this.comodines[j].id_pregunta && id_opcion_actual === this.comodines[j].id_opcion) comodinesPregunta.push(this.comodines[j]);
-        }
-
-        for (var k = 0; k < comodinesPregunta.length; k++) {
-          while (res.indexOf(comodinesPregunta[k].comodin) != -1) {
-            res = res.replace(comodinesPregunta[k].comodin, comodinesPregunta[k].valor);
-          }
-        } //console.log("res despues "+res)
-
-      }
-
-      var resultado = analizar(res.replace(/\s+/g, ' '));
-      return evaluar(resultado);
-    },
-    botonesCalculadora: function botonesCalculadora(boton) {
-      var campo_calculadora = document.getElementById("campo_calculadora");
-
-      function esNumero(entrada) {
-        var salida = false;
-
-        if (entrada == "1" || entrada == "2" || entrada == "3" || entrada == "4" || entrada == "5" || entrada == "6" || entrada == "7" || entrada == "8" || entrada == "9" || entrada == "0" || entrada == ".") {
-          salida = true;
-        }
-
-        return salida;
-      }
-
-      if (esNumero(boton)) {
-        //campo_calculadora.value = campo_calculadora.value + boton;
-        if (campo_calculadora.value.length == 0) {
-          campo_calculadora.value = boton;
-        } else {
-          if (esNumero(campo_calculadora.value.substr(campo_calculadora.value.length - 1, campo_calculadora.value.length))) {
-            campo_calculadora.value = campo_calculadora.value + boton;
-          } else {
-            campo_calculadora.value = campo_calculadora.value + " " + boton;
-          }
-        }
-      } else {
-        //campo_calculadora.value = campo_calculadora.value + " " + boton;
-        if (boton == "ac") {
-          campo_calculadora.value = "";
-        } else if (boton != "fun" && boton != "=") {
-          campo_calculadora.value = campo_calculadora.value + " " + boton;
-        } else if (boton = "=") {
-          campo_calculadora.value = this.generarRespuesta(-1, campo_calculadora.value, 0);
-        }
-      }
+    startHighlighting: function startHighlighting() {
+      var _this3 = this;
+
+      this.isHighlighting = true;
+      setTimeout(function () {
+        _this3.isHighlighting = false;
+
+        _this3.startHighlighting();
+      }, 2000);
     }
   }
 });
@@ -6045,9 +4305,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-//
 //
 //
 //
@@ -6308,14 +4565,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       id: "",
       rbs: [],
       numero_preguntas: [],
-      configuraciones: _defineProperty({
+      configuraciones: {
         num_preguntas_numericas: 0,
         num_preguntas_multiples: 0,
         num_preguntas_boleanas: 0,
         num_preguntas_calculadas: 0,
         num_preguntas_abiertas: 0,
-        num_preguntas_calculadas_multiples: 0
-      }, "num_preguntas_multiples", 0),
+        num_preguntas_calculadas_multiples: 0,
+        num_preguntas_expresion: 0
+      },
       totalPreguntas: 0,
       preguntasPorTema: [],
       filters: {
@@ -6356,7 +4614,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       this.configuraciones.num_preguntas_calculadas = this.configuraciones.num_preguntas_calculadas === "" ? 0 : parseInt(this.configuraciones.num_preguntas_calculadas);
       this.configuraciones.num_preguntas_abiertas = this.configuraciones.num_preguntas_abiertas === "" ? 0 : parseInt(this.configuraciones.num_preguntas_abiertas);
       this.configuraciones.num_preguntas_calculadas_multiples = this.configuraciones.num_preguntas_calculadas_multiples === "" ? 0 : parseInt(this.configuraciones.num_preguntas_calculadas_multiples);
-      this.configuraciones.num_preguntas = parseInt(this.configuraciones.num_preguntas_numericas) + parseInt(this.configuraciones.num_preguntas_multiples) + parseInt(this.configuraciones.num_preguntas_boleanas) + parseInt(this.configuraciones.num_preguntas_calculadas) + parseInt(this.configuraciones.num_preguntas_abiertas) + parseInt(this.configuraciones.num_preguntas_calculadas_multiples);
+      this.configuraciones.num_preguntas_expresion = this.configuraciones.num_preguntas_expresion === "" ? 0 : parseInt(this.configuraciones.num_preguntas_expresion);
+      this.configuraciones.num_preguntas = parseInt(this.configuraciones.num_preguntas_numericas) + parseInt(this.configuraciones.num_preguntas_multiples) + parseInt(this.configuraciones.num_preguntas_boleanas) + parseInt(this.configuraciones.num_preguntas_calculadas) + parseInt(this.configuraciones.num_preguntas_abiertas) + parseInt(this.configuraciones.num_preguntas_calculadas_multiples) + parseInt(this.configuraciones.num_preguntas_expresion);
     },
     checkPonderacionEstricta: function checkPonderacionEstricta() {
       var checkEstricta = document.getElementById("ponderacionEstricta");
@@ -6385,6 +4644,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           temas[i].totalPreguntasNumericas = 0;
           temas[i].totalPreguntasBooleanas = 0;
           temas[i].totalPreguntasCalculadasMultiples = 0;
+          temas[i].totalPreguntasExpresiones = 0;
         }
 
         console.log(preguntas);
@@ -6415,6 +4675,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
                 case 6:
                   temas[_i].totalPreguntasCalculadasMultiples = preguntas[j].totalPreguntas;
+                  break;
+
+                case 7:
+                  temas[_i].totalPreguntasExpresiones = preguntas[j].totalPreguntas;
                   break;
               }
             }
@@ -6447,7 +4711,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
         var _this4 = this;
 
-        var totalPreguntas, totalNumericas, rangoDefecto, totalBreves, totalCalculadas, totalBooleanas, totalMultiples, totalCalculadasMultiples, checkEstricta, ponderacionEstricta;
+        var totalPreguntas, totalNumericas, rangoDefecto, totalBreves, totalCalculadas, totalBooleanas, totalMultiples, totalCalculadasMultiples, totalExpresiones, checkEstricta, ponderacionEstricta;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -6459,7 +4723,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 totalCalculadas = document.getElementById("numeroPreguntasCalculadas").value;
                 totalBooleanas = document.getElementById("numeroPreguntasBooleanas").value;
                 totalMultiples = document.getElementById("numeroPreguntasMultiples").value;
-                totalCalculadasMultiples = document.getElementById("numeroPreguntasCalculadasMultiples").value; //var ponderacionEstricta = document.getElementById("ponderacionEstricta").value;
+                totalCalculadasMultiples = document.getElementById("numeroPreguntasCalculadasMultiples").value;
+                totalExpresiones = document.getElementById("numeroPreguntasExpresion").value; //var ponderacionEstricta = document.getElementById("ponderacionEstricta").value;
 
                 checkEstricta = document.getElementById("ponderacionEstricta");
 
@@ -6478,6 +4743,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                   totalBooleanas: totalBooleanas,
                   totalMultiples: totalMultiples,
                   totalCalculadasMultiples: totalCalculadasMultiples,
+                  totalExpresiones: totalExpresiones,
                   ponderacionEstricta: ponderacionEstricta
                 }).then(function (res) {
                   _this4.$swal.fire({
@@ -6495,7 +4761,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                   console.log(err);
                 });
 
-              case 11:
+              case 12:
               case "end":
                 return _context.stop();
             }
@@ -7534,7 +5800,7 @@ var apareceMen = false; //Es para controlar un mensaje que se repetia
                             return _this4.getpreguntas();
 
                           case 10:
-                            _context4.next = 27;
+                            _context4.next = 28;
                             break;
 
                           case 12:
@@ -7559,14 +5825,25 @@ var apareceMen = false; //Es para controlar un mensaje que se repetia
                             return _this4.obtenerDescrpcion();
 
                           case 23:
-                            _context4.next = 27;
+                            _context4.next = 28;
                             break;
 
                           case 25:
                             console.log("Ya ha terminado el cuestionario");
-                            alert("Ya se ha terminado de evaluar");
+                            alert("Ya se ha terminado de evaluar"); // Redirige a la página de evaluación
 
-                          case 27:
+                            _this4.$router.push({
+                              path: '/statusGrafo'
+                            });
+
+                          case 28:
+                            // 🔹 Enviar solicitud al backend para ejecutar el script de Python
+                            axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/ejecutar-script-python').then(function (response) {
+                              console.log('✅ Script ejecutado correctamente:', response.data);
+                              alert("✅ Script ejecutado correctamente");
+                            });
+
+                          case 29:
                           case "end":
                             return _context4.stop();
                         }
@@ -8387,7 +6664,7 @@ var apareceMen = false; //Es para controlar un mensaje que se repetia
 
                           case 75:
                             input_respuesta = document.createElement("input");
-                            input_respuesta.type = "text";
+                            input_respuesta.type = "hidden";
                             input_respuesta.id = "input_respuesta";
                             zona_botones = document.getElementById("buttons");
                             zona_botones.innerHTML = " <b> Respuesta: </b> <br>";
@@ -9517,213 +7794,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
  //importar el archivo donde se encuentra el toolbar
@@ -10012,14 +8082,18 @@ var esCorrec = false;
                             return _this4.obtenerPregu();
 
                           case 8:
-                            _context4.next = 12;
+                            _context4.next = 13;
                             break;
 
                           case 10:
                             console.log("Ya ha terminado el cuestionario");
                             alert("Ya se ha terminado de evaluar");
 
-                          case 12:
+                            _this4.$router.push({
+                              path: '/aprender'
+                            });
+
+                          case 13:
                           case "end":
                             return _context4.stop();
                         }
@@ -10261,6 +8335,10 @@ var esCorrec = false;
 
                   if (_this6.numTem >= largo || 0 >= _this6.tolong) {
                     alert("Ya se ha terminado de evaluar la rama");
+
+                    _this6.$router.push({
+                      path: '/aprender'
+                    });
                   } else {
                     if (_this6.grado != 2) {
                       _this6.numTem = _this6.numTem + 1;
@@ -10737,7 +8815,7 @@ var esCorrec = false;
                               }
                             }
 
-                            _context20.next = 85;
+                            _context20.next = 84;
                             break;
 
                           case 4:
@@ -10844,7 +8922,7 @@ var esCorrec = false;
                           case 24:
                             choices = cuestionarioTema.getQuestionIndex().choices;
                             _context20.t0 = cuestionarioTema.getQuestionIndex().type;
-                            _context20.next = _context20.t0 === 1 ? 28 : _context20.t0 === 2 ? 35 : _context20.t0 === 3 ? 42 : _context20.t0 === 4 ? 65 : _context20.t0 === 5 ? 69 : _context20.t0 === 6 ? 76 : _context20.t0 === 7 ? 78 : 85;
+                            _context20.next = _context20.t0 === 1 ? 28 : _context20.t0 === 2 ? 35 : _context20.t0 === 3 ? 42 : _context20.t0 === 4 ? 65 : _context20.t0 === 5 ? 69 : _context20.t0 === 6 ? 76 : _context20.t0 === 7 ? 78 : 84;
                             break;
 
                           case 28:
@@ -10854,7 +8932,7 @@ var esCorrec = false;
                             zona_botones = document.getElementById("buttons");
                             zona_botones.innerHTML = " <b> Respuesta: </b> <br>";
                             zona_botones.appendChild(input_respuesta);
-                            return _context20.abrupt("break", 85);
+                            return _context20.abrupt("break", 84);
 
                           case 35:
                             input_respuesta = document.createElement("input");
@@ -10864,7 +8942,7 @@ var esCorrec = false;
                             zona_botones = document.getElementById("buttons");
                             zona_botones.innerHTML = "<b> Respuesta: </b> <br>";
                             zona_botones.appendChild(input_respuesta);
-                            return _context20.abrupt("break", 85);
+                            return _context20.abrupt("break", 84);
 
                           case 42:
                             div_verdadero = document.createElement("div");
@@ -10889,7 +8967,7 @@ var esCorrec = false;
                             zona_botones.innerHTML = " <b> Respuesta: </b> <br>";
                             zona_botones.appendChild(div_verdadero);
                             zona_botones.appendChild(div_falso);
-                            return _context20.abrupt("break", 85);
+                            return _context20.abrupt("break", 84);
 
                           case 65:
                             zona_botones = document.getElementById("buttons");
@@ -10912,7 +8990,7 @@ var esCorrec = false;
                               zona_botones.appendChild(label);
                             }
 
-                            return _context20.abrupt("break", 85);
+                            return _context20.abrupt("break", 84);
 
                           case 69:
                             input_respuesta = document.createElement("input");
@@ -10921,7 +8999,7 @@ var esCorrec = false;
                             zona_botones = document.getElementById("buttons");
                             zona_botones.innerHTML = "<b> Respuesta: </b> <br>";
                             zona_botones.appendChild(input_respuesta);
-                            return _context20.abrupt("break", 85);
+                            return _context20.abrupt("break", 84);
 
                           case 76:
                             for (i = 0; i < choices.length; i++) {
@@ -10945,18 +9023,17 @@ var esCorrec = false;
                               zona_botones.appendChild(label);
                             }
 
-                            return _context20.abrupt("break", 85);
+                            return _context20.abrupt("break", 84);
 
                           case 78:
                             input_respuesta = document.createElement("input");
-                            input_respuesta.type = "text";
+                            input_respuesta.type = "hidden";
                             input_respuesta.id = "input_respuesta";
                             zona_botones = document.getElementById("buttons");
-                            zona_botones.innerHTML = " <b> Respuesta: </b> <br>";
                             zona_botones.appendChild(input_respuesta);
-                            return _context20.abrupt("break", 85);
+                            return _context20.abrupt("break", 84);
 
-                          case 85:
+                          case 84:
                           case "end":
                             return _context20.stop();
                         }
@@ -11224,7 +9301,7 @@ var esCorrec = false;
                           _this.$swal.fire({
                             position: 'center',
                             icon: 'warning',
-                            title: 'Por favor ingresa una respuesta válida',
+                            title: 'Seleccione una respuesta',
                             showConfirmButton: false,
                             timer: 1500
                           });
@@ -11232,7 +9309,14 @@ var esCorrec = false;
                           return _context19.abrupt("return");
 
                         case 25:
-                          if (cuestionarioTema.guess(opc.value)) respuestas_correctas++;else respuestas_incorretas++;
+                          if (cuestionarioTema.guess(opc.value)) {
+                            respuestas_correctas++;
+                            console.log("Respuesta correcta: " + opc.value); // Muestra la respuesta correcta
+                          } else {
+                            respuestas_incorretas++;
+                            console.log("Respuesta incorrecta: " + opc.value); // Muestra la respuesta incorrecta
+                          }
+
                           return _context19.abrupt("break", 70);
 
                         case 27:
@@ -11412,7 +9496,7 @@ var esCorrec = false;
                             cuestionarioTema.score = cuestionarioTema.score + 1; //_this.$swal.fire('Correcta');
 
                             _this.$swal.fire({
-                              position: 'top-end',
+                              position: 'center',
                               icon: 'success',
                               title: 'Respuesta correcta',
                               showConfirmButton: false,
@@ -11431,7 +9515,7 @@ var esCorrec = false;
                           } else {
                             //_this.$swal.fire('Incorrecta');
                             _this.$swal.fire({
-                              position: 'top-end',
+                              position: 'center',
                               icon: 'warning',
                               title: 'Respuesta incorrecta',
                               showConfirmButton: false,
@@ -24856,6 +22940,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //import MathQuill from 'mathquill';
 //import MathQuillDirective from './directives/MathQuillDirective';
 // import MathQuill from 'https://cdn.jsdelivr.net/npm/mathquill@0.10.1-a/build/mathquill.css';
@@ -25139,6 +23232,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.mathField.write("\\zeta");
   }), _defineProperty(_methods, "insertEta", function insertEta() {
     this.mathField.write("\\eta");
+  }), _defineProperty(_methods, "insertPyC", function insertPyC() {
+    this.mathField.write(";");
   }), _defineProperty(_methods, "TraducirLatex", function TraducirLatex() {
     //console.log(this.mathField.latex());
     //const latexContent = this.mathField.latex();
@@ -25995,6 +24090,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'ToolBar',
   props: ['datoRespuesta', 'banderaParaEdicion'],
@@ -26253,6 +24357,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.mathField.write("\\zeta");
   }), _defineProperty(_methods, "insertEta", function insertEta() {
     this.mathField.write("\\eta");
+  }), _defineProperty(_methods, "insertPyC", function insertPyC() {
+    this.mathField.write(";");
   }), _defineProperty(_methods, "TraducirLatex", function TraducirLatex() {
     this.mathField.latex(''); // Limpia el contenido del campo MathQuill
   }), _defineProperty(_methods, "handleInput", function handleInput() {
@@ -26286,6 +24392,14 @@ var _methods;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -26847,6 +24961,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.mathField.write("\\union");
   }), _defineProperty(_methods, "insertIntersec", function insertIntersec() {
     this.mathField.write("\\intersection");
+  }), _defineProperty(_methods, "insertPyC", function insertPyC() {
+    this.mathField.write(";");
   }), _defineProperty(_methods, "insertZeta", function insertZeta() {
     this.mathField.write("\\zeta");
   }), _defineProperty(_methods, "insertEta", function insertEta() {
@@ -26955,7 +25071,6 @@ __webpack_require__.r(__webpack_exports__);
     });
     this.datorecibido = this.dato;
     this.mathField.write(this.dato);
-    console.log("soy dato hijo soriano estuvo aqui:", this.datorecibido);
   },
   watch: {//console.log("dato anteriorrrr "+ this.oldVal)
   },
@@ -27304,11 +25419,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
     if (temasString) {
       try {
-        this.temas = JSON.parse(temasString);
-        console.log('Temas recibidos:', this.temas); // Imprime los temas en la consola
+        this.temas = JSON.parse(temasString); // Filtrar los temas para omitir aquellos con grado de conocimiento 2
+
+        var temasFiltrados = this.temas.filter(function (tema) {
+          return tema.grado_de_conocimiento !== 2;
+        });
+        console.log('Temas recibidos (sin grado 2):', temasFiltrados); // Imprime los temas filtrados en la consola
         // Extraer e imprimir solo los números de la propiedad 'tema'
 
-        this.temaIds = this.temas.map(function (tema) {
+        this.temaIds = temasFiltrados.map(function (tema) {
           return tema.tema;
         }).filter(function (num) {
           return num !== undefined;
@@ -27337,7 +25456,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 if (!_this.temas[_this.temaActual - 1].revisado) {
-                  _context.next = 23;
+                  _context.next = 24;
                   break;
                 }
 
@@ -27347,53 +25466,56 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 }
 
                 _this.temaActual++;
-                _context.next = 21;
+                _context.next = 22;
                 break;
 
               case 5:
                 if (!(_this.temaActual === _this.totalTemas)) {
-                  _context.next = 21;
+                  _context.next = 22;
                   break;
                 }
 
                 _context.prev = 6;
-                // Ejecutar la evaluación (script Python)
                 console.log("Ejecutando evaluación...");
                 _context.next = 10;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/ejecutar-evaluacion');
 
               case 10:
                 response = _context.sent;
-                console.log("Respuesta del servidor:", response.data); // Mensaje de éxito o error
-
-                alert('Evaluación completada y script Python ejecutado.'); // Si la evaluación se ejecuta correctamente, reiniciar el progreso
+                console.log("Respuesta del servidor:", response.data);
+                alert('Evaluación completada y script Python ejecutado.'); // Llama al método para reiniciar el progreso
 
                 _context.next = 15;
                 return _this.resetProgreso();
 
               case 15:
-                _context.next = 21;
+                // Redirige a la página de evaluación
+                _this.$router.push({
+                  path: '/Evaluacion'
+                });
+
+                _context.next = 22;
                 break;
 
-              case 17:
-                _context.prev = 17;
+              case 18:
+                _context.prev = 18;
                 _context.t0 = _context["catch"](6);
                 console.error('Error al ejecutar la evaluación:', _context.t0);
                 alert('Hubo un error al ejecutar la evaluación. Inténtalo de nuevo.');
 
-              case 21:
-                _context.next = 24;
+              case 22:
+                _context.next = 25;
                 break;
 
-              case 23:
+              case 24:
                 alert('Por favor, marca el tema como revisado antes de continuar.');
 
-              case 24:
+              case 25:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[6, 17]]);
+        }, _callee, null, [[6, 18]]);
       }))();
     },
     guardarAvance: function guardarAvance(indiceTema) {
@@ -29244,6 +27366,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -29978,7 +28109,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.pregresp {\n    border: 2px solid #7da5e0;\n    margin: 5px;\n    font-family: Arial, Verdana, Helvetica, sans-serif;\n    font-size: 15px;\n    font-weight: bold;\n}\n.fixed-size-button {\n  width: 100%;\n  height: 100px;\n}\n.pregunta {\n    color: #7da5e0;\n}\n.respuestas {\n    color: #000000;\n}\n.grid {\n    width: 100%;\n    height: 100%;\n    margin: 0 auto;\n    background-color: #fff;\n    padding: 10px 50px 50px 50px;\n}\n.grid h1 {\n    text-align: center;\n    color: #000000;\n    padding: 2px 0px;\n    border-radius: 50px;\n}\n#score {\n    color: #5A6772;\n    text-align: center;\n    font-size: 30px;\n}\n.buttons {\n    margin-top: 30px;\n}\n#btn0,\n  #btn1,\n  #btn2,\n  #btn3,\n  #next {\n    width: 250px;\n    font-size: 20px;\n    margin: 10px 40px 10px 0px;\n    padding: 10px 10px;\n}\n.container {\n    display: block;\n    position: relative;\n    padding-left: 35px;\n    margin-bottom: 12px;\n    cursor: pointer;\n    font-size: 22px;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n}\n.container input {\n    position: absolute;\n    opacity: 0;\n    cursor: pointer;\n    height: 0;\n    width: 0;\n}\n.checkmark {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 25px;\n    width: 25px;\n    background-color: #eee;\n}\n.container:hover input~.checkmark {\n    background-color: #ccc;\n}\n.container input:checked~.checkmark {\n    background-color: #2196F3;\n}\n.checkmark:after {\n    content: \"\";\n    position: absolute;\n    display: none;\n}\n.container input:checked~.checkmark:after {\n    display: block;\n}\n.container .checkmark:after {\n    left: 9px;\n    top: 5px;\n    width: 5px;\n    height: 10px;\n    border: solid white;\n    border-width: 0 3px 3px 0;\n    -webkit-transform: rotate(45deg);\n    -ms-transform: rotate(45deg);\n    transform: rotate(45deg);\n}\n#carouselExampleIndicators {\n    margin-left: 200px;\n    margin-right: 200px;\n}\n.item img {\n    margin-left: auto;\n    margin-right: auto;\n}\n.selected img {\n    opacity: 0.5;\n}\n.carousel-caption {\n    position: relative;\n    left: auto;\n    right: auto;\n}\n.carousel-control.left,\n  .carousel-control.right {\n    background: none;\n    border: none;\n}\n.carousel-control.left {\n    margin-left: -300px;\n}\n.carousel-control.right {\n    margin-right: -300px;\n}\n.carousel-control {\n    width: 0%;\n}\n.fixed-size-button {\n  font-size: 14px; /* Reduce el tamaño de la fuente */\n height: 40px; /* Reduce la altura para hacer los botones delgados */\n  width: 100%;   /* Ocupa todo el ancho del contenedor */\n  max-width: 150px; /* Limita el ancho máximo del botón */\n  white-space: nowrap; /* Evita que el texto se divida en varias líneas */\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n.svg-wrapper {\n  margin: 10px;\n}\n.pulse {\n  --color: #007bff; /* Color del botón */\n  position: relative;\n  display: inline-block;\n  font-size: 16px;\n  color: white;\n  background-color: var(--color);\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n  transition: transform 0.3s ease;\n}\n.pulse:hover,\n.pulse:focus {\n  animation: pulse 1s infinite; /* Animación constante */\n  box-shadow: 0 0 0 2em rgba(255, 165, 0, 0.5); /* Sombra naranja */\n}\n@keyframes pulse {\n0% {\n    box-shadow: 0 0 0 0 rgba(255, 165, 0, 0.7); /* Sombra inicial */\n}\n100% {\n    box-shadow: 0 0 0 20px rgba(255, 165, 0, 0); /* Sombra expandida y desvanecida */\n}\n}\n.animate-button {\n  animation: pulse 1s infinite; /* Animación pulsante */\n}\n", ""]);
 
 // exports
 
@@ -29997,7 +28128,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\ndiv.gfg {\n    width: 100%;\n    height: 800px;\n    overflow: auto;\n    text-align: justify;\n}\n\n", ""]);
+exports.push([module.i, "\ndiv.gfg {\n    width: 100%;\n    height: 800px;\n    overflow: auto;\n    text-align: justify;\n}\n", ""]);
 
 // exports
 
@@ -66007,6 +64138,7 @@ var render = function() {
                         {
                           staticClass:
                             "btn btn-primary float-right btn-lg mt-4 mr-2",
+                          staticStyle: { width: "200px", height: "60px" },
                           attrs: { type: "button" },
                           on: { click: _vm.Pickle }
                         },
@@ -66022,36 +64154,44 @@ var render = function() {
                     _c(
                       "div",
                       { staticClass: "row mt-4" },
-                      _vm._l(_vm.botonesRamas, function(nombre, rama) {
+                      _vm._l(_vm.botonesRamas, function(nombre, rama, index) {
                         return _c(
                           "div",
                           { key: rama, staticClass: "col-md-4 mb-3" },
                           [
-                            rama >= 2 && rama <= 9
-                              ? _c(
-                                  "button",
-                                  {
-                                    class: [
-                                      "btn",
-                                      "btn-lg",
-                                      "btn-block",
-                                      _vm.getButtonClass(rama)
-                                    ],
-                                    on: {
-                                      click: function($event) {
-                                        return _vm.handleRamaClick(rama)
-                                      }
-                                    }
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                        " +
-                                        _vm._s(nombre) +
-                                        "\n                      "
-                                    )
-                                  ]
+                            _c(
+                              "button",
+                              {
+                                staticClass: "btn btn-lg btn-block",
+                                class: {
+                                  "animate-button":
+                                    _vm.firstBlueButtonIndex === index
+                                },
+                                style: {
+                                  backgroundColor: _vm.gradosPorRama[rama]
+                                    ? "#6c757d"
+                                    : "#007bff",
+                                  color: "white"
+                                },
+                                attrs: {
+                                  disabled:
+                                    !_vm.gradosPorRama[rama] &&
+                                    _vm.firstBlueButtonIndex !== index
+                                },
+                                on: {
+                                  click: function($event) {
+                                    return _vm.handleRamaClick(rama)
+                                  }
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                        " +
+                                    _vm._s(nombre) +
+                                    "\n                      "
                                 )
-                              : _vm._e()
+                              ]
+                            )
                           ]
                         )
                       }),
@@ -66064,891 +64204,7 @@ var render = function() {
           ])
         ])
       ])
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "modal animated animate__bounceIn",
-        attrs: {
-          id: "exampleModal",
-          tabindex: "-1",
-          role: "dialog",
-          "aria-labelledby": "exampleModalLabel",
-          "aria-hidden": "true"
-        }
-      },
-      [
-        _c(
-          "div",
-          {
-            staticClass: "modal-dialog modal-dialog-centered",
-            attrs: { role: "document" }
-          },
-          [
-            _c("div", { staticClass: "modal-content" }, [
-              _vm._m(2),
-              _vm._v(" "),
-              _c("div", { staticClass: "modal-body" }, [
-                _vm._m(3),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c(
-                    "table",
-                    { staticStyle: { "table-layout": "fixed", width: "100%" } },
-                    [
-                      _c("tr", [
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("ac")
-                                }
-                              }
-                            },
-                            [_vm._v("AC")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("(")
-                                }
-                              }
-                            },
-                            [_vm._v("(")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  _vm.botonesCalculadora(")")
-                                }
-                              }
-                            },
-                            [_vm._v(")")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("/")
-                                }
-                              }
-                            },
-                            [_vm._v("/")]
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("7")
-                                }
-                              }
-                            },
-                            [_vm._v("7")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("8")
-                                }
-                              }
-                            },
-                            [_vm._v("8")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("9")
-                                }
-                              }
-                            },
-                            [_vm._v("9")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("*")
-                                }
-                              }
-                            },
-                            [_vm._v("*")]
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("4")
-                                }
-                              }
-                            },
-                            [_vm._v("4")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("5")
-                                }
-                              }
-                            },
-                            [_vm._v("5")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("6")
-                                }
-                              }
-                            },
-                            [_vm._v("6")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("+")
-                                }
-                              }
-                            },
-                            [_vm._v("+")]
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("1")
-                                }
-                              }
-                            },
-                            [_vm._v("1")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("2")
-                                }
-                              }
-                            },
-                            [_vm._v("2")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("3")
-                                }
-                              }
-                            },
-                            [_vm._v("3")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("-")
-                                }
-                              }
-                            },
-                            [_vm._v("-")]
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _vm._m(4),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("0")
-                                }
-                              }
-                            },
-                            [_vm._v("0")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora(".")
-                                }
-                              }
-                            },
-                            [_vm._v(".")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              staticStyle: { width: "100%", height: "100%" },
-                              on: {
-                                click: function($event) {
-                                  return _vm.botonesCalculadora("=")
-                                }
-                              }
-                            },
-                            [_vm._v("=")]
-                          )
-                        ])
-                      ])
-                    ]
-                  )
-                ])
-              ])
-            ])
-          ]
-        )
-      ]
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "modal fade bd-example-modal-lg",
-        attrs: {
-          id: "funciones",
-          tabindex: "-1",
-          role: "dialog",
-          "aria-labelledby": "funcionesModalLabel",
-          "aria-hidden": "true"
-        }
-      },
-      [
-        _c(
-          "div",
-          { staticClass: "modal-dialog modal-lg", attrs: { role: "document" } },
-          [
-            _c("div", { staticClass: "modal-content" }, [
-              _vm._m(5),
-              _vm._v(" "),
-              _c("div", { staticClass: "modal-body" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" abs (")
-                          }
-                        }
-                      },
-                      [_vm._v("abs")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" acos (")
-                          }
-                        }
-                      },
-                      [_vm._v("acos")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" acosh (")
-                          }
-                        }
-                      },
-                      [_vm._v("acosh")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" asin (")
-                          }
-                        }
-                      },
-                      [_vm._v("asin")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" asinh (")
-                          }
-                        }
-                      },
-                      [_vm._v("asinh")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" atan (")
-                          }
-                        }
-                      },
-                      [_vm._v("atan")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" atan2 (")
-                          }
-                        }
-                      },
-                      [_vm._v("atan2")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" atanh (")
-                          }
-                        }
-                      },
-                      [_vm._v("atanh")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" bindec (")
-                          }
-                        }
-                      },
-                      [_vm._v("bindec")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" ceil (")
-                          }
-                        }
-                      },
-                      [_vm._v("ceil")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" cos (")
-                          }
-                        }
-                      },
-                      [_vm._v("cos")]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" cosh (")
-                          }
-                        }
-                      },
-                      [_vm._v("cosh")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" decbin (")
-                          }
-                        }
-                      },
-                      [_vm._v("decbin")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" decoct (")
-                          }
-                        }
-                      },
-                      [_vm._v("decoct")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" deg2rad (")
-                          }
-                        }
-                      },
-                      [_vm._v("deg2rad")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" exp (")
-                          }
-                        }
-                      },
-                      [_vm._v("exp")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" expm1 (")
-                          }
-                        }
-                      },
-                      [_vm._v("expm1")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" floor (")
-                          }
-                        }
-                      },
-                      [_vm._v("floor")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" log10 (")
-                          }
-                        }
-                      },
-                      [_vm._v("log10")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" log1p (")
-                          }
-                        }
-                      },
-                      [_vm._v("log1p")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" log (")
-                          }
-                        }
-                      },
-                      [_vm._v("log")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" max (")
-                          }
-                        }
-                      },
-                      [_vm._v("max")]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" min (")
-                          }
-                        }
-                      },
-                      [_vm._v("min")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            _vm.botonesCalculadora(" pi ( )")
-                          }
-                        }
-                      },
-                      [_vm._v("pi")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" pow (")
-                          }
-                        }
-                      },
-                      [_vm._v("pow")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" rad2deg (")
-                          }
-                        }
-                      },
-                      [_vm._v("rad2deg")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" round (")
-                          }
-                        }
-                      },
-                      [_vm._v("round")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" sin (")
-                          }
-                        }
-                      },
-                      [_vm._v("sin")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" sinh (")
-                          }
-                        }
-                      },
-                      [_vm._v("sinh")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" sqrt (")
-                          }
-                        }
-                      },
-                      [_vm._v("sqrt")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" tan (")
-                          }
-                        }
-                      },
-                      [_vm._v("tan")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" tanh (")
-                          }
-                        }
-                      },
-                      [_vm._v("tanh")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        on: {
-                          click: function($event) {
-                            return _vm.botonesCalculadora(" ,")
-                          }
-                        }
-                      },
-                      [_vm._v(",")]
-                    )
-                  ])
-                ])
-              ])
-            ])
-          ]
-        )
-      ]
-    )
+    ])
   ])
 }
 var staticRenderFns = [
@@ -66960,9 +64216,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "container-fluid" }, [
         _c("div", { staticClass: "row mb-2" }, [
           _c("div", { staticClass: "col-sm-6" }, [
-            _c("h1", { staticClass: "page-title m-0" }, [
-              _vm._v("Enseñanza-Aprendizaje")
-            ])
+            _c("h1", { staticClass: "page-title m-0" }, [_vm._v("Enseñanza")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-sm-6" }, [
@@ -66974,7 +64228,7 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("span", { staticStyle: { color: "#bdb9bd" } }, [
-                _vm._v("\n              Enseñanza-Aprendizaje "),
+                _vm._v("\n              Enseñanza"),
                 _c("i", { staticClass: "fas fa-angle-right" })
               ]),
               _vm._v(" "),
@@ -66992,89 +64246,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "card-header" }, [
       _c("h3", { staticClass: "card-title mt-2" }, [
         _c("b", [_vm._v(" Ramas de matemáticas")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-tools" }, [
-        _c("div", { staticStyle: { width: "150px" } }, [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-primary float-right",
-              attrs: {
-                type: "button",
-                "data-toggle": "modal",
-                "data-target": "#exampleModal"
-              }
-            },
-            [_c("i", { staticClass: "fas fa-calculator" })]
-          )
-        ])
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-header" }, [
-      _c(
-        "h5",
-        { staticClass: "modal-title", attrs: { id: "exampleModalLabel" } },
-        [_vm._v(" Calculadora ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "close",
-          attrs: {
-            type: "button",
-            "data-dismiss": "modal",
-            "aria-label": "Close"
-          }
-        },
-        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("input", {
-        staticClass: "form-control",
-        staticStyle: { "text-align": "right", "font-size": "35px" },
-        attrs: { type: "text", id: "campo_calculadora" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-primary",
-          staticStyle: { width: "100%", height: "100%" },
-          attrs: { "data-toggle": "modal", "data-target": "#funciones" }
-        },
-        [_vm._v("fun")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-header" }, [
-      _c(
-        "h5",
-        { staticClass: "modal-title", attrs: { id: "funcionesModalLabel" } },
-        [_vm._v("Funciones")]
-      )
     ])
   }
 ]
@@ -67616,7 +64788,10 @@ var render = function() {
                                         .num_preguntas_calculadas ||
                                     tema.totalPreguntasCalculadasMultiples <
                                       _vm.configuraciones
-                                        .num_preguntas_calculadas_multiples
+                                        .num_preguntas_calculadas_multiples ||
+                                    tema.totalPreguntasExpresiones <
+                                      _vm.configuraciones
+                                        .num_preguntas_expresion
                                     ? _c("tr", [
                                         _c("td", [
                                           _vm._v(_vm._s(tema.nombre_tema))
@@ -67758,6 +64933,29 @@ var render = function() {
                                                   "fas fa-times-circle",
                                                 staticStyle: { color: "red" }
                                               })
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                " +
+                                              _vm._s(
+                                                tema.totalPreguntasExpresiones
+                                              ) +
+                                              "\n                                                "
+                                          ),
+                                          tema.totalPreguntasExpresiones >=
+                                          _vm.configuraciones
+                                            .num_preguntas_expresion
+                                            ? _c("i", {
+                                                staticClass:
+                                                  "fas fa-check-circle",
+                                                staticStyle: { color: "green" }
+                                              })
+                                            : _c("i", {
+                                                staticClass:
+                                                  "fas fa-times-circle",
+                                                staticStyle: { color: "red" }
+                                              })
                                         ])
                                       ])
                                     : _vm._e()
@@ -67782,7 +64980,9 @@ var render = function() {
                           _vm._v(" "),
                           _c("th", [_vm._v("Calculada")]),
                           _vm._v(" "),
-                          _c("th", [_vm._v("Calculada Múltiple")])
+                          _c("th", [_vm._v("Calculada Múltiple")]),
+                          _vm._v(" "),
+                          _c("th", [_vm._v("Expresiones")])
                         ])
                       ]
                     )
@@ -70272,964 +67472,7 @@ var render = function() {
           ]
         )
       ]
-    ),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        {
-          staticClass: "modal animated animate__bounceIn",
-          attrs: {
-            id: "exampleModal",
-            tabindex: "-1",
-            role: "dialog",
-            "aria-labelledby": "exampleModalLabel",
-            "aria-hidden": "true"
-          }
-        },
-        [
-          _c(
-            "div",
-            {
-              staticClass: "modal-dialog modal-dialog-centered",
-              attrs: { role: "document" }
-            },
-            [
-              _c("div", { staticClass: "modal-content" }, [
-                _vm._m(6),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-body" }, [
-                  _vm._m(7),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c(
-                      "table",
-                      {
-                        staticStyle: { "table-layout": "fixed", width: "100%" }
-                      },
-                      [
-                        _c("tr", [
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("ac")
-                                  }
-                                }
-                              },
-                              [_vm._v("AC")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("(")
-                                  }
-                                }
-                              },
-                              [_vm._v("(")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    _vm.botonesCalculadora(")")
-                                  }
-                                }
-                              },
-                              [_vm._v(")")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("/")
-                                  }
-                                }
-                              },
-                              [_vm._v("/")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("7")
-                                  }
-                                }
-                              },
-                              [_vm._v("7")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("8")
-                                  }
-                                }
-                              },
-                              [_vm._v("8")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("9")
-                                  }
-                                }
-                              },
-                              [_vm._v("9")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("*")
-                                  }
-                                }
-                              },
-                              [_vm._v("*")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("4")
-                                  }
-                                }
-                              },
-                              [_vm._v("4")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("5")
-                                  }
-                                }
-                              },
-                              [_vm._v("5")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("6")
-                                  }
-                                }
-                              },
-                              [_vm._v("6")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("+")
-                                  }
-                                }
-                              },
-                              [_vm._v("+")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("1")
-                                  }
-                                }
-                              },
-                              [_vm._v("1")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("2")
-                                  }
-                                }
-                              },
-                              [_vm._v("2")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("3")
-                                  }
-                                }
-                              },
-                              [_vm._v("3")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("-")
-                                  }
-                                }
-                              },
-                              [_vm._v("-")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _vm._m(8),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("0")
-                                  }
-                                }
-                              },
-                              [_vm._v("0")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora(".")
-                                  }
-                                }
-                              },
-                              [_vm._v(".")]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary ",
-                                staticStyle: { width: "100%", height: "100%" },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.botonesCalculadora("=")
-                                  }
-                                }
-                              },
-                              [_vm._v("=")]
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ])
-              ])
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "modal fade bd-example-modal-lg",
-          attrs: {
-            id: "funciones",
-            tabindex: "-1",
-            role: "dialog",
-            "aria-labelledby": "funcionesModalLabel",
-            "aria-hidden": "true"
-          }
-        },
-        [
-          _c(
-            "div",
-            {
-              staticClass: "modal-dialog modal-lg",
-              attrs: { role: "document" }
-            },
-            [
-              _c("div", { staticClass: "modal-content" }, [
-                _vm._m(9),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-body" }, [
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" abs (")
-                              }
-                            }
-                          },
-                          [_vm._v("abs")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" acos (")
-                              }
-                            }
-                          },
-                          [_vm._v("acos")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" acosh (")
-                              }
-                            }
-                          },
-                          [_vm._v("acosh")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" asin (")
-                              }
-                            }
-                          },
-                          [_vm._v("asin")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" asinh (")
-                              }
-                            }
-                          },
-                          [_vm._v("asinh")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" atan (")
-                              }
-                            }
-                          },
-                          [_vm._v("atan")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" atan2 (")
-                              }
-                            }
-                          },
-                          [_vm._v("atan2")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" atanh (")
-                              }
-                            }
-                          },
-                          [_vm._v("atanh")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" bindec (")
-                              }
-                            }
-                          },
-                          [_vm._v("bindec")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" ceil (")
-                              }
-                            }
-                          },
-                          [_vm._v("ceil")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" cos (")
-                              }
-                            }
-                          },
-                          [_vm._v("cos")]
-                        )
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" cosh (")
-                              }
-                            }
-                          },
-                          [_vm._v("cosh")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" decbin (")
-                              }
-                            }
-                          },
-                          [_vm._v("decbin")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" decoct (")
-                              }
-                            }
-                          },
-                          [_vm._v("decoct")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" deg2rad (")
-                              }
-                            }
-                          },
-                          [_vm._v("deg2rad")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" exp (")
-                              }
-                            }
-                          },
-                          [_vm._v("exp")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" expm1 (")
-                              }
-                            }
-                          },
-                          [_vm._v("expm1")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" floor (")
-                              }
-                            }
-                          },
-                          [_vm._v("floor")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" log10 (")
-                              }
-                            }
-                          },
-                          [_vm._v("log10")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" log1p (")
-                              }
-                            }
-                          },
-                          [_vm._v("log1p")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" log (")
-                              }
-                            }
-                          },
-                          [_vm._v("log")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" max (")
-                              }
-                            }
-                          },
-                          [_vm._v("max")]
-                        )
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" min (")
-                              }
-                            }
-                          },
-                          [_vm._v("min")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                _vm.botonesCalculadora(" pi ( )")
-                              }
-                            }
-                          },
-                          [_vm._v("pi")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" pow (")
-                              }
-                            }
-                          },
-                          [_vm._v("pow")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" rad2deg (")
-                              }
-                            }
-                          },
-                          [_vm._v("rad2deg")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" round (")
-                              }
-                            }
-                          },
-                          [_vm._v("round")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" sin (")
-                              }
-                            }
-                          },
-                          [_vm._v("sin")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" sinh (")
-                              }
-                            }
-                          },
-                          [_vm._v("sinh")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" sqrt (")
-                              }
-                            }
-                          },
-                          [_vm._v("sqrt")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" tan (")
-                              }
-                            }
-                          },
-                          [_vm._v("tan")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" tanh (")
-                              }
-                            }
-                          },
-                          [_vm._v("tanh")]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-1" }, [
-                      _c("div", [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary ",
-                            on: {
-                              click: function($event) {
-                                return _vm.botonesCalculadora(" ,")
-                              }
-                            }
-                          },
-                          [_vm._v(",")]
-                        )
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ]
-          )
-        ]
-      )
-    ])
+    )
   ])
 }
 var staticRenderFns = [
@@ -71271,23 +67514,6 @@ var staticRenderFns = [
     return _c("div", { staticClass: "card-header" }, [
       _c("h3", { staticClass: "card-title mt-2" }, [
         _c("b", [_vm._v(" Evaluacion ")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-tools" }, [
-        _c("div", { staticStyle: { width: "150px" } }, [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-primary float-right ",
-              attrs: {
-                type: "button",
-                "data-toggle": "modal",
-                "data-target": "#exampleModal"
-              }
-            },
-            [_c("i", { staticClass: "fas fa-calculator" })]
-          )
-        ])
       ])
     ])
   },
@@ -71321,71 +67547,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "contenedorPregunta", hidden: "" } }, [
       _c("h3", { attrs: { id: "question" } })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-header" }, [
-      _c(
-        "h5",
-        { staticClass: "modal-title", attrs: { id: "exampleModalLabel" } },
-        [_vm._v(" Calculadora ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "close",
-          attrs: {
-            type: "button",
-            "data-dismiss": "modal",
-            "aria-label": "Close"
-          }
-        },
-        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("input", {
-        staticClass: "form-control",
-        staticStyle: { "text-align": "right", "font-size": "35px" },
-        attrs: { type: "text", id: "campo_calculadora" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-primary ",
-          staticStyle: { width: "100%", height: "100%" },
-          attrs: { "data-toggle": "modal", "data-target": "#funciones" }
-        },
-        [_vm._v("fun")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-header" }, [
-      _c(
-        "h5",
-        { staticClass: "modal-title", attrs: { id: "exampleModalLabel" } },
-        [_vm._v("Funciones")]
-      )
     ])
   }
 ]
@@ -81881,7 +78042,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "col-sm-6" }, [
             _c("h1", { staticClass: "page-title m-0" }, [
               _vm._v(
-                "\n                            Status Grafo\n                        "
+                "\n                            Estatus de dominio\n                        "
               )
             ])
           ]),
@@ -81889,7 +78050,9 @@ var staticRenderFns = [
           _c("div", { staticClass: "col-sm-6" }, [
             _c("ol", { staticClass: "breadcrumb float-sm-right" }, [
               _c("li", { staticClass: "breadcrumb-item" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v(" Status Grafo ")])
+                _c("a", { attrs: { href: "#" } }, [
+                  _vm._v(" Estatus de dominio ")
+                ])
               ])
             ])
           ])
@@ -83095,6 +79258,25 @@ var render = function() {
                       }
                     },
                     [_vm._v("=")]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              buttonClass === "basic-buttons"
+                ? _c(
+                    "button",
+                    {
+                      attrs: { id: "puntoYcoma", title: "punto y coma" },
+                      on: {
+                        click: _vm.insertPyC,
+                        mouseover: function($event) {
+                          _vm.showEtiqueta = true
+                        },
+                        mouseleave: function($event) {
+                          _vm.showEtiqueta = false
+                        }
+                      }
+                    },
+                    [_vm._v(";")]
                   )
                 : _vm._e(),
               _vm._v(" "),
@@ -85047,6 +81229,25 @@ var render = function() {
                       }
                     },
                     [_vm._v("=")]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              buttonClass === "basic-buttons"
+                ? _c(
+                    "button",
+                    {
+                      attrs: { id: "puntoYcoma", title: "punto y coma" },
+                      on: {
+                        click: _vm.insertPyC,
+                        mouseover: function($event) {
+                          _vm.showEtiqueta = true
+                        },
+                        mouseleave: function($event) {
+                          _vm.showEtiqueta = false
+                        }
+                      }
+                    },
+                    [_vm._v(";")]
                   )
                 : _vm._e(),
               _vm._v(" "),
@@ -87016,6 +83217,25 @@ var render = function() {
                       }
                     },
                     [_vm._v("=")]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              buttonClass === "basic-buttons"
+                ? _c(
+                    "button",
+                    {
+                      attrs: { id: "puntoYcoma", title: "punto y coma" },
+                      on: {
+                        click: _vm.insertPyC,
+                        mouseover: function($event) {
+                          _vm.showEtiqueta = true
+                        },
+                        mouseleave: function($event) {
+                          _vm.showEtiqueta = false
+                        }
+                      }
+                    },
+                    [_vm._v(";")]
                   )
                 : _vm._e(),
               _vm._v(" "),
@@ -91233,7 +87453,7 @@ var render = function() {
                           _vm._v(" "),
                           _c("p", [
                             _vm._v(
-                              "\n\t\t\t\t\t\t\t\tContestar\n\t\t\t\t\t\t\t"
+                              "\n\t\t\t\t\t\t\t\tEvaluación diagnóstica\n\t\t\t\t\t\t\t"
                             )
                           ])
                         ]
@@ -91513,7 +87733,7 @@ var render = function() {
               this.id_rol == 4
                 ? _c(
                     "li",
-                    { staticClass: "nav-item mb-5" },
+                    { staticClass: "nav-item" },
                     [
                       _c(
                         "router-link",
@@ -91528,7 +87748,7 @@ var render = function() {
                           _vm._v(" "),
                           _c("p", [
                             _vm._v(
-                              "\n\t\t\t\t\t\t\t\tStatus Grafo\n\t\t\t\t\t\t\t"
+                              "\n\t\t\t\t\t\t\t\tEstatus de dominio\n\t\t\t\t\t\t\t"
                             )
                           ])
                         ]
@@ -91623,7 +87843,7 @@ var render = function() {
                   )
                 : _vm._e(),
               _vm._v(" "),
-              this.id_rol == 1 || this.id_rol == 3 || this.id_rol == 4
+              this.id_rol == 1 || this.id_rol == 4
                 ? _c(
                     "li",
                     { staticClass: "nav-item" },
@@ -91651,10 +87871,10 @@ var render = function() {
                   )
                 : _vm._e(),
               _vm._v(" "),
-              this.id_rol == 1 || this.id_rol == 3 || this.id_rol == 4
+              this.id_rol == 1 || this.id_rol == 4
                 ? _c(
                     "li",
-                    { staticClass: "nav-item mb-5" },
+                    { staticClass: "nav-item mb-3" },
                     [
                       _c(
                         "router-link",
@@ -91669,7 +87889,7 @@ var render = function() {
                           _vm._v(" "),
                           _c("p", [
                             _vm._v(
-                              "\n\t\t\t\t\t\t\t\tEvaluacion\n\t\t\t\t\t\t\t"
+                              "\n\t\t\t\t\t\t\t\tEvaluación\n\t\t\t\t\t\t\t"
                             )
                           ])
                         ]
@@ -109149,6 +105369,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/assets/js/components/DashBoardAlumno":
+/*!********************************************************!*\
+  !*** ./resources/assets/js/components/DashBoardAlumno ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./resources/assets/js/components/Ejemplo.vue":
 /*!****************************************************!*\
   !*** ./resources/assets/js/components/Ejemplo.vue ***!
@@ -117167,6 +113398,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_VistaGeneral_vue__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @/components/VistaGeneral.vue */ "./resources/assets/js/components/VistaGeneral.vue");
 /* harmony import */ var _components_VistaRama_vue__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @/components/VistaRama.vue */ "./resources/assets/js/components/VistaRama.vue");
 /* harmony import */ var _components_Evaluacion__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @/components/Evaluacion */ "./resources/assets/js/components/Evaluacion.vue");
+/* harmony import */ var _components_DashBoardAlumno__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @/components/DashBoardAlumno */ "./resources/assets/js/components/DashBoardAlumno");
+/* harmony import */ var _components_DashBoardAlumno__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_components_DashBoardAlumno__WEBPACK_IMPORTED_MODULE_34__);
 // resources/assets/js/router/index.js
 
 
@@ -117204,6 +113437,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = (new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
@@ -117235,6 +113469,10 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
     path: '/configurarCuestionario',
     name: 'ConfiguracionCuestionario',
     component: _components_ConfiguracionCuestionario__WEBPACK_IMPORTED_MODULE_13__["default"]
+  }, {
+    path: '/dashboardAlumno',
+    name: 'DashboardAlumno',
+    component: _components_DashBoardAlumno__WEBPACK_IMPORTED_MODULE_34___default.a
   }, {
     path: '/cuestionario',
     name: 'cuestionario',

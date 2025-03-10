@@ -65,6 +65,14 @@
           @mouseleave="showEtiqueta = false" title="mayor o igual que">≥</button>
         <button v-if="buttonClass === 'basic-buttons'" id="equal" @click="insertEqual" @mouseover="showEtiqueta = true"
           @mouseleave="showEtiqueta = false" title="igual">=</button>
+        <button 
+               v-if="buttonClass === 'basic-buttons'" 
+               id="puntoYcoma" 
+               @click="insertPyC"
+               @mouseover="showEtiqueta = true"
+               @mouseleave="showEtiqueta = false"
+               title="punto y coma"
+           >;</button>
 
 
         <!-- Los botones para Cálculo y Sumas -->
@@ -599,6 +607,9 @@ export default {
     insertIntersec() {
       this.mathField.write("\\intersection")
     },
+    insertPyC(){
+      this.mathField.write(";")
+      },
     insertZeta() {
       this.mathField.write("\\zeta")
     },

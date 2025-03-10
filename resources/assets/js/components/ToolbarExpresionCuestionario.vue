@@ -43,6 +43,7 @@
 
       const MQ = MathQuill.getInterface(2);
       this.mathField = MQ.MathField(this.$refs.mathField);
+    
       this.handleInput();
     
     // Obtener la referencia al campo de mathquill
@@ -61,7 +62,7 @@
     });
     this.datorecibido = this.dato;
     this.mathField.write(this.dato);
-    console.log("soy dato hijo soriano estuvo aqui:", this.datorecibido)  
+    
   },
   watch: {
       //console.log("dato anteriorrrr "+ this.oldVal)

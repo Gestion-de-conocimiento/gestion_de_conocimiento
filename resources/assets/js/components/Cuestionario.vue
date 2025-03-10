@@ -518,7 +518,16 @@
           } else {
             console.log("Ya ha terminado el cuestionario");
             alert("Ya se ha terminado de evaluar");
+            
+        // Redirige a la página de evaluación
+        this.$router.push({ path: '/statusGrafo' });
           }
+          // 🔹 Enviar solicitud al backend para ejecutar el script de Python
+  axios.post('/ejecutar-script-python')
+    .then(response => {
+      console.log('✅ Script ejecutado correctamente:', response.data);
+      alert("✅ Script ejecutado correctamente");
+    })
         }, error => {
           console.error(error)
         })
@@ -1394,7 +1403,7 @@ console.log("la re2"+opc);
                 break;
               case 7:
                 var input_respuesta = document.createElement("input");
-                input_respuesta.type = "text";
+                input_respuesta.type = "hidden";
                 input_respuesta.id = "input_respuesta";
                 var zona_botones = document.getElementById("buttons");
                 zona_botones.innerHTML = " <b> Respuesta: </b> <br>";
