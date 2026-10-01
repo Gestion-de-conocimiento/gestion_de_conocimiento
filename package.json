@@ -38,6 +38,7 @@
     "@adonisjs/validator": "^5.0.6",
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "axios": "^0.19.2",
+    "exceljs": "^4.4.0",
     "foundation-sites": "^6.6.3",
     "jquery": "^3.5.0",
     "laravel-mix": "^5.0.1",

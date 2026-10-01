@@ -194,6 +194,15 @@
                title="igual"
            >=</button>
           
+          <button 
+               v-if="buttonClass === 'basic-buttons'" 
+               id="puntoYcoma" 
+               @click="insertPyC"
+               @mouseover="showEtiqueta = true"
+               @mouseleave="showEtiqueta = false"
+               title="punto y coma"
+           >;</button>
+          
           <!-- Los botones para Cálculo y Sumas -->
           
           
@@ -1179,6 +1188,9 @@
       },
       insertEta(){
       this.mathField.write("\\eta")
+      },
+      insertPyC(){
+      this.mathField.write(";")
       },
       
       

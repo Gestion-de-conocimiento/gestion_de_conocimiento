@@ -15,6 +15,112 @@ Route.get('/saludar', 'SaludarController.metodoSaludar')
 
 Route.post('/wolfram-query', 'WolframController.query')
 
+
+
+//Aqui los servicios de analitica
+Route.post('/limpiar-graficas', 'DashBoardAlumnoController.limpiarGraficasDesdeRuta');
+
+const DashBoardAlumnoController = require('../app/Controllers/Http/DashBoardAlumnoController');
+Route.post('/generar-grafica', 'DashBoardAlumnoController.ejecutarScriptPython');
+Route.post('/generar-historico', 'DashBoardAlumnoController.ejecutarScriptHistorico');
+Route.get('/limpiar-graficas', 'DashBoardAlumnoController.limpiarGraficasDesdeRuta');
+
+
+Route.get('/tus-alumnos/listar', 'TusAlumnoController.listar').middleware('auth');
+Route.post('/tus-alumnos/cambiar', 'TusAlumnoController.cambiar').middleware('auth');
+
+Route.post('/graficas/desempeno', 'GraficasControllerDelProfesor.generarGrafica')
+
+
+
+// Rutas para experto (actualización de la base de conocimiento bayesiana y visualización de red)
+
+// Obtener la lista de archivos .bifxml disponibles en el sistema
+Route.get('/api/redes-bayesianas', 'ActualizarBCController.listarRedes').middleware(['auth']);
+
+// Generar una gráfica HTML a partir del archivo .bifxml seleccionado
+Route.post('/api/graficar-bifxml', 'ActualizarBCController.graficarRedBayesiana').middleware(['auth']);
+
+// Ejecutar la actualización automática de la base de conocimiento (fusión de datos reales con red bayesiana)
+Route.post('/api/actualizar-bc', 'ActualizarBCController.actualizarBC').middleware(['auth']);
+
+// Obtener la configuración actual de actualización automática
+Route.get('/api/configuracion-actualizacion', 'ActualizarBCController.show').middleware(['auth']);
+
+// Guardar o actualizar la configuración de actualización automática
+Route.post('/api/configuracion-actualizacion', 'ActualizarBCController.update').middleware(['auth']);
+
+// Obtener el estado actual: cuántos pickles hay, cuántos son aptos, cuánto falta para actualizar, y dispara la actualización si se cumplen condiciones
+Route.get('/api/estado-actualizacion', 'ActualizarBCController.estado').middleware(['auth']);
+
+// Obtener el historial de actualizaciones automáticas ejecutadas
+Route.get('/api/historial-actualizaciones', 'ActualizarBCController.historial').middleware(['auth']);
+
+//---------------------Navegación y actualización de los estados del alumno--------------------$
+//
+
+Route.get('/actualizar-estado-alumno', 'UserController.actualizarEstadoAlumno').middleware('auth');
+Route.post('/estado/aprendiendo', 'EstadoAlumnoController.cambiar').middleware(['auth']);
+Route.post('/estado/evaluando', async ({ auth, response }) => {
+  try {
+    const user = await auth.getUser();
+
+    await Database
+      .from('users')
+      .where('id', user.id)
+      .update({ estado_alumno: 'evaluando' });
+
+    return response.json({ message: "Estado actualizado a evaluando" });
+  } catch (error) {
+    console.error("❌ Error al actualizar el estado:", error);
+    return response.status(500).json({ error: "No se pudo actualizar el estado" });
+  }
+});
+
+Route.get('/usuario/actual', async ({ auth, response }) => {
+  const user = await auth.getUser();
+
+  // Si necesitas enviar solo campos específicos:
+  return response.json({
+    id: user.id,
+    nombre: user.nombre,
+    apellido_paterno: user.apellido_paterno,
+    apellido_materno: user.apellido_materno,
+    matricula: user.matricula,
+    foto: user.foto,
+    id_rol: user.id_rol,
+    estado_alumno: user.estado_alumno,
+  });
+});
+
+
+
+
+//Controlador para subir alumnos por excel
+Route.get('/descargar-plantilla-alumnos', 'ExcelController.descargarPlantillaAlumnos')
+Route.post('/preview-alumnos-excel', 'ExcelController.previewAlumnosExcel').middleware(['auth'])
+Route.post('/cargar-alumnos-excel', 'ExcelController.cargarAlumnosExcel').middleware(['auth'])
+
+//------------------------------------Correr Actualizar nodos--------------------------------------------------------------
+Route.post("/ejecutar-script-python", "CuestionarioController.ejecutarScriptPython").middleware("auth");
+
+//-----------------------Actualizar Base de Conocimiento--------------------------------------
+
+
+Route.get('/api/configuracion-actualizacion', 'ConfiguracionActualizacionController.index').middleware(['auth'])
+Route.post('/api/configuracion-actualizacion', 'ConfiguracionActualizacionController.update').middleware(['auth'])
+
+// Redes Bayesianas: obtener lista y la más reciente
+Route.get('/api/redes-bayesianas', 'ActualizarBCController.listarRedes').middleware(['auth']);
+
+// Generar la gráfica de la red seleccionada
+Route.post('/api/graficar-bifxml', 'ActualizarBCController.graficarRedBayesiana').middleware(['auth']);
+
+// Actualizar la base de conocimiento (usando la red seleccionada o la más reciente)
+Route.post('/api/actualizar-bc', 'ActualizarBCController.actualizarBC').middleware(['auth']);
+Route.get('/api/estado-actualizacion', 'ConfiguracionActualizacionController.estado').middleware(['auth']);
+
+
 //---------------------Rutas para la interfaz general del módulo de enseñanza--------------------$
 // Ruta para ejecutar script Python con la matrícula del usuario
 Route.post('/api/ejecutar-evaluacion', 'EvaluacionController2.ejecutarEvaluacion').middleware(['auth'])
@@ -131,7 +237,7 @@ Route.get('/obtenerPonderaciones/:matricula', 'PonderacionController.obtener_pon
 Route.get('/ejemplo', ({view}) =>  view.render('app') );
 //Se envia matrícula para la lectura del pickle
 Route.get('/obtenerMatricula/:matricula','AprenderController.obtener_matricula')
-
+//Route.get('/ObtenerMatricula/:matricula','CuestionarioController.Obtener_matricula')
 
 Route.get('/Matricula/:matricula','EvaluacionController.obtener_matricula')
 Route.get('/reactivos/:rama/:tema', 'EvaluacionController.obtenerReactivosPorRama');
@@ -333,6 +439,7 @@ Route.group(()=>{
 	Route.post('tema/addsecundario','TemaController.registrar_secundario')
 	Route.post('tema/deleteNodoSecundario','TemaController.deleteNodoSecundarioRelation')
 	Route.post('alumno/add','UserController.realumno')
+	Route.post('alumno/addFromTemplate', 'UserController.addFromTemplate');
 	Route.get('alumno/show','UserController.alumnos')
 	Route.post('alumno/actualizar','UserController.actualizarA')
 	Route.get('alumno/showp','UserController.alumnosP')

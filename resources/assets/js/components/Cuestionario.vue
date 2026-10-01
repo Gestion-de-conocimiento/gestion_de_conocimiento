@@ -386,14 +386,51 @@
       };
     }
     ,
-    async created() {
-      await this.obtenerConfiguracion();
-      await this.obtenerPonderaciones();
+  async created() {
+  await this.obtenerConfiguracion();
 
-      //it this.btnEditar($refs.hijoComponent.editarCampoMathquill());
-      //await this.$nextTick(); // Esperar a que Vue termine de actualizar el DOM
+  const resultado = await axios.get("/obtenerPonderaciones/" + matricula);
 
-    },
+  if (resultado.data == -1) {
+    console.log("Un tema evaluado", resultado.data);
+
+    await this.obtenerPrimerTema();
+    await this.getopic();
+    await this.getpreguntas();
+    await this.obtenerDescrpcion();
+  } else if (resultado.data.detenerse == false) {
+    this.ultimoTema = resultado.data.ultimo;
+    this.datosEvaluacion = resultado.data;
+
+    await this.getopic();
+    await this.getpreguntas();
+    await this.obtenerDescrpcion();
+  } else {
+    console.log("Ya ha terminado el cuestionario");
+    alert("Ya se ha terminado de evaluar");
+
+    axios.post('/estado/aprendiendo')
+      .then(() => console.log("Estado actualizado a 'aprendiendo'"))
+      .catch(err => console.error("Error actualizando estado:", err));
+
+    this.$router.push({ path: '/DashBoardAlumno' });
+    return;
+  }
+
+  // ✅ Solo después de que todo esté listo
+  if (this.topic && this.topic.nombre_tema && this.pregunta.length > 0) {
+    await this.$nextTick();
+    await this.cargarCuestionario(this.topic.nombre_tema, this.pregunta);
+  }
+
+  // ✅ Ejecutar script de Python si aplica
+  await axios.post('/ejecutar-script-python')
+    .then(response => {
+      console.log('✅ Script ejecutado correctamente:', response.data);
+      alert("✅ Script ejecutado correctamente");
+    });
+},
+
     methods: {
       
       obtenerContenidoMathQuill() {
@@ -515,10 +552,26 @@
             await this.getpreguntas();
             await this.obtenerDescrpcion();
 
-          } else {
-            console.log("Ya ha terminado el cuestionario");
-            alert("Ya se ha terminado de evaluar");
-          }
+          }else {
+  console.log("Ya ha terminado el cuestionario");
+  alert("Ya se ha terminado de evaluar");
+
+  axios.post('/estado/aprendiendo')
+    .then(() => {
+      console.log("Estado actualizado a 'aprendiendo'");
+    })
+    .catch(err => {
+      console.error("Error actualizando estado:", err);
+    });
+
+  this.$router.push({ path: '/DashBoardAlumno' });
+}
+          // 🔹 Enviar solicitud al backend para ejecutar el script de Python
+  axios.post('/ejecutar-script-python')
+    .then(response => {
+      console.log('✅ Script ejecutado correctamente:', response.data);
+      alert("✅ Script ejecutado correctamente");
+    })
         }, error => {
           console.error(error)
         })
@@ -1394,7 +1447,7 @@ console.log("la re2"+opc);
                 break;
               case 7:
                 var input_respuesta = document.createElement("input");
-                input_respuesta.type = "text";
+                input_respuesta.type = "hidden";
                 input_respuesta.id = "input_respuesta";
                 var zona_botones = document.getElementById("buttons");
                 zona_botones.innerHTML = " <b> Respuesta: </b> <br>";

@@ -49,6 +49,27 @@
 							</p>
 						</router-link>
 					</li>
+
+					<li v-if="this.id_rol==1 || this.id_rol==2" class="nav-header"> <b> BASE DE CONOCIMIENTO </b> </li>
+
+					<li v-if="this.id_rol==1 || this.id_rol==2" class="nav-item ">							
+						<router-link class="nav-link" id="navAccesos" to="/ConfiguracionABC">
+							<i class="fas fa-folder nav-icon"></i> 
+							<p>
+								ConfiguracionABC
+							</p>
+						</router-link>
+					</li>
+          
+          <li v-if="this.id_rol==1 || this.id_rol==2" class="nav-item ">							
+						<router-link class="nav-link" id="navAccesos" to="/ActualizarBC">
+							<i class="fas fa-folder nav-icon"></i> 
+							<p>
+								Actualizar BC
+							</p>
+						</router-link>
+					</li>
+          
 					
 					<li v-if="this.id_rol==1 || this.id_rol==3" class="nav-header"> <b> USUARIOS </b> </li>
 
@@ -78,6 +99,15 @@
 							</p>
 						</router-link>
 					</li>
+                    
+          <li v-if="this.id_rol==1 || this.id_rol==3" class="nav-item">							
+						<router-link class="nav-link" id="navAccesos" to="/TusAlumnos">
+							<i class="fas fa-user-graduate nav-icon"></i>  
+							<p>
+								Tus alumnos
+							</p>
+						</router-link>
+					</li>
 
 					<li v-if="this.id_rol==1" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/usuariosExperto">
@@ -90,7 +120,7 @@
 					
 					<li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==4" class="nav-header"> <b>CUESTIONARIO </b> </li>
 
-					<li v-if="this.id_rol==1 || this.id_rol==3" class="nav-item">							
+					<li v-if="this.id_rol==1" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/configurarCuestionario">
 							<i class="fas fa-cogs nav-icon"></i> 
 							<p>
@@ -99,8 +129,17 @@
 						</router-link>
 					</li>
           
+          <!-- <li v-if="this.id_rol==1 || this.id_rol==3" class="nav-item">							
+						<router-link class="nav-link" id="navAccesos" to="/configurarCuestionario">
+							<i class="fas fa-cogs nav-icon"></i> 
+							<p>
+								Dashboard
+							</p>
+						</router-link>
+					</li> -->
           
-          <li v-if="this.id_rol==1 || this.id_rol==3" class="nav-item">							
+          
+          <li v-if="this.id_rol==1" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/configuracion/modulo">
 							<i class="fas fa-cogs nav-icon"></i> 
 							<p>
@@ -110,18 +149,28 @@
 					</li>
           
 
-					<li v-if="this.id_rol==1 || this.id_rol==4" class="nav-item">							
+					<li v-if="id_rol == 4 && estado_alumno == 'pendiente'" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/cuestionario">
 							<i class="fas fa-clipboard-check nav-icon"></i>
 							<p>
-								Contestar
+								Evaluación diagnóstica
 							</p>
 						</router-link>
 					</li>
+          
+          <li v-if="id_rol == 4 && estado_alumno != 'pendiente'" class="nav-item">							
+						<router-link class="nav-link" id="navAccesos" to="/DashBoardAlumno">
+							<i class="fas fa-clipboard-check nav-icon"></i>
+							<p>
+								Desempeño academico
+							</p>
+						</router-link>
+					</li>
+          
 
 					<li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==2" class="nav-header"> <b> PREGUNTAS </b> </li>
 
-					<li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==2" class="nav-item">							
+					<li v-if="this.id_rol==1 || this.id_rol==2" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/preguntasAbiertas">
 							<i class="fas fa-keyboard nav-icon"></i>
 							<p>
@@ -130,7 +179,7 @@
 						</router-link>
 					</li>
 
-					<li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==2" class="nav-item">							
+					<li v-if="this.id_rol==1 || this.id_rol==2" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/preguntasNumericas">
 							<i class="fas fa-sort-numeric-down nav-icon"></i>
 							<p>
@@ -139,7 +188,7 @@
 						</router-link>
 					</li>
 
-					<li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==2" class="nav-item">							
+					<li v-if="this.id_rol==1 || this.id_rol==2" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/preguntasVerdaderoFalso">
 							<i class="fas fa-toggle-on nav-icon"></i>
 							<p>
@@ -148,7 +197,7 @@
 						</router-link>
 					</li>
 
-					<li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==2" class="nav-item">							
+					<li v-if="this.id_rol==1 || this.id_rol==2" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/preguntasOpcionMultiple">
 							<i class="fas fa-stream nav-icon"></i>
 							<p>
@@ -157,7 +206,7 @@
 						</router-link>
 					</li>
 
-					<li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==2" class="nav-item">							
+					<li v-if="this.id_rol==1 ||  this.id_rol==2" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/preguntasCalculadas">
 							<i class="fas fa-square-root-alt nav-icon"></i>
 							<p>
@@ -166,7 +215,7 @@
 						</router-link>
 					</li>
 
-					<li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==2" class="nav-item">							
+					<li v-if="this.id_rol==1 || this.id_rol==2" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/PreguntasOpcionMultipleCalculadas">
 							<i class="fas fas fa-check-square nav-icon"></i>
 							<p>
@@ -176,7 +225,7 @@
 					</li>
 					
           
-          <li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==2" class="nav-item">							
+          <li v-if="this.id_rol==1 || this.id_rol==2" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/PreguntasExpresiones">
 							<i class="fas fa-sort-numeric-down nav-icon"></i>
     
@@ -208,11 +257,11 @@
 					</li>
           
           
-					<li v-if="this.id_rol == 4" class="nav-item mb-5">
+				<li v-if="this.id_rol == 4 && estado_alumno != 'pendiente'" class="nav-item">
 						<router-link class="nav-link" id="navAccesos" to="/statusGrafo">
 							<i class="fas fa-folder-open nav-icon"></i>
 							<p>
-								Status Grafo
+								Estatus de dominio
 							</p>
 						</router-link>
 					</li>
@@ -232,7 +281,7 @@
           
           <li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==4" class="nav-header"> <b>MÓDULO DE ENSEÑANZA </b></li>
           
-           <li v-if="this.id_rol==1 || this.id_rol==3" class="nav-item">
+           <li v-if="this.id_rol==1" class="nav-item">
 						<router-link class="nav-link" id="navAccesos" to="/configuracion/evaluacion">
 							<i class="fas fa-cogs nav-icon"></i>
 							<p>
@@ -242,7 +291,7 @@
 					</li>
 
           
-           <li v-if="this.id_rol==1 || this.id_rol==3" class="nav-item ">							
+           <li v-if="this.id_rol==1" class="nav-item ">							
 						<router-link class="nav-link" id="navAccesos" to="/recursos">
 							<i class="fas fa-folder nav-icon"></i> 
 							<p>
@@ -252,7 +301,7 @@
 					</li>
           
           
-          <li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==4" class="nav-item">							
+          <li v-if="id_rol == 4 && estado_alumno == 'aprendiendo'" class="nav-item">							
 						<router-link class="nav-link" id="navAccesos" to="/aprender">
 							<i class="fas fa-chalkboard-teacher nav-icon"></i> 
 							<p>
@@ -260,39 +309,14 @@
 							</p>
 						</router-link>
 					</li>
-                    <li v-if="this.id_rol==1 || this.id_rol==3 || this.id_rol==4" class="nav-item mb-5">							
+          <li v-if="id_rol == 4 && estado_alumno == 'evaluando'" class="nav-item mb-3">							
 						<router-link class="nav-link" id="navAccesos" to="/evaluacion">
 							<i class="fas fa-chalkboard-teacher nav-icon"></i> 
 							<p>
-								Evaluacion
+								Evaluación
 							</p>
 						</router-link>
 					</li>
-          
-          
-
-<!-- mb-5 -->
-					<!-- <li v-if="this.id_rol==1 || this.id_rol==2 || this.id_rol==3"  class="nav-item">							
-						<router-link class="nav-link" id="navTemas" to="/grafo">
-							<i class="fas fa-poll nav-icon"></i>
-							<p>
-								Resultados por alumno
-							</p>
-						</router-link>
-					</li> -->
-
-					<!--<li v-if="this.id_rol==1 || this.id_rol==2" class="nav-header"> <b> RECURSOS </b> </li>
-
-					<li v-if="this.id_rol==1 || this.id_rol==2" class="nav-item">							
-						<router-link class="nav-link" id="navRecursos" to="/subirImagenes">
-							<i class="nav-icon fas fa-file-upload"></i>  
-							<p>
-								imagenes
-							</p>
-						</router-link>
-					</li>-->
-					
-					
 				</ul>
 			</nav>
 			<!-- /.sidebar-menu -->
@@ -301,7 +325,9 @@
 	</aside>
 </template>
 <script>
+  import axios from 'axios'; // ⬅️ IMPORTANTE: esto te faltaba
 export default {
+  
 	data(){
 		return {
 			id: '',
@@ -312,33 +338,40 @@ export default {
 			foto: '',
 			id_rol: '',
 			rol: '',
+      estado_alumno: '',
 		}
 	},
 	mounted() {
-		this.id = window.idUsuario;
-		this.nombre = window.nombre;
-		this.apellidoPaterno = window.apellido_paterno;
-		this.apellidoMaterno = window.apellido_materno;
-		this.matricula = window.matricula;
-		this.foto = window.foto;
-		this.id_rol = window.rol;
+    this.obtenerUsuario();
+	},
+    watch: {
+    $route(to, from) {
+      this.obtenerUsuario(); // cada que cambia la ruta, se actualiza el menú
+    }
+  },
+    methods: {
+    obtenerUsuario() {
+      axios.get('/usuario/actual')
+        .then(res => {
+          const user = res.data;
+          this.id = user.id;
+          this.nombre = user.nombre;
+          this.apellidoPaterno = user.apellido_paterno;
+          this.apellidoMaterno = user.apellido_materno;
+          this.matricula = user.matricula;
+          this.foto = user.foto;
+          this.id_rol = user.id_rol;
+          this.estado_alumno = user.estado_alumno;
 
-		if(this.id_rol === '1'){
-			this.rol = "Administrador"
-		}
-
-		if(this.id_rol === '2'){
-			this.rol = "Experto"
-		}
-
-		if(this.id_rol === '3'){
-			this.rol = "Profesor"
-		}
-
-		if(this.id_rol === '4'){
-			this.rol = "Alumno"
-		}
-
-	}
+          if (this.id_rol == 1) this.rol = "Administrador";
+          if (this.id_rol == 2) this.rol = "Experto";
+          if (this.id_rol == 3) this.rol = "Profesor";
+          if (this.id_rol == 4) this.rol = "Alumno";
+        })
+        .catch(err => {
+          console.error("Error al obtener datos del usuario:", err);
+        });
+    }
+  }
 };
 </script>

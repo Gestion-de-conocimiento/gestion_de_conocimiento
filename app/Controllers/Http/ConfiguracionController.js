@@ -35,7 +35,6 @@ class ConfiguracionController {
     const totalCalculadasMultiples = Number(request.post().totalCalculadasMultiples);
     const totalExpresiones = Number(request.post().totalExpresiones);
 		const ponderacionEstricta = Number(request.post().ponderacionEstricta);
-		
 		const banco_preguntas = await Database.raw('UPDATE configuracion_cuestionarios SET ponde_estricta = ?, num_preguntas = ?, num_preguntas_abiertas = ?, num_preguntas_boleanas = ?, num_preguntas_multiples = ?, num_preguntas_calculadas = ?, num_preguntas_numericas = ?, num_preguntas_calculadas_multiples = ?,num_preguntas_expresion = ?, rango_por_defecto = ? ',[ponderacionEstricta, totalPreguntas, totalBreves, totalBooleanas, totalMultiples, totalCalculadas, totalNumericas, totalCalculadasMultiples,totalExpresiones,  rangoDefecto ])
 	
 		

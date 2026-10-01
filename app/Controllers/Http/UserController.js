@@ -1,9 +1,13 @@
 'use strict'
+const ExcelJS = require('exceljs')
+const fs = require('fs')
+const Helpers = use('Helpers')
 
 const User = use('App/Models/User')
 const {validate}= use('Validator')
 const Hash = use('Hash')
 const Database = use('Database')
+
 
 class UserController {
 		async registrar({request,response}){
@@ -59,7 +63,54 @@ class UserController {
 		
 
 	}
-	
+  
+async descargarPlantillaAlumnos({ response }) {
+  const rutaPlantilla = Helpers.publicPath('Documentos/Plantilla_Alumnos.xlsx')
+  return response.download(rutaPlantilla)
+}
+
+  
+  
+  
+  
+  async actualizarEstadoAlumno({ auth, response }) {
+  const userId = auth.user.id;
+
+  // Total de temas que existen
+  const totalTemas = await Database.from('temas').count('* as total');
+
+  // Total de temas que el alumno ha marcado como revisados
+  const temasRevisados = await Database
+    .from('usuario_tema_avance')
+    .where('user_id', userId)
+    .andWhere('revisado', 1)
+    .count('* as revisados');
+
+  // Lógica del estado
+  let estado = 'pendiente';
+  if (temasRevisados[0].revisados > 0) {
+    estado = 'en_progreso';
+  }
+  if (temasRevisados[0].revisados == totalTemas[0].total) {
+    estado = 'listo';
+  }
+
+  // Guardar el nuevo estado en la base de datos
+  await Database
+    .from('users')
+    .where('id', userId)
+    .update({ estado_alumno: estado });
+
+  // Retornar mensaje
+  return response.json({
+    message: `Estado actualizado a: ${estado}`,
+    estado
+  });
+}
+
+
+  
+  
   	async usuarioTipo({auth}){
 		return auth.user.id_rol;
 	}
@@ -122,6 +173,53 @@ class UserController {
 		return response.redirect('/')
 
 	}
+  
+  async cargarAlumnosExcel({ request, response, auth }) {
+  const archivo = request.file('archivo', {
+    types: ['application'],
+    extnames: ['xlsx']
+  })
+
+  if (!archivo) {
+    return response.status(400).send({ error: 'Archivo no proporcionado' })
+  }
+
+  const nombre = `alumnos_${Date.now()}.xlsx`
+  await archivo.move(Helpers.tmpPath(), { name: nombre })
+
+  if (!archivo.moved()) {
+    return response.status(500).send(archivo.error())
+  }
+
+  const workbook = new ExcelJS.Workbook()
+  await workbook.xlsx.readFile(`${Helpers.tmpPath()}/${nombre}`)
+  const hoja = workbook.getWorksheet(1)
+
+  for (let i = 2; i <= hoja.rowCount; i++) {
+    const fila = hoja.getRow(i)
+    const [
+      nombre, apellido_paterno, apellido_materno, edad, matricula,
+      genero, password, nivel_academico, periodo, id_rol
+    ] = fila.values.slice(1)
+
+    const safePassword = await Hash.make(password)
+
+    const [idInsertado] = await Database
+      .insert({
+        nombre, apellido_paterno, apellido_materno, edad, matricula,
+        genero, password: safePassword, nivel_academico, periodo, id_rol
+      })
+      .into('users')
+
+    // Puedes asumir que el usuario que los sube es un profesor
+    await Database.insert({
+      id_profesor: auth.user.id,
+      id_alumno: idInsertado
+    }).into('relacion_profesors')
+  }
+
+  return response.send({ message: 'Alumnos cargados correctamente' })
+}
 	
 	async enviarCorreo({session, request, response, auth}){
 		

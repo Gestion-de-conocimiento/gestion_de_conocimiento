@@ -1,30 +1,17 @@
 import pickle
 import sys
-import json
 import mysql.connector
+import numpy as np
 
-"""  
-Archivo con funciones predefinidas para modificar un .pkl
-"""
-# Matricula del alumno obtenida como argumento
+# Argumentos del sistema
 matriculaAlumno = sys.argv[1]
-
-id_tema = sys.argv[2]
-
+id_tema = str(sys.argv[2])  # <- importante: usar como str
 ponderacion = int(sys.argv[3])
-
 gradoCono = int(sys.argv[4])
 
-# Ruta al archivo pickle RBMA
 file_path = f"red_bayesiana/metodo_rutas_evaluacion/rbma/rbma_{matriculaAlumno}.pkl"
 
-
-
-
-
-"""
-Clase NODO extraída de red_bayesiana/metodo_rutas_evaluacion/NODO.py
-"""
+# Clase original NODO
 class NODO:
     def __init__(self, id, clasificacion):
         self.id = id
@@ -33,160 +20,141 @@ class NODO:
         self.sumatoria_ponderaciones = 0
         self.contador = 1
         self.grado_de_conocimiento = -1
-        self.matriz_ponderacion = [0,0,0]  
-        self.matriz_inferencia = [0,0,0]  
-        self.matriz_inferencia_final = [0,0,0]  
+        self.matriz_ponderacion = [0, 0, 0]
+        self.matriz_inferencia = [0, 0, 0]
+        self.matriz_inferencia_final = [0, 0, 0]
         self.dificultad = 0
         self.discriminacion = 0
         self.adivinacion = 0
         self.asintota = 0
         self.orden_evaluacion = -1
 
+# === Funciones auxiliares ===
 
-""" 
-Función para cargar datos del pkl
+def sigmoide(x):
+    return 1 / (1 + np.exp(-x))
 
-@param file_path dirección del archivo pkl
-"""
-def escribirDatos():
-      id = id_tema
-      nuevos_datos = {}
-      campo = "grado_de_conocimiento" 
-      valor = gradoCono + 0
-      nuevos_datos[campo] = valor
-      actualizar_objeto(rbma, id, nuevos_datos)
-      campo = "sumatoria_ponderaciones" 
-      valor = ponderacion + 0
-      nuevos_datos[campo] = valor
-      actualizar_objeto(rbma, id, nuevos_datos)
-            
-            
+def calcular_matriz_inferencia_final(ponderacion):
+    bajo = 1 - sigmoide(ponderacion - 66)
+    regular = sigmoide(ponderacion - 66) - sigmoide(ponderacion - 83)
+    bueno = sigmoide(ponderacion - 83)
+
+    total = bajo + regular + bueno
+    partes = [bajo / total, regular / total, bueno / total]
+    porcentajes = [int(round(p * 100)) for p in partes]
+
+    diferencia = 100 - sum(porcentajes)
+    if diferencia != 0:
+        idx = np.argmax(partes) if diferencia > 0 else np.argmin(partes)
+        porcentajes[idx] += diferencia
+
+    return porcentajes
+
+def matriz_por_grado(grado):
+    if grado == 0:
+        return [100, 0, 0]
+    elif grado == 1:
+        return [0, 100, 0]
+    elif grado == 2:
+        return [0, 0, 100]
+    return [0, 0, 0]
+
+def calcular_grado_por_ponderacion(ponderacion, nivel):
+    if nivel in (0, 1):
+        if ponderacion <= 66:
+            return 0
+        elif ponderacion <= 83:
+            return 1
+        else:
+            return 2
+    return -1
+
 def cargar_datos(file_path):
-    with open(file_path, 'rb') as file: # Se abre como 'rb' de 'read binary'
+    with open(file_path, 'rb') as file:
         return pickle.load(file)
 
-"""
-Función para guardar los datos en el .pkl
-
-@param file_path dirección del archivo pkl
-"""
 def guardar_datos(file_path, data):
-    with open(file_path, 'wb') as file: # Se abre como 'wb' de 'write binary'
-        pickle.dump(data, file) 
+    with open(file_path, 'wb') as file:
+        pickle.dump(data, file)
 
-"""  
-Función para crear
+def obtener_jerarquia_mysql():
+    conexion = mysql.connector.connect(
+        host='localhost',
+        user='root',
+        password='PROYECTO1KMS',
+        database='kms'
+    )
+    cursor = conexion.cursor()
+    cursor.execute("SELECT id_tema, tema_rama FROM temas_orden_ensenanza WHERE tema_rama IS NOT NULL")
+    resultados = cursor.fetchall()
+    cursor.close()
+    conexion.close()
 
-@param rbma Matriz de datos cargados
-@param nuevo_objeto Nuevo objeto a guardar
-"""
-def crear_objeto(rbma, nuevo_objeto):
-    rbma[1][nuevo_objeto.id] = nuevo_objeto
-    guardar_datos(file_path, rbma)
-    print(f"Objeto {nuevo_objeto.id} creado exitosamente.")
+    jerarquia = {}
+    for id_tema, tema_rama in resultados:
+        tema_t = str(id_tema)
+        padre_t = str(tema_rama)
+        if padre_t not in jerarquia:
+            jerarquia[padre_t] = []
+        jerarquia[padre_t].append(tema_t)
+    return jerarquia
 
-""" 
-Función para leer todos los datos del .pkl
-
-@param rbma Matriz con datos cargados
-"""
-def leer_todos(rbma):
-    for i in rbma[1]:
-        obj = rbma[1][i]
-        print(obj.id, obj.clasificacion, obj.ponderacion, obj.sumatoria_ponderaciones, obj.contador, obj.grado_de_conocimiento, obj.matriz_ponderacion, obj.matriz_inferencia, obj.matriz_inferencia_final, float(obj.dificultad), float(obj.discriminacion), float(obj.adivinacion), obj.asintota, obj.orden_evaluacion)
-
-"""  
-Función para buscar un registro por id
-
-@param rbma Matriz con los datos cargados
-@param id ID de objeto a leer
-"""
-def leer_por_id(rbma, id):
-    if id in rbma[1]:
-        obj = rbma[1][id]
-        print(obj.id, obj.clasificacion, obj.ponderacion, obj.sumatoria_ponderaciones, obj.contador, obj.grado_de_conocimiento, obj.matriz_ponderacion, obj.matriz_inferencia, obj.matriz_inferencia_final, float(obj.dificultad), float(obj.discriminacion), float(obj.adivinacion), obj.asintota, obj.orden_evaluacion)
-    else:
-        print(f"Objeto con ID {id} no encontrado.")
-
-
-"""  
-Función para actualizar un objeto en base a un id
-
-@param rbma Matriz con los datos guardados
-@param id ID del objeto a actualizar
-@param nuevos_datos 
-"""
 def actualizar_objeto(rbma, id, nuevos_datos):
     if id in rbma[1]:
-        obj = rbma[1][id]
+        nodo = rbma[1][id]
         for key, value in nuevos_datos.items():
-            setattr(obj, key, value)
-        guardar_datos(file_path, rbma)
-        print(f"Objeto {id} actualizado exitosamente.")
+            setattr(nodo, key, value)
+        nodo.matriz_ponderacion = matriz_por_grado(nodo.grado_de_conocimiento)
+        nodo.matriz_inferencia_final = calcular_matriz_inferencia_final(nodo.ponderacion)
+        print(f"[✔] Nodo {id} actualizado: grado={nodo.grado_de_conocimiento}, ponderacion={nodo.ponderacion}, mif={nodo.matriz_inferencia_final}")
     else:
-        print(f"Objeto con ID {id} no encontrado.")
+        print(f"[✘] Nodo {id} no encontrado")
 
-"""  
-Función para eliminar un registro del .pkl
+def actualizar_nivel_superior(rbma, id_padre, jerarquia, nivel):
+    ids_hijos = jerarquia.get(id_padre, [])
+    hijos = [rbma[1][hid] for hid in ids_hijos if hid in rbma[1] and rbma[1][hid].ponderacion > 0]
+    if not hijos:
+        return
 
-@param rbma Matriz con los datos guardados
-@param id ID del objeto a elimianr
-"""
-def eliminar_objeto(rbma, id):
-    if id in rbma[1]:
-        del rbma[1][id] # Borramos el objeto en la posición rbma[1][id]
-        guardar_datos(file_path, rbma)
-        print(f"Objeto {id} eliminado exitosamente.")
-    else:
-        print(f"Objeto con ID {id} no encontrado.")
+    suma = sum(h.ponderacion for h in hijos)
+    promedio = suma / len(hijos)
+    grado = calcular_grado_por_ponderacion(promedio, nivel)
 
-"""  
-Función para imprimir el menú de opciones
-"""
-def mostrar_menu():
-    print("\nSeleccione una opción:")
-    print("1. Crear un nuevo objeto")
-    print("2. Leer todos los objetos")
-    print("3. Leer un objeto por ID")
-    print("4. Actualizar un objeto")
-    print("5. Eliminar un objeto")
-    print("6. Salir")
+    if id_padre in rbma[1]:
+        nodo = rbma[1][id_padre]
+        nodo.ponderacion = int(promedio)
+        nodo.sumatoria_ponderaciones = int(suma)
+        nodo.grado_de_conocimiento = grado
+        nodo.matriz_ponderacion = matriz_por_grado(grado)
+        nodo.matriz_inferencia_final = calcular_matriz_inferencia_final(promedio)
+        print(f"[↑] Nodo nivel {nivel} {id_padre} → promedio={promedio:.2f}, grado={grado}, mif={nodo.matriz_inferencia_final}")
 
-"""  
-Función para pedirle al usuario los nuevos datos del nodo
-"""
-def obtener_datos_nodo():
-    id = input("Ingrese el id del nodo: ")
-    clasificacion = input("Ingrese la clasificación del nodo: ")
-    return NODO(id, clasificacion)
+# === Función principal ===
 
-"""  
-Método main
-
-if ponderacion < 66: 
-  gradoCono = 0;
-elif ponderacion < 83:
-gradoCono = 1  
-elif ponderacion >= 83:
-  gradoCono = 2
-else
-  gradoCono = -2
-""""""
-
-            ida = id_tema
-            nuevos_datos = {}
-            while True:
-                #campo = input("Ingrese el campo a actualizar (o 'salir' para terminar): ")
-                campo = "grado_de_conocimiento" 
-                if campo == "salir":
-                    break
-                #valor = input(f"Ingrese el nuevo valor para {campo}: ")
-                
-                valor = gradoCono
-                nuevos_datos[campo] = valor
-            actualizar_objeto(rbma, id, nuevos_datos)
-"""
-if __name__ == "__main__":
-    # Cargar datos
+def escribirDatos():
+    print(f"[RUN] matricula={matriculaAlumno}, tema={id_tema}, ponderacion={ponderacion}, grado={gradoCono}")
     rbma = cargar_datos(file_path)
+    jerarquia = obtener_jerarquia_mysql()
+
+    # 1. Actualizar nodo tema
+    actualizar_objeto(rbma, id_tema, {
+        "grado_de_conocimiento": gradoCono,
+        "sumatoria_ponderaciones": ponderacion,
+        "ponderacion": ponderacion
+    })
+
+    # 2. Actualizar padre (rama)
+    padre_rama = next((k for k, hijos in jerarquia.items() if id_tema in hijos), None)
+    if padre_rama:
+        actualizar_nivel_superior(rbma, padre_rama, jerarquia, nivel=1)
+
+        # 3. Actualizar raíz
+        abuelo_raiz = next((k for k, hijos in jerarquia.items() if padre_rama in hijos), None)
+        if abuelo_raiz:
+            actualizar_nivel_superior(rbma, abuelo_raiz, jerarquia, nivel=0)
+
+    guardar_datos(file_path, rbma)
+    print("✅ Datos actualizados y guardados correctamente.")
+
+if __name__ == "__main__":
     escribirDatos()

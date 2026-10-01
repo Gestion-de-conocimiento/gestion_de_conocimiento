@@ -1,0 +1,47 @@
+]633;E;echo "=== PM2 ===";7ef7f3cb-53a8-4f4d-a086-a654c194afb9]633;C=== PM2 ===
+┌─────┬───────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id  │ name      │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├─────┼───────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0   │ server    │ default     │ 4.1.0   │ fork    │ 5562     │ 3h     │ 2    │ online    │ 0%       │ 83.9mb   │ root     │ disabled │
+└─────┴───────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+
+=== PROCESOS NODE ===
+nodejs      1077  0.0  0.4 627800 35500 ?        Ssl  Sep30   0:09 PM2 v5.2.0: God Daemon (/home/nodejs/.pm2)
+nodejs      1141  0.2  0.4 689684 35060 ?        Ssl  Sep30   0:54 node /var/www/html/hello.js
+root        3323  1.5 26.5 3787064 2159160 ?     Sl   Sep30   4:38 /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --agent-host-bridge-port=40719 --agent-host-bridge-host=127.0.0.1 --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-eda434a5-83d1-417d-9223-48e332e76f60
+root        3367  0.0  1.1 1739180 94860 ?       Sl   Sep30   0:02 /root/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/node /root/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/out/server-main.js --socket-path /tmp/code-0574829e-023b-475c-bb94-4231c3b90c06 --agent-host-path /tmp/code-d059660b-1a73-4d25-a155-fd2a9faa5a98 --start-server --accept-server-license-terms --enable-remote-auto-shutdown --without-connection-token
+root        3400  0.1  1.0 1626076 84560 ?       Sl   Sep30   0:28 /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/bootstrap-fork --type=ptyHost --logsPath /root/.vscode-server/data/logs/20260930T232311
+root        3416  0.0  1.8 18556164 148800 ?     Sl   Sep30   0:10 /root/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/node /root/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/out/bootstrap-fork --type=agentHost --logsPath /root/.vscode-server/data/logs/20260930T232313 --user-data-dir /root/.vscode-server/data --telemetry-level all
+root        3428  0.2  0.3 926848 31248 ?        Sl   Sep30   0:40 /root/.vscode-server/cli/servers/Stable-07f806f999227108933c2e30515b26eecc1fda74/server/node_modules/@github/copilot-sdk-linux-x64/prebuilds/linux-x64/copilot-runtime --headless --no-auto-update --log-level info --stdio --no-auto-login
+root        5562  0.4  1.0 969780 85888 ?        Ssl  00:21   1:00 node /root/SistemaKMS/server.js
+root        7916  1.0  7.1 19372012 584340 ?     Rl   00:48   2:14 /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node --dns-result-order=ipv4first /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+root        7927  0.1  2.9 1726592 238316 ?      Sl   00:48   0:15 /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/out/bootstrap-fork --type=fileWatcher
+root        8099  0.0  0.9 1500056 73504 ?       Sl   00:48   0:01 /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=7916
+root       10000  0.5  7.4 11462000 603468 ?     Sl   02:20   0:37 /root/.vscode-server/cli/servers/Stable-04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/server/node /root/.vscode-server/extensions/ms-python.vscode-pylance-2026.4.1/dist/server.bundle.js --cancellationReceive=file:859f75aee7db615f0b0dcf9c7ff60393b608852fc5 --node-ipc --clientProcessId=7916
+
+=== PUERTOS ESCUCHANDO ===
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*        users:(("sshd",pid=2137,fd=3))                                                 
+LISTEN    0         511              127.0.0.1:3000             0.0.0.0:*        users:(("node /var/www/h",pid=1141,fd=19))                                     
+LISTEN    0         511              127.0.0.1:32859            0.0.0.0:*        users:(("MainThread",pid=10000,fd=35))                                         
+LISTEN    0         70               127.0.0.1:33060            0.0.0.0:*        users:(("mysqld",pid=1050,fd=21))                                              
+LISTEN    0         511              127.0.0.1:3333             0.0.0.0:*        users:(("node /root/Sist",pid=5562,fd=20))                                     
+LISTEN    0         151              127.0.0.1:3306             0.0.0.0:*        users:(("mysqld",pid=1050,fd=33))                                              
+LISTEN    0         511              127.0.0.1:36331            0.0.0.0:*        users:(("MainThread",pid=3416,fd=30))                                          
+LISTEN    0         128              127.0.0.1:40719            0.0.0.0:*        users:(("code-04c0d99f4f",pid=3281,fd=11))                                     
+LISTEN    0         511                0.0.0.0:80               0.0.0.0:*        users:(("nginx",pid=1003,fd=6),("nginx",pid=1002,fd=6),("nginx",pid=1001,fd=6),("nginx",pid=1000,fd=6),("nginx",pid=999,fd=6))
+LISTEN    0         128              127.0.0.1:40627            0.0.0.0:*        users:(("code-04c0d99f4f",pid=11577,fd=10))                                    
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=745,fd=13))                                      
+LISTEN    0         128                   [::]:22                  [::]:*        users:(("sshd",pid=2137,fd=4))                                                 
+LISTEN    0         511                   [::]:80                  [::]:*        users:(("nginx",pid=1003,fd=7),("nginx",pid=1002,fd=7),("nginx",pid=1001,fd=7),("nginx",pid=1000,fd=7),("nginx",pid=999,fd=7))
+
+=== NGINX SITES ENABLED ===
+total 8.0K
+drwxr-xr-x 2 root root 4.0K Jul 29  2022 .
+drwxr-xr-x 8 root root 4.0K Feb 26  2025 ..
+lrwxrwxrwx 1 root root   34 Jul 29  2022 default -> /etc/nginx/sites-available/default
+
+=== SERVICIOS ===
+  mysql.service               loaded active running MySQL Community Server                                  
+  nginx.service               loaded active running A high performance web server and a reverse proxy server
+  pm2-nodejs.service          loaded active running PM2 process manager                                     

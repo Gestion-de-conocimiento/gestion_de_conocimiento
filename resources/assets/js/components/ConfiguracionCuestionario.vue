@@ -31,10 +31,6 @@
                                 <h3 class="card-title mt-2"><b> Configurar cuestionario </b></h3>
                                 <div class="card-tools">
                                     <div style="width: 150px;">
-                                        <!-- <button type="button" class="btn btn-primary float-right" data-toggle="modal"
-                                                data-target="#modalDeInformacion">
-                                            <i class="fas fa-question-circle"></i> Más información
-                                        </button> -->
                                     </div>
                                 </div>
                             </div>
@@ -130,10 +126,6 @@
                                 <h3 class="card-title mt-2"><b>Temas que no cumplen con la configuración establecida</b></h3>
                                 <div class="card-tools">
                                     <div style="width: 150px;">
-                                        <!-- <button type="button" class="btn btn-primary float-right" data-toggle="modal"
-                                                data-target="#modalDeInformacion">
-                                            <i class="fas fa-plus"></i> Info
-                                        </button> -->
                                     </div>
                                 </div>
                             </div>
@@ -160,6 +152,7 @@
                                             <th>Múltiple</th>
                                             <th>Calculada</th>
                                             <th>Calculada Múltiple</th>
+                                            <th>Expresiones</th>
                                         </thead>
                                         <tbody slot="body" slot-scope="{displayData}">
                                             <tr v-for="tema in displayData"
@@ -168,7 +161,8 @@
                                                     (tema.totalPreguntasBooleanas < configuraciones.num_preguntas_boleanas) ||
                                                     (tema.totalPreguntasMultiples < configuraciones.num_preguntas_multiples) ||
                                                     (tema.totalPreguntasCalculadas < configuraciones.num_preguntas_calculadas) ||
-                                                    (tema.totalPreguntasCalculadasMultiples < configuraciones.num_preguntas_calculadas_multiples)">
+                                                    (tema.totalPreguntasCalculadasMultiples < configuraciones.num_preguntas_calculadas_multiples)||
+                                                    (tema.totalPreguntasExpresiones < configuraciones.num_preguntas_expresion)">
                                                 <td>{{ tema.nombre_tema }}</td>
                                                 <td>
                                                     {{ tema.totalPreguntasAbiertas }}
@@ -203,6 +197,12 @@
                                                 <td>
                                                     {{ tema.totalPreguntasCalculadasMultiples }}
                                                     <i v-if="tema.totalPreguntasCalculadasMultiples >= configuraciones.num_preguntas_calculadas_multiples"
+                                                       class="fas fa-check-circle" style="color:green"></i>
+                                                    <i v-else class="fas fa-times-circle" style="color:red"></i>
+                                                </td>
+                                              <td>
+                                                    {{ tema.totalPreguntasExpresiones }}
+                                                    <i v-if="tema.totalPreguntasExpresiones >= configuraciones.num_preguntas_expresion"
                                                        class="fas fa-check-circle" style="color:green"></i>
                                                     <i v-else class="fas fa-times-circle" style="color:red"></i>
                                                 </td>
@@ -251,7 +251,6 @@
     </div>
 </template>
 
-
 <script>
     import axios from "axios";
     export default {
@@ -267,7 +266,7 @@
                     num_preguntas_calculadas: 0,
                     num_preguntas_abiertas: 0,
                     num_preguntas_calculadas_multiples: 0,
-                    num_preguntas_multiples: 0
+                    num_preguntas_expresion: 0
                 },
                 totalPreguntas: 0,
                 preguntasPorTema: [],
@@ -331,6 +330,8 @@
                 this.configuraciones.num_preguntas_calculadas_multiples = (this.configuraciones
                     .num_preguntas_calculadas_multiples === "") ? 0 : parseInt(this.configuraciones
                     .num_preguntas_calculadas_multiples);
+                              this.configuraciones.num_preguntas_expresion = (this.configuraciones.num_preguntas_expresion === "") ?
+                    0 : parseInt(this.configuraciones.num_preguntas_expresion);
 
 
                 this.configuraciones.num_preguntas = parseInt(this.configuraciones.num_preguntas_numericas) +
@@ -338,7 +339,8 @@
                     parseInt(this.configuraciones.num_preguntas_boleanas) +
                     parseInt(this.configuraciones.num_preguntas_calculadas) +
                     parseInt(this.configuraciones.num_preguntas_abiertas) +
-                    parseInt(this.configuraciones.num_preguntas_calculadas_multiples)
+                    parseInt(this.configuraciones.num_preguntas_calculadas_multiples)+
+                    parseInt(this.configuraciones.num_preguntas_expresion)
 
             },
 
@@ -373,6 +375,7 @@
                             temas[i].totalPreguntasNumericas = 0;
                             temas[i].totalPreguntasBooleanas = 0;
                             temas[i].totalPreguntasCalculadasMultiples = 0;
+                            temas[i].totalPreguntasExpresiones = 0;
                         }
 
                         console.log(preguntas);
@@ -398,6 +401,10 @@
                                             break;
                                         case 6:
                                             temas[i].totalPreguntasCalculadasMultiples = preguntas[j]
+                                            .totalPreguntas;
+                                             break;
+                                        case 7:
+                                            temas[i].totalPreguntasExpresiones = preguntas[j]
                                             .totalPreguntas;
                                             break;
                                     }
@@ -431,7 +438,6 @@
                     }
                 )
             },
-
             guardarConfiguracion: async function () {
                 var totalPreguntas = document.getElementById("numeroPreguntas").value;
                 var totalNumericas = document.getElementById("numeroPreguntasNumericas").value;
@@ -441,7 +447,9 @@
                 var totalBooleanas = document.getElementById("numeroPreguntasBooleanas").value;
                 var totalMultiples = document.getElementById("numeroPreguntasMultiples").value;
                 var totalCalculadasMultiples = document.getElementById("numeroPreguntasCalculadasMultiples").value;
-                //var ponderacionEstricta = document.getElementById("ponderacionEstricta").value;
+                var totalExpresiones = document.getElementById("numeroPreguntasExpresion").value;
+
+              //var ponderacionEstricta = document.getElementById("ponderacionEstricta").value;
 
                 var checkEstricta = document.getElementById("ponderacionEstricta");
 
@@ -460,6 +468,7 @@
                         totalBooleanas: totalBooleanas,
                         totalMultiples: totalMultiples,
                         totalCalculadasMultiples: totalCalculadasMultiples,
+                        totalExpresiones: totalExpresiones,
                         ponderacionEstricta: ponderacionEstricta,
                     })
                     .then((res) => {
@@ -468,7 +477,6 @@
                             title: 'Configuracion guardada',
                             text: 'Configuracion guardada con exito',
                         })
-
                         this.obtenerConfiguraciones();
                         this.obtenerTotales();
                         this.checkPonderacionEstricta();
@@ -476,16 +484,10 @@
                     .catch((err) => {
                         console.log(err)
                     })
-
-
             }
-
         },
-
     }
-
 </script>
-
 <style>
     div.gfg {
         width: 100%;
@@ -493,5 +495,4 @@
         overflow: auto;
         text-align: justify;
     }
-
 </style>

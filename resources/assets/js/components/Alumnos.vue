@@ -28,14 +28,74 @@
 						<div class="card shadow">
                             <div class="card-header">
 								<h3 class="card-title mt-2"> <b> Lista de alumnos </b> </h3>
-								<div class="card-tools">
-									<div class="" style="width: 150px;">
-										<button type="button" class="btn btn-primary float-right"  data-toggle="modal"
-											data-target="#registrarPregunta" @click="btnGuardar">
-											<i class="fas fa-plus"></i> Nuevo
-										</button> 
-									</div>
-								</div>
+					<div class="card-tools d-flex flex-wrap justify-content-end align-items-center">
+
+  <!-- Botón Nuevo -->
+  <div class="mr-2 mb-2">
+    <button type="button" class="btn btn-primary" data-toggle="modal"
+      data-target="#registrarPregunta" @click="btnGuardar">
+      <i class="fas fa-plus"></i> Nuevo
+    </button>
+  </div>
+
+  <!-- Botón Cargar Excel -->
+  <div class="mr-2 mb-2">
+    <button class="btn btn-success" @click="$refs.excelFile.click()">
+      <i class="fas fa-file-excel"></i> Cargar Excel
+    </button>
+    <input type="file" ref="excelFile" @change="subirExcel" accept=".xlsx, .xls" style="display: none;" />
+  </div>
+            <div v-if="vistaPrevia.length > 0" class="mt-4">
+  <h5>Vista previa de alumnos a registrar</h5>
+  <p><b>Nuevos:</b> {{ registrosNuevos }} | <b>Existentes:</b> {{ registrosExistentes }}</p>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-sm">
+      <thead class="thead-light">
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido Paterno</th>
+          <th>Apellido Materno</th>
+          <th>Edad</th>
+          <th>Matrícula</th>
+          <th>Género</th>
+          <th>Nivel Académico</th>
+          <th>Periodo</th>
+          <th>Profesor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(a, i) in vistaPrevia" :key="i">
+          <td>{{ a.nombre }}</td>
+          <td>{{ a.apellido_paterno }}</td>
+          <td>{{ a.apellido_materno }}</td>
+          <td>{{ a.edad }}</td>
+          <td>{{ a.matricula }}</td>
+          <td>{{ a.genero }}</td>
+          <td>{{ a.nivel_academico }}</td>
+          <td>{{ a.periodo }}</td>
+          <td>{{ a.profesor }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <button class="btn btn-primary" @click="confirmarCargaExcel">
+    <i class="fas fa-save"></i> Confirmar registro
+  </button>
+</div>
+
+
+  <!-- Botón Descargar Plantilla -->
+  <div class="mb-2">
+    <button class="btn btn-outline-success" @click="descargarPlantilla" title="Descargar plantilla de alumnos">
+      <i class="fas fa-download"></i> Plantilla Excel
+    </button>
+  </div>
+
+</div>
+
+
 							</div>
 							<div class="card-body">
 								<div class="row mb-2">
@@ -155,7 +215,10 @@
                     }
                 },
                 currentPage: 1,
-                totalPages: 0
+                totalPages: 0,
+              vistaPrevia: [],
+    registrosExistentes: 0,
+    registrosNuevos: 0
             }
 
         },
@@ -165,10 +228,68 @@
             this.getprofesor();
         },
         methods: {
+          async subirExcel(event) {
+    const archivo = event.target.files[0];
+    const formData = new FormData();
+    formData.append("archivo", archivo);
+
+    try {
+      const res = await fetch("/preview-alumnos-excel", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+        body: formData,
+      });
+      const data = await res.json();
+      this.vistaPrevia = data.preview;
+      this.registrosExistentes = data.existentes;
+      this.registrosNuevos = data.nuevos;
+    } catch (err) {
+      console.error("Error al generar vista previa", err);
+    }
+  },
+
+  async confirmarCargaExcel() {
+    const archivo = this.$refs.excelFile.files[0];
+    const formData = new FormData();
+    formData.append("archivo", archivo);
+
+    try {
+      await fetch("/cargar-alumnos-excel", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+        body: formData,
+      });
+
+      this.vistaPrevia = [];
+      this.getAlumnos();
+
+      this.$swal.fire({
+        icon: "success",
+        title: "Alumnos registrados correctamente",
+        toast: true,
+        timer: 2000,
+        position: "top-end",
+        showConfirmButton: false,
+      });
+    } catch (error) {
+      console.error("Error al registrar alumnos", error);
+    }
+  },
             cambiarCampoDeBusqueda() {
                 let x = document.getElementById("campoBusqueda").value;
                 this.filters.nombre.keys[0] = x;
             },
+   descargarPlantilla() {
+  window.location.href = '/descargar-plantilla-alumnos';
+},
+          subirExcel(event) {
+ 
+},
+
             getAlumnos() {
                 axios({
                     method: 'GET',
@@ -434,8 +555,7 @@
 						
             <p class="text-left mt-0 mb-0" style="color:#212529; font-size:16px;"> <b>Período<span style="color:red">*</span>: </b> </p>
                     <select id="periodo" value="" name="periodo" class="form-control">
-                         <option value="` + periodo + `">` + periodo + `</option>
-                   
+                         <option value="` + periodo + `">` + periodo + `</option>              
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -561,9 +681,6 @@
                         }
                        
                      
-
-
-
                     }
                 })
 
@@ -573,8 +690,6 @@
                 }
 
             },
-
-
 
             editar(id, nombre, apellido_paterno, apellido_materno, edad,password, matricula, genero, nivel_academico, periodo,id_profesor) {
                 axios.post('/alumno/actualizar', {
@@ -619,9 +734,6 @@
                         console.log(err)
                     })
             },
-
-
-
             eliminar(id, estado) {
 
                 if (estado == null) {
@@ -631,8 +743,7 @@
                 console.log("Id " + id + " Estado " + estado);
                 this.$swal.fire({
                     html: `
-                        <h3 style="color:#212529;">¿Realmente desea eliminar este registro?</h3>
-			        `,
+                        <h3 style="color:#212529;">¿Realmente desea eliminar este registro?</h3>			        `,
                     //icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#DC3545',
@@ -640,26 +751,14 @@
                     confirmButtonText: '<i class="fas fa-trash"></i> Aceptar',
                     cancelButtonText: '<i class="fas fa-ban"></i> Cancelar',
                 }).then((result) => {
-
                     if (result.value) {
-
                         axios.post('user/delete2', {
                             id: id,
                             estado: estado
                         }).then((res) => {
                             this.id = ''
                             this.getAlumnos()
-                            /*const Toast = this.$swal.mixin({
-                                toast: true,
-                                position: 'top-end',
-                                showConfirmButton: false,
-                                timer: 3000
-                            });
-                            this.$swal.fire({
-                                type: 'success',
-                                title: '¡Tarea realizada con exito!'
-                            })*/
-
+                   
                             this.$swal.fire({
                                 position: 'top-end',
                                 icon: 'success',
